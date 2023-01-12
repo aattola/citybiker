@@ -1,6 +1,6 @@
-import { prisma } from "database";
+import { prisma } from "@citybiker/db"
 
-import type { NextApiRequest, NextApiResponse } from "next";
+import type { NextApiRequest, NextApiResponse } from "next"
 
 /**
  * Users
@@ -12,23 +12,23 @@ export default async function handler(
   res: NextApiResponse
 ) {
   if (req.method !== "GET") {
-    res.setHeader("Allow", ["GET"]);
-    return res.status(405).end(`Method ${req.method} Not Allowed`);
+    res.setHeader("Allow", ["GET"])
+    return res.status(405).end(`Method ${req.method} Not Allowed`)
   }
 
   try {
-    const users = await prisma.user.findMany();
+    const users = await prisma.station.findMany()
     if (!users)
       throw {
         message: "Failed to retrieve users",
         status: 500,
-      };
+      }
 
     return res.status(200).json({
       users,
-    });
+    })
   } catch ({ message = "An unknown error occured", status = 500 }) {
-    console.error({ message, status });
-    return res.status(status).end(message);
+    console.error({ message, status })
+    return res.status(status as number).end(message)
   }
 }

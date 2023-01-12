@@ -1,20 +1,53 @@
 // This is your Prisma schema file,
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
 
-datasource db {
-  provider = "mysql"
-  url      = env("DATABASE_URL")
-  referentialIntegrity = "prisma"
-}
-
 generator client {
   provider = "prisma-client-js"
   previewFeatures = ["referentialIntegrity"]
+  emitTranspiledCode = "true"
 }
 
-model User {
-  id            String    @id @default(cuid())
-  name          String?
-  email         String?   @unique
-  emailVerified DateTime?
+generator typegraphql {
+  provider = "typegraphql-prisma"
+  output   = "../../../apps/web/generated/type-graphql"
+  emitTranspiledCode = "true"
 }
+
+datasource db {
+  provider          = "postgresql"
+  url               = env("DATABASE_URL")
+  // shadowDatabaseUrl = env("DEV_DB_URL")
+  referentialIntegrity = "prisma"
+
+}
+
+model Journey {
+  id                   String   @id @default(cuid())
+  departure            DateTime
+  return               DateTime
+  departureStation     Station  @relation(name: "departure", fields: [departureStationId], references: [id])
+  departureStationId   Int
+  departureStationName String
+  returnStation        Station  @relation(name: "return", fields: [returnStationId], references: [id])
+  returnStationId      Int
+  returnStationName    String
+  coveredDistance      Float
+  duration             Float
+}
+
+model Station {
+  id              Int       @id
+  startedJourneys Journey[] @relation("departure")
+  endedJourneys   Journey[] @relation("return")
+  finName         String
+  sweName         String
+  finAddress      String
+  sweAddress      String
+  finCity         String    @default("Helsinki")
+  sweCity         String    @default("Helsingfors")
+  operator        String    @default("HSL")
+  capacity        Int
+  x               Float
+  y               Float
+}
+

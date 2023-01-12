@@ -35,3 +35,6 @@ yarn-error.log*
 .turbo
 
 .idea/
+/packages/database/data/
+/apps/web/generated/type-graphql/
+/packages/database/dist/

@@ -19,6 +19,7 @@
   },
   "devDependencies": {
     "prettier": "^2.5.1",
+    "prettier-plugin-prisma": "^4.8.0",
     "tsx": "^3.7.1",
     "turbo": "latest"
   },
