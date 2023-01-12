@@ -4,13 +4,6 @@
 generator client {
   provider = "prisma-client-js"
   previewFeatures = ["referentialIntegrity"]
-  emitTranspiledCode = "true"
-}
-
-generator typegraphql {
-  provider = "typegraphql-prisma"
-  output   = "../../../apps/web/generated/type-graphql"
-  emitTranspiledCode = "true"
 }
 
 datasource db {

@@ -1,38 +1,39 @@
 {
+  "name": "@citybiker/web",
+  "version": "0.1.0",
   "private": true,
-  "name": "web",
-  "version": "1.0.0",
   "scripts": {
-    "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "clean": "rm -rf .next .turbo node_modules",
+    "dev": "next dev",
+    "lint": "SKIP_ENV_VALIDATION=1 next lint",
+    "type-check": "tsc --noEmit",
+    "with-env": "dotenv -e ../../.env --"
   },
   "dependencies": {
-    "class-validator": "^0.14.0",
-    "graphql": "^15.8.0",
-    "graphql-yoga": "^3.3.0",
+    "@citybiker/api": "*",
+    "@citybiker/db": "*",
+    "@tanstack/react-query": "^4.22.0",
+    "@trpc/client": "^10.8.1",
+    "@trpc/next": "^10.8.1",
+    "@trpc/react-query": "^10.8.1",
+    "@trpc/server": "^10.8.1",
     "next": "^13.1.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "reflect-metadata": "^0.1.13",
-    "type-graphql": "^1.1.1"
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "tsconfig": "*",
+    "zod": "^3.20.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.12",
-    "@babel/plugin-proposal-class-properties": "^7.18.6",
-    "@babel/plugin-proposal-decorators": "^7.20.7",
-    "@babel/preset-react": "^7.18.6",
-    "@babel/preset-typescript": "^7.18.6",
-    "@citybiker/db": "*",
-    "@types/node": "^17.0.12",
-    "@types/react": "^18.0.22",
-    "@types/react-dom": "^18.0.7",
-    "babel-plugin-parameter-decorator": "^1.0.16",
-    "babel-plugin-transform-typescript-metadata": "^0.3.2",
-    "config": "*",
-    "eslint": "^7.32.0",
-    "tsconfig": "*",
-    "typescript": "^4.5.3"
+    "@types/node": "^18.0.0",
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.9",
+    "autoprefixer": "^10.4.13",
+    "dotenv-cli": "^6.0.0",
+    "eslint": "^8.30.0",
+    "eslint-config-next": "^13.1.1",
+    "postcss": "^8.4.19",
+    "tailwindcss": "^3.2.4",
+    "typescript": "^4.9.4"
   }
 }
