@@ -456,24 +456,24 @@
   resolved "https://registry.yarnpkg.com/@tootallnate/once/-/once-2.0.0.tgz#f544a148d3ab35801c1f633a7441fd87c2e484bf"
   integrity sha512-XCuKFP5PS55gnMVu3dty8KPatLqUoy/ZYzDzAGCQ8JNFCkLXzmI7vNHCR+XpbZaMWQK/vQubr7PkYq8g470J/A==
 
-"@trpc/client@^10.8.1":
+"@trpc/client@^10.8.1", "@trpc/client@^10.9.0":
   version "10.9.0"
   resolved "https://registry.yarnpkg.com/@trpc/client/-/client-10.9.0.tgz#c6c672ab1b8764ddb2f8f4d8884d5d4c156bc957"
   integrity sha512-id6318qpgqllNOuBp7nuciXFPXCe+zae5d4r1hze6Eyp5fFFNO58TqA+4Q44KIcHgpfWyW2egs6iPeql3PrdKA==
 
-"@trpc/next@^10.8.1":
+"@trpc/next@^10.9.0":
   version "10.9.0"
   resolved "https://registry.yarnpkg.com/@trpc/next/-/next-10.9.0.tgz#342242be9a3d0ee4ebe5c1e4f4a45c055100a730"
   integrity sha512-h/W8VHMki/fw7vHNMs1Ku7bLqccjpiKCE1wkqbvHfBOO1ARDmarRbuK6dLqJilip/f7jkFXcrxwB+eNgK4+6Wg==
   dependencies:
     react-ssr-prepass "^1.5.0"
 
-"@trpc/react-query@^10.8.1":
+"@trpc/react-query@^10.9.0":
   version "10.9.0"
   resolved "https://registry.yarnpkg.com/@trpc/react-query/-/react-query-10.9.0.tgz#b37c7bef6fbf5a8acec08d8d0532ba4060fa136b"
   integrity sha512-I7xtdFj/AETwc9HfY2bGxKINij39r26LvfIiTBfz2pBj1ELrcgucWmPeI2eS6pon/uI1E9Nqa6fQCg/zkg764Q==
 
-"@trpc/server@^10.8.1":
+"@trpc/server@^10.8.1", "@trpc/server@^10.9.0":
   version "10.9.0"
   resolved "https://registry.yarnpkg.com/@trpc/server/-/server-10.9.0.tgz#e470df429c823858d715b21acd564f9c6f17f0d9"
   integrity sha512-5psyZgbvy29pJND32hwkWTMbv6s86IbsPOeDopsgNF0VegZT6Dsijmb7Ub/TDhuJVQVq5u4u5briMXi3SxmBkw==
@@ -4453,7 +4453,7 @@ zip-stream@^4.1.0:
     compress-commons "^4.1.0"
     readable-stream "^3.6.0"
 
-zod@^3.20.0:
+zod@^3.20.0, zod@^3.20.2:
   version "3.20.2"
   resolved "https://registry.yarnpkg.com/zod/-/zod-3.20.2.tgz#068606642c8f51b3333981f91c0a8ab37dfc2807"
   integrity sha512-1MzNQdAvO+54H+EaK5YpyEy0T+Ejo/7YLHS93G3RnYWh5gaotGHwGeN/ZO687qEDU2y4CdStQYXVHIgrUl5UVQ==

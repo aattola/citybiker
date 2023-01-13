@@ -3,7 +3,9 @@ import { createTRPCRouter, publicProcedure } from '../trpc'
 
 export const stationRouter = createTRPCRouter({
   all: publicProcedure.query(async ({ ctx }) => {
-    return await ctx.prisma.station.findMany()
+    const stations = await ctx.prisma.station.findMany()
+
+    return stations
   }),
 
   byId: publicProcedure.input(z.number()).query(({ ctx, input }) => {
