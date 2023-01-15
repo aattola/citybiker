@@ -1,21 +1,28 @@
 import { useRouter } from 'next/router'
 import { NextPage } from 'next'
 import GoogleMapReact from 'google-map-react'
+import Image from 'next/image'
+import Bike from '@citybiker/web/public/bike.png'
 import { api } from '../../utils/api'
+const MapPointer = ({ lat, lng }) => {
+  const wh = 30
 
-const AnyReactComponent = ({ text }) => (
-  <img
-    src="/bike.png"
-    height={30}
-    width={30}
-    style={{ transform: 'translate3d(-30px, -30px, 0px)' }}
-    alt="Bike station"
-  />
-)
+  return (
+    <Image
+      src={Bike}
+      height={wh}
+      width={wh}
+      style={{ transform: `translate3d(-${wh / 2}px, -${wh / 2}px, 0px)` }}
+      alt={`Bike station at ${lat}, ${lng}`}
+    />
+  )
+}
 
 const StationById: NextPage = () => {
   const router = useRouter()
   const { stationId } = router.query
+
+  console.log(stationId)
 
   if (typeof stationId !== 'string') return <h1>Invalid station id</h1>
 
@@ -55,7 +62,7 @@ const StationById: NextPage = () => {
           }}
           defaultZoom={16}
         >
-          <AnyReactComponent lat={station.y} lng={station.x} text="My Marker" />
+          <MapPointer lat={station.y} lng={station.x} />
         </GoogleMapReact>
       </div>
     </div>

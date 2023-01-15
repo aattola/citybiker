@@ -20,8 +20,10 @@ const Stations: NextPage = () => {
   }
 
   function handleNext() {
-    const lastIndex = stationQuery.data!.length - 1
-    const lastId = stationQuery.data![lastIndex].id
+    if (!stationQuery.data) return
+
+    const lastIndex = stationQuery.data.length - 1
+    const lastId = stationQuery.data[lastIndex].id
     setCursor(lastId)
   }
 
@@ -33,8 +35,11 @@ const Stations: NextPage = () => {
       <main>
         {stationQuery.data.map((station) => (
           <div key={station.id}>
-            <Link href={`/station/${station.id}`}>{station.finName}</Link>
-            <h3>{station.finAddress}</h3>
+            <Link href={`/station/${station.id}`}>
+              <h3>
+                {station.finName} {station.finAddress}
+              </h3>
+            </Link>
           </div>
         ))}
 

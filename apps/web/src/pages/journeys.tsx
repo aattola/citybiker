@@ -31,8 +31,10 @@ const Journeys: NextPage = () => {
   }
 
   function handleNext() {
-    const lastIndex = journeyQuery.data!.length - 1
-    const lastId = journeyQuery.data![lastIndex].id
+    if (!journeyQuery.data) return
+
+    const lastIndex = journeyQuery.data.length - 1
+    const lastId = journeyQuery.data[lastIndex].id
     setCursor(lastId)
   }
 
