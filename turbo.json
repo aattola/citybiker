@@ -9,6 +9,7 @@
     "db:migrate:deploy": {},
     "db:push": {},
     "db:seed": {},
+    "clean": {},
     "dev": {
       "cache": false,
       "persistent": true
