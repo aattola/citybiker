@@ -3,8 +3,18 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Logo from '@citybiker/web/public/android-chrome-192x192.png'
 import Link from 'next/link'
+import dynamic from 'next/dynamic'
+import Skeleton from 'react-loading-skeleton'
+import { api } from '../utils/api'
+
+const MapWithNoSSR = dynamic(() => import('../components/Map'), {
+  ssr: false,
+  loading: () => <Skeleton />
+})
 
 const Home: NextPage = () => {
+  const stationsQuery = api.station.getAllMapPoints.useQuery()
+
   return (
     <>
       <Head>
@@ -35,6 +45,14 @@ const Home: NextPage = () => {
             </Link>
           </div>
         </div>
+
+        {stationsQuery.isSuccess && (
+          <MapWithNoSSR
+            zoom={10}
+            center={[60.1975, 24.93213]}
+            stations={stationsQuery.data}
+          />
+        )}
       </main>
     </>
   )

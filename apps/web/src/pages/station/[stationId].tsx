@@ -2,10 +2,12 @@ import { useRouter } from 'next/router'
 import { NextPage } from 'next'
 import Head from 'next/head'
 import dynamic from 'next/dynamic'
+import Skeleton from 'react-loading-skeleton'
 import { api } from '../../utils/api'
 
 const MapWithNoSSR = dynamic(() => import('../../components/Map'), {
-  ssr: false
+  ssr: false,
+  loading: () => <Skeleton />
 })
 
 const StationById: NextPage = () => {
