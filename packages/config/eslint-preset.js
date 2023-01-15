@@ -12,13 +12,14 @@ module.exports = {
   },
   extends: [
     'next',
+    'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
     'turbo',
     'standard',
     'standard-jsx',
     'prettier'
   ],
-  plugins: ['prettier', '@typescript-eslint'],
+  plugins: ['prettier', '@typescript-eslint', 'react', 'react-hooks'],
   settings: {
     next: {
       rootDir: ['apps/*/', 'packages/*/']
@@ -37,6 +38,9 @@ module.exports = {
     'react/jsx-no-bind': 'off',
     'react/no-array-index-key': 'off',
     'import/order': 'error',
-    'turbo/no-undeclared-env-vars': 'off'
+    'turbo/no-undeclared-env-vars': 'off',
+
+    'react-hooks/rules-of-hooks': 'error', // Checks rules of Hooks
+    'react-hooks/exhaustive-deps': 'warn' // Checks effect dependencies
   }
 }
