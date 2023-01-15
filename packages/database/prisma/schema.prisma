@@ -3,15 +3,12 @@
 
 generator client {
   provider = "prisma-client-js"
-  previewFeatures = ["referentialIntegrity"]
 }
 
 datasource db {
   provider          = "postgresql"
   url               = env("DATABASE_URL")
   // shadowDatabaseUrl = env("DEV_DB_URL")
-  referentialIntegrity = "prisma"
-
 }
 
 model Journey {
@@ -26,6 +23,8 @@ model Journey {
   returnStationName    String
   coveredDistance      Float
   duration             Float
+
+  @@index([departureStationId, returnStationId, coveredDistance, duration])
 }
 
 model Station {
