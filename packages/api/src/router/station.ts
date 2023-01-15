@@ -18,10 +18,20 @@ export const stationRouter = createTRPCRouter({
         orderBy: { id: 'desc' }
       }
 
-      const stations = await ctx.prisma.station.findMany(query)
-
-      return stations
+      return await ctx.prisma.station.findMany(query)
     }),
+
+  getAllMapPoints: publicProcedure.query(async ({ ctx }) => {
+    return await ctx.prisma.station.findMany({
+      select: {
+        x: true,
+        y: true,
+        id: true,
+        finName: true,
+        sweName: true
+      }
+    })
+  }),
 
   byId: publicProcedure.input(z.number()).query(async ({ ctx, input }) => {
     // The average distance of a journey starting from the station
