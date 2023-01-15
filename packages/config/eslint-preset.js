@@ -38,6 +38,7 @@ module.exports = {
     'react/jsx-no-bind': 'off',
     'react/no-array-index-key': 'off',
     'import/order': 'error',
+    'react/prop-types': 'off',
     'turbo/no-undeclared-env-vars': 'off',
 
     'react-hooks/rules-of-hooks': 'error', // Checks rules of Hooks
