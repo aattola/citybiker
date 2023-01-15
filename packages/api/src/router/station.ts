@@ -36,18 +36,6 @@ export const stationRouter = createTRPCRouter({
     //   }
     // })
 
-    const stationWithJourneys = await ctx.prisma.station.findFirst({
-      where: { id: input },
-      include: {
-        _count: {
-          select: {
-            startedJourneys: true,
-            endedJourneys: true
-          }
-        }
-      }
-    })
-
     // Top 5 most popular return stations for journeys starting from the station with prisma
 
     /**
@@ -79,6 +67,16 @@ export const stationRouter = createTRPCRouter({
     //   by: ['returnStationId']
     // })
 
-    return stationWithJourneys
+    return ctx.prisma.station.findFirst({
+      where: { id: input },
+      include: {
+        _count: {
+          select: {
+            startedJourneys: true,
+            endedJourneys: true
+          }
+        }
+      }
+    })
   })
 })

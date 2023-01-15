@@ -6,14 +6,14 @@ export const journeyRouter = createTRPCRouter({
   getAll: publicProcedure
     .input(
       z.object({
-        take: z.number().min(1).max(100).default(10),
-        cursor: z.string().optional().nullable()
+        take: z.number().min(1).max(50).default(10),
+        cursor: z.string().nullable()
       })
     )
     .query(async ({ ctx, input }) => {
       const query: Prisma.JourneyFindManyArgs = {
         skip: 1,
-        take: 100,
+        take: input.take,
         cursor: input.cursor ? { id: input.cursor } : undefined,
         orderBy: { id: 'desc' }
       }
