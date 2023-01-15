@@ -1,23 +1,12 @@
 import { useRouter } from 'next/router'
 import { NextPage } from 'next'
-import GoogleMapReact from 'google-map-react'
-import Image from 'next/image'
-import Bike from '@citybiker/web/public/bike.png'
 import Head from 'next/head'
+import dynamic from 'next/dynamic'
 import { api } from '../../utils/api'
-const MapPointer = ({ lat, lng }) => {
-  const wh = 30
 
-  return (
-    <Image
-      src={Bike}
-      height={wh}
-      width={wh}
-      style={{ transform: `translate3d(-${wh / 2}px, -${wh / 2}px, 0px)` }}
-      alt={`Bike station at ${lat}, ${lng}`}
-    />
-  )
-}
+const MapWithNoSSR = dynamic(() => import('../../components/Map'), {
+  ssr: false
+})
 
 const StationById: NextPage = () => {
   const router = useRouter()
@@ -56,18 +45,7 @@ const StationById: NextPage = () => {
       </h2>
 
       <div style={{ height: 400, width: 400 }}>
-        <GoogleMapReact
-          bootstrapURLKeys={{
-            key: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY
-          }}
-          defaultCenter={{
-            lat: station.y,
-            lng: station.x
-          }}
-          defaultZoom={16}
-        >
-          <MapPointer lat={station.y} lng={station.x} />
-        </GoogleMapReact>
+        <MapWithNoSSR station={station} />
       </div>
     </div>
   )
