@@ -10,26 +10,37 @@ const bikeIcon = new L.Icon({
   popupAnchor: [-0, -0],
   iconSize: [30, 30]
 })
-const Map = ({ station }) => {
+const Map = ({
+  stations,
+  center,
+  zoom
+}: {
+  stations: any[]
+  center: [number, number]
+  zoom: number
+}) => {
   return (
     <MapContainer
-      center={[station.y, station.x]}
-      zoom={16}
+      center={center}
+      zoom={zoom}
       scrollWheelZoom
       style={{ height: '100%', width: '100%' }}
       attributionControl={false}
     >
       <TileLayer url="https://tile.openstreetmap.org/{z}/{x}/{y}.png" />
 
-      <Marker
-        position={[station.y, station.x]}
-        icon={bikeIcon}
-        // eventHandlers={{
-        //   click: () => {
-        //     console.log('ok ')
-        //   }
-        // }}
-      />
+      {stations.map((station: any) => (
+        <Marker
+          position={[station.y, station.x]}
+          icon={bikeIcon}
+          key={station.id}
+          // eventHandlers={{
+          //   click: () => {
+          //     console.log('ok ')
+          //   }
+          // }}
+        />
+      ))}
     </MapContainer>
   )
 }

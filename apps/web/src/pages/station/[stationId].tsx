@@ -45,7 +45,11 @@ const StationById: NextPage = () => {
       </h2>
 
       <div style={{ height: 400, width: 400 }}>
-        <MapWithNoSSR station={station} />
+        <MapWithNoSSR
+          stations={[station]}
+          center={[station.y, station.x]}
+          zoom={16}
+        />
       </div>
     </div>
   )
