@@ -33,6 +33,47 @@ export const stationRouter = createTRPCRouter({
     })
   }),
 
+  byIdFilteredByMonth: publicProcedure
+    .input(
+      z.object({
+        id: z.number(),
+        month: z.number().min(5).max(7) // dataset is only available for May, June and July 2021
+      })
+    )
+    .query(async ({ ctx, input }) => {
+      const gteDate = new Date(`2021-${input.month}-01`)
+      const ltDate = new Date(`2021-${input.month + 1}-01`)
+
+      const stationsdeparture = ctx.prisma.journey.findMany({
+        where: {
+          departureStationId: input.id,
+          departure: {
+            gte: gteDate,
+            lt: ltDate
+          }
+        }
+      })
+
+      const stationsarrival = ctx.prisma.journey.findMany({
+        where: {
+          returnStationId: input.id,
+          return: {
+            gte: gteDate,
+            lt: ltDate
+          }
+        }
+      })
+
+      const tr = await Promise.all([stationsdeparture, stationsarrival])
+
+      return {
+        starting: tr[0].length,
+        ending: tr[1].length,
+        month: gteDate.getMonth() + 1,
+        monthName: gteDate.toLocaleString('en-US', { month: 'long' })
+      }
+    }),
+
   byId: publicProcedure.input(z.number()).query(async ({ ctx, input }) => {
     // The average distance of a journey starting from the station
 
