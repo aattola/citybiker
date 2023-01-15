@@ -22,6 +22,8 @@ const Journeys: NextPage = () => {
     cursor
   })
 
+  console.log(journeyQuery)
+
   if (journeyQuery.isLoading) {
     return <h1>Loading</h1>
   }

@@ -2,10 +2,14 @@ import React from 'react'
 import Image from 'next/image'
 import Logo from '@citybiker/web/public/android-chrome-192x192.png'
 import Link from 'next/link'
+import Head from 'next/head'
 
 const Appbar = () => {
   return (
     <div className="flex items-center p-2">
+      <Head>
+        <title>Citybiker</title>
+      </Head>
       <Link href="/">
         <div className="flex items-center">
           <Image

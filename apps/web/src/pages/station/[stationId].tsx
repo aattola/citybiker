@@ -3,6 +3,7 @@ import { NextPage } from 'next'
 import GoogleMapReact from 'google-map-react'
 import Image from 'next/image'
 import Bike from '@citybiker/web/public/bike.png'
+import Head from 'next/head'
 import { api } from '../../utils/api'
 const MapPointer = ({ lat, lng }) => {
   const wh = 30
@@ -40,6 +41,9 @@ const StationById: NextPage = () => {
   // Total number of journeys ending at the station
   return (
     <div>
+      <Head>
+        <title>Citybiker - Station {station.finName}</title>
+      </Head>
       <h1>{station.finName}</h1>
       <h2>{station.finAddress}</h2>
 
