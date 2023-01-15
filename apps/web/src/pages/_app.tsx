@@ -4,7 +4,9 @@ import type { AppType } from 'next/app'
 import { MantineProvider } from '@mantine/core'
 
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
+import { useRouter } from 'next/router'
 import { api } from '../utils/api'
+import Appbar from '../components/appbar'
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -15,7 +17,9 @@ const queryClient = new QueryClient({
   }
 })
 
-const MyApp: AppType = ({ Component, pageProps: { ...pageProps } }) => {
+const CustomApp: AppType = ({ Component, pageProps: { ...pageProps } }) => {
+  const router = useRouter()
+
   return (
     <MantineProvider
       withGlobalStyles
@@ -26,10 +30,12 @@ const MyApp: AppType = ({ Component, pageProps: { ...pageProps } }) => {
       }}
     >
       <QueryClientProvider client={queryClient}>
+        {router.pathname !== '/' && <Appbar />}
+
         <Component {...pageProps} />
       </QueryClientProvider>
     </MantineProvider>
   )
 }
 
-export default api.withTRPC(MyApp)
+export default api.withTRPC(CustomApp)
