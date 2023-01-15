@@ -22,8 +22,6 @@ const Journeys: NextPage = () => {
     cursor
   })
 
-  console.log(journeyQuery)
-
   if (journeyQuery.isLoading) {
     return <h1>Loading</h1>
   }
@@ -46,6 +44,7 @@ const Journeys: NextPage = () => {
         <title>Citybiker - Journeys</title>
       </Head>
       <main>
+        {/* TODO: make stations link to correct page and make it look much nicer + useInfiniteQuery */}
         {journeyQuery.data.map((journey) => (
           <div key={journey.id}>
             <h3>

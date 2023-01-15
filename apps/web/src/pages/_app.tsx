@@ -5,6 +5,7 @@ import { MantineProvider } from '@mantine/core'
 
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { useRouter } from 'next/router'
+import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
 import { api } from '../utils/api'
 import Appbar from '../components/appbar'
 
@@ -33,6 +34,7 @@ const CustomApp: AppType = ({ Component, pageProps: { ...pageProps } }) => {
         {router.pathname !== '/' && <Appbar />}
 
         <Component {...pageProps} />
+        <ReactQueryDevtools initialIsOpen={false} />
       </QueryClientProvider>
     </MantineProvider>
   )

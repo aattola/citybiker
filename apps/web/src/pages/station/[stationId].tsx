@@ -3,6 +3,8 @@ import { NextPage } from 'next'
 import Head from 'next/head'
 import dynamic from 'next/dynamic'
 import Skeleton from 'react-loading-skeleton'
+import React, { useState } from 'react'
+import { Select } from '@mantine/core'
 import { api } from '../../utils/api'
 
 const MapWithNoSSR = dynamic(() => import('../../components/Map'), {
@@ -10,15 +12,37 @@ const MapWithNoSSR = dynamic(() => import('../../components/Map'), {
   loading: () => <Skeleton />
 })
 
+const selectValues = [
+  { value: 'all', label: 'All' },
+  { value: '5', label: 'May' },
+  { value: '6', label: 'June' },
+  { value: '7', label: 'July' }
+]
+
 const StationById: NextPage = () => {
+  const [monthFilter, setMonthFilter] = useState<string>('all')
   const router = useRouter()
   const { stationId } = router.query
 
   console.log(stationId)
 
-  if (typeof stationId !== 'string') return <h1>Invalid station id</h1>
+  const id = +(stationId as string)
 
-  const stationQuery = api.station.byId.useQuery(+stationId)
+  const stationQuery = api.station.byId.useQuery(id, {
+    enabled: router.isReady
+  })
+
+  const stationTime = api.station.byIdFilteredByMonth.useQuery(
+    {
+      id,
+      month: +monthFilter
+    },
+    {
+      enabled: monthFilter !== 'all' && router.isReady
+    }
+  )
+
+  console.log(stationTime)
 
   if (stationQuery.isLoading) return <h1>Loading</h1>
 
@@ -38,12 +62,37 @@ const StationById: NextPage = () => {
       <h1>{station.finName}</h1>
       <h2>{station.finAddress}</h2>
 
+      <Select
+        zIndex={1234}
+        label="Filter journeys by month"
+        data={selectValues}
+        value={monthFilter}
+        onChange={(e: string) => setMonthFilter(e)}
+      />
+
+      {/* TODO: REFACTOR TO SOMETHING MUCH NICER */}
       <h2>
-        Count of journeys starting from the station:{' '}
-        {station._count.startedJourneys}
+        Total number of journeys starting from the station
+        {stationTime.data && monthFilter !== 'all' ? (
+          <>
+            {' '}
+            in {stationTime.data.monthName}: {stationTime.data.starting}{' '}
+          </>
+        ) : (
+          <>: {station._count.startedJourneys}</>
+        )}
       </h2>
+
       <h2>
-        Count of journeys ending at the station: {station._count.endedJourneys}
+        Total number of journeys ending at the station
+        {stationTime.data && monthFilter !== 'all' ? (
+          <>
+            {' '}
+            in {stationTime.data.monthName}: {stationTime.data.ending}{' '}
+          </>
+        ) : (
+          <>: {station._count.endedJourneys}</>
+        )}
       </h2>
 
       <div style={{ height: 400, width: 400 }}>
