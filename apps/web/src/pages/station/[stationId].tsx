@@ -30,6 +30,10 @@ const StationById: NextPage = () => {
     enabled: router.isReady
   })
 
+  const top5Query = api.station.getTopById.useQuery(id, {
+    enabled: router.isReady
+  })
+
   const stationTime = api.station.byIdFilteredByMonth.useQuery(
     {
       id,
@@ -80,7 +84,7 @@ const StationById: NextPage = () => {
             in {stationTime.data.monthName}: {stationTime.data.starting}{' '}
           </>
         ) : (
-          <>: {station._count.startedJourneys}</>
+          <>: {station._count.departureCount}</>
         )}
       </h2>
 
@@ -92,9 +96,23 @@ const StationById: NextPage = () => {
             in {stationTime.data.monthName}: {stationTime.data.ending}{' '}
           </>
         ) : (
-          <>: {station._count.endedJourneys}</>
+          <>: {station._count.returnCount}</>
         )}
       </h2>
+
+      <h2>Top 5 most popular return stations for journeys starting here</h2>
+
+      {top5Query.isLoading && <Skeleton />}
+
+      {/* TODO: MAKE DEPARTURE STATIONS TOO AND MAKE THIS LOOK NICE */}
+
+      {top5Query.isSuccess && top5Query.data && (
+        <ul>
+          {top5Query.data.map((station) => (
+            <li key={station._id}>{station.name[0]}</li>
+          ))}
+        </ul>
+      )}
 
       <div style={{ height: 400, width: 400 }}>
         <MapWithNoSSR
