@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import { useState } from 'react'
 import Link from 'next/link'
+import { Spinner } from '@chakra-ui/react'
 import { api } from '../utils/api'
 
 const Stations: NextPage = () => {
@@ -12,7 +13,11 @@ const Stations: NextPage = () => {
   })
 
   if (stationQuery.isLoading) {
-    return <h1>Loading</h1>
+    return (
+      <div className="flex align-center content-center justify-center my-2">
+        <Spinner />
+      </div>
+    )
   }
 
   if (!stationQuery.isSuccess) {
