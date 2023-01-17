@@ -1,11 +1,10 @@
 // src/pages/_app.tsx
 import '../styles/globals.css'
 import type { AppType } from 'next/app'
-import { MantineProvider } from '@mantine/core'
-
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { useRouter } from 'next/router'
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
+import { ChakraProvider } from '@chakra-ui/react'
 import { api } from '../utils/api'
 import Appbar from '../components/appbar'
 
@@ -22,21 +21,14 @@ const CustomApp: AppType = ({ Component, pageProps: { ...pageProps } }) => {
   const router = useRouter()
 
   return (
-    <MantineProvider
-      withGlobalStyles
-      withNormalizeCSS
-      theme={{
-        /** Put your mantine theme override here */
-        colorScheme: 'light'
-      }}
-    >
+    <ChakraProvider>
       <QueryClientProvider client={queryClient}>
         {router.pathname !== '/' && <Appbar />}
 
         <Component {...pageProps} />
         <ReactQueryDevtools initialIsOpen={false} />
       </QueryClientProvider>
-    </MantineProvider>
+    </ChakraProvider>
   )
 }
 

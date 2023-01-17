@@ -4,7 +4,7 @@ import Head from 'next/head'
 import dynamic from 'next/dynamic'
 import Skeleton from 'react-loading-skeleton'
 import React, { useState } from 'react'
-import { Select } from '@mantine/core'
+import { Select } from '@chakra-ui/react'
 import { api } from '../../utils/api'
 
 const MapWithNoSSR = dynamic(() => import('../../components/Map'), {
@@ -24,8 +24,6 @@ const StationById: NextPage = () => {
   const router = useRouter()
   const { stationId } = router.query
 
-  console.log(stationId)
-
   const id = +(stationId as string)
 
   const stationQuery = api.station.byId.useQuery(id, {
@@ -41,8 +39,6 @@ const StationById: NextPage = () => {
       enabled: monthFilter !== 'all' && router.isReady
     }
   )
-
-  console.log(stationTime)
 
   if (stationQuery.isLoading) return <h1>Loading</h1>
 
@@ -63,12 +59,17 @@ const StationById: NextPage = () => {
       <h2>{station.finAddress}</h2>
 
       <Select
+        placeholder="Filter journeys by month"
         zIndex={1234}
-        label="Filter journeys by month"
-        data={selectValues}
         value={monthFilter}
-        onChange={(e: string) => setMonthFilter(e)}
-      />
+        onChange={(e) => setMonthFilter(e.target.value)}
+      >
+        {selectValues.map(({ value, label }) => (
+          <option key={value} value={value}>
+            {label}
+          </option>
+        ))}
+      </Select>
 
       {/* TODO: REFACTOR TO SOMETHING MUCH NICER */}
       <h2>
