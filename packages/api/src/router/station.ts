@@ -1,6 +1,9 @@
 import { z } from 'zod'
 import { Prisma } from '@citybiker/db'
+import { TRPCError } from '@trpc/server'
 import { createTRPCRouter, publicProcedure } from '../trpc'
+
+type top5List = { _id: number; count: number; name: [string] }[]
 
 export const stationRouter = createTRPCRouter({
   getAll: publicProcedure
@@ -74,6 +77,41 @@ export const stationRouter = createTRPCRouter({
       }
     }),
 
+  getTopById: publicProcedure
+    .input(z.number())
+    .query(async ({ ctx, input }) => {
+      const rawAggregation = await ctx.prisma.journey.aggregateRaw({
+        pipeline: [
+          {
+            $match: {
+              departureStationId: input
+            }
+          },
+          {
+            $group: {
+              _id: '$returnStationId',
+              name: {
+                $addToSet: '$returnStationName'
+              },
+              count: {
+                $count: {}
+              }
+            }
+          },
+          {
+            $sort: {
+              count: -1
+            }
+          },
+          {
+            $limit: 5
+          }
+        ]
+      })
+
+      return rawAggregation as unknown as top5List
+    }),
+
   byId: publicProcedure.input(z.number()).query(async ({ ctx, input }) => {
     // The average distance of a journey starting from the station
 
@@ -118,16 +156,53 @@ export const stationRouter = createTRPCRouter({
     //   by: ['returnStationId']
     // })
 
-    return ctx.prisma.station.findFirst({
-      where: { id: input },
-      include: {
-        _count: {
-          select: {
-            startedJourneys: true,
-            endedJourneys: true
+    const departureCountP = ctx.prisma.journey.aggregateRaw({
+      pipeline: [
+        {
+          $match: {
+            departureStationId: 3
           }
+        },
+        {
+          $count: 'count'
         }
-      }
+      ]
     })
+
+    const returnCountP = ctx.prisma.journey.aggregateRaw({
+      pipeline: [
+        {
+          $match: {
+            returnStationId: 3
+          }
+        },
+        {
+          $count: 'count'
+        }
+      ]
+    })
+
+    const stationP = ctx.prisma.station.findFirst({
+      where: { id: input }
+    })
+
+    const data = await Promise.all([departureCountP, returnCountP, stationP])
+
+    const station = data[2]
+
+    if (station === null)
+      throw new TRPCError({
+        code: 'NOT_FOUND',
+        message: 'Station not found',
+        cause: 'Wrong ID'
+      })
+
+    return {
+      ...station,
+      _count: {
+        returnCount: data[1].count! ?? 0,
+        departureCount: data[0].count! ?? 0
+      }
+    }
   })
 })
