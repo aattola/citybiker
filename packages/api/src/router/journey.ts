@@ -7,7 +7,7 @@ export const journeyRouter = createTRPCRouter({
     .input(
       z.object({
         take: z.number().min(1).max(50).default(10),
-        cursor: z.string().nullable()
+        cursor: z.string().nullable().optional()
       })
     )
     .query(async ({ ctx, input }) => {
