@@ -9,6 +9,11 @@ function generateQuey(where: string, input: number) {
   const whereInvert =
     where === 'departureStationId' ? 'returnStationId' : 'departureStationId'
 
+  const whereInvertName =
+    where === 'departureStationId'
+      ? 'returnStationName'
+      : 'departureStationName'
+
   return {
     pipeline: [
       {
@@ -20,7 +25,7 @@ function generateQuey(where: string, input: number) {
         $group: {
           _id: `$${whereInvert}`,
           name: {
-            $addToSet: '$returnStationName'
+            $addToSet: `$${whereInvertName}`
           },
           count: {
             $count: {}
@@ -149,49 +154,6 @@ export const stationRouter = createTRPCRouter({
     }),
 
   byId: publicProcedure.input(z.number()).query(async ({ ctx, input }) => {
-    // The average distance of a journey starting from the station
-
-    // const avgDepartureStatsPromise = ctx.prisma.journey.aggregate({
-    //   where: {
-    //     departureStationId: input
-    //   },
-    //   _avg: {
-    //     coveredDistance: true,
-    //     duration: true
-    //   }
-    // })
-
-    // Top 5 most popular return stations for journeys starting from the station with prisma
-
-    /**
-     * Top 5 most popular return stations for journeys starting from the station with
-     *
-     * Ottaa lähtöasema (departureStationId) on input
-     * katsoa kaikki journeyt jossa departureStationId = input
-     * Laskea nämä kaikki yhteen groupBy returnStationId
-     * Laskea monta kertaa per yksi tapahtuma
-     * Ja palauttaa tämä sorted by descenfing order
-     *
-     */
-
-    // const topReturnStationsSQL = await ctx.prisma.$queryRaw`
-    //   SELECT
-    //     returnStationId,
-    //     COUNT(returnStationId) AS count
-    //   FROM Journey
-    //   WHERE departureStationId = ${input}
-    //   GROUP BY departureStationId
-    //   ORDER BY count DESC
-    //   LIMIT 5
-    //   `
-
-    // const top5Departure = await ctx.prisma.journey.groupBy({
-    //   where: {
-    //     departureStationId: input
-    //   },
-    //   by: ['returnStationId']
-    // })
-
     const station = await ctx.prisma.station.findFirst({
       where: { id: input }
     })
