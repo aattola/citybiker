@@ -1,19 +1,42 @@
-import type { NextPage } from 'next'
+import type { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import Logo from '@citybiker/web/public/android-chrome-192x192.png'
 import Link from 'next/link'
 import dynamic from 'next/dynamic'
 import Skeleton from 'react-loading-skeleton'
-import { api } from '../utils/api'
+import { prisma } from '@citybiker/db'
 
 const MapWithNoSSR = dynamic(() => import('../components/Map'), {
   ssr: false,
   loading: () => <Skeleton />
 })
 
-const Home: NextPage = () => {
-  const stationsQuery = api.station.getAllMapPoints.useQuery()
+export const getStaticProps: GetStaticProps = async () => {
+  const stations = await prisma.station.findMany({
+    select: {
+      x: true,
+      y: true,
+      id: true,
+      finName: true,
+      sweName: true
+    }
+  })
+
+  if (!stations) {
+    return {
+      notFound: true
+    }
+  }
+
+  return {
+    props: { stations }
+  }
+}
+const Home: NextPage = ({
+  stations
+}: InferGetStaticPropsType<typeof getStaticProps>) => {
+  // const stationsQuery = api.station.getAllMapPoints.useQuery()
 
   return (
     <>
@@ -46,13 +69,11 @@ const Home: NextPage = () => {
           </div>
         </div>
 
-        {stationsQuery.isSuccess && (
-          <MapWithNoSSR
-            zoom={10}
-            center={[60.1975, 24.93213]}
-            stations={stationsQuery.data}
-          />
-        )}
+        <MapWithNoSSR
+          zoom={10}
+          center={[60.1975, 24.93213]}
+          stations={stations}
+        />
       </main>
     </>
   )
