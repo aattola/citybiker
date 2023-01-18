@@ -6,6 +6,9 @@ import { createTRPCRouter, publicProcedure } from '../trpc'
 type top5List = { _id: number; count: number; name: [string] }[]
 
 function generateQuey(where: string, input: number) {
+  const whereInvert =
+    where === 'departureStationId' ? 'returnStationId' : 'departureStationId'
+
   return {
     pipeline: [
       {
@@ -15,7 +18,7 @@ function generateQuey(where: string, input: number) {
       },
       {
         $group: {
-          _id: '$returnStationId',
+          _id: `$${whereInvert}`,
           name: {
             $addToSet: '$returnStationName'
           },
