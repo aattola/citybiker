@@ -31,6 +31,7 @@ import { ChevronDownIcon } from '@chakra-ui/icons'
 import Link from 'next/link'
 import { prisma } from '@citybiker/db'
 import { api } from '../../utils/api'
+import { convertDistance } from '../../utils/units'
 
 export async function getStaticPaths() {
   const stations = await prisma.station.findMany()
@@ -66,13 +67,10 @@ export const getStaticProps: GetStaticProps = async (context) => {
     }
   }
 
-  // Passed to the page component as props
-  const returns = {
+  return {
     props: { station: _station },
     revalidate: 60
   }
-
-  return returns
 }
 
 const MapWithNoSSR = dynamic(() => import('../../components/Map'), {
@@ -98,7 +96,6 @@ function Loader() {
 const StationById: NextPage = ({
   station
 }: InferGetStaticPropsType<typeof getStaticProps>) => {
-  console.log(station)
   const [monthFilter, setMonthFilter] = useState<string>('all')
   const router = useRouter()
   const { stationId } = router.query
@@ -144,6 +141,9 @@ const StationById: NextPage = ({
     monthFilter !== 'all'
       ? stationTime.data?.starting
       : info?.counts?._count.startedJourneys
+
+  const avgDepartureDistance = info?.avgDepartureStats._avg.coveredDistance
+  const avgReturnDistance = info?.avgReturnStats._avg.coveredDistance
 
   const infoPaused = stationTime.fetchStatus === 'idle'
 
@@ -201,6 +201,42 @@ const StationById: NextPage = ({
               </div>
             </HStack>
 
+            <HStack>
+              <div>
+                <p>
+                  The average distance of a journey starting from the station
+                </p>
+
+                <Heading size="md" py={1}>
+                  {info && avgDepartureDistance ? (
+                    convertDistance(avgDepartureDistance) + ' km'
+                  ) : (
+                    <SkeletonText
+                      noOfLines={1}
+                      skeletonHeight={7}
+                      maxW="75px"
+                    />
+                  )}
+                </Heading>
+              </div>
+
+              <div>
+                <p>The average distance of a journey ending at the station</p>
+
+                <Heading size="md" py={1}>
+                  {info && avgReturnDistance ? (
+                    convertDistance(avgReturnDistance) + ' km'
+                  ) : (
+                    <SkeletonText
+                      noOfLines={1}
+                      skeletonHeight={7}
+                      maxW="75px"
+                    />
+                  )}
+                </Heading>
+              </div>
+            </HStack>
+
             <Select
               zIndex={1234}
               value={monthFilter}
@@ -233,63 +269,65 @@ const StationById: NextPage = ({
                 <AccordionPanel pb={4}>
                   {top5Query.isLoading && <Loader />}
                   {top5Query.isSuccess && (
-                    <HStack>
-                      <div>
-                        <h1>
-                          Top 5 return stations for journeys starting from
-                        </h1>
-                        <TableContainer>
-                          <Table>
-                            <Thead>
-                              <Tr>
-                                <Th>Station</Th>
-                                <Th>Count</Th>
-                              </Tr>
-                            </Thead>
-                            <Tbody>
-                              {top5Query.data.startingFrom.map((station) => (
+                    <>
+                      <HStack>
+                        <div>
+                          <h1>
+                            Top 5 return stations for journeys starting from
+                          </h1>
+                          <TableContainer>
+                            <Table>
+                              <Thead>
                                 <Tr>
-                                  <Td>
-                                    <Link href={`/station/${station._id}`}>
-                                      {station.name[0]}
-                                    </Link>
-                                  </Td>
-                                  <Td>{station.count}</Td>
+                                  <Th>Station</Th>
+                                  <Th>Count</Th>
                                 </Tr>
-                              ))}
-                            </Tbody>
-                          </Table>
-                        </TableContainer>
-                      </div>
+                              </Thead>
+                              <Tbody>
+                                {top5Query.data.startingFrom.map((station) => (
+                                  <Tr>
+                                    <Td>
+                                      <Link href={`/station/${station._id}`}>
+                                        {station.name[0]}
+                                      </Link>
+                                    </Td>
+                                    <Td>{station.count}</Td>
+                                  </Tr>
+                                ))}
+                              </Tbody>
+                            </Table>
+                          </TableContainer>
+                        </div>
 
-                      <div>
-                        <h1>
-                          Top 5 departure stations for journeys ending here
-                        </h1>
-                        <TableContainer>
-                          <Table>
-                            <Thead>
-                              <Tr>
-                                <Th>Station</Th>
-                                <Th>Count</Th>
-                              </Tr>
-                            </Thead>
-                            <Tbody>
-                              {top5Query.data.endingAt.map((station) => (
+                        <div>
+                          <h1>
+                            Top 5 departure stations for journeys ending here
+                          </h1>
+                          <TableContainer>
+                            <Table>
+                              <Thead>
                                 <Tr>
-                                  <Td>
-                                    <Link href={`/station/${station._id}`}>
-                                      {station.name[0]}
-                                    </Link>
-                                  </Td>
-                                  <Td>{station.count}</Td>
+                                  <Th>Station</Th>
+                                  <Th>Count</Th>
                                 </Tr>
-                              ))}
-                            </Tbody>
-                          </Table>
-                        </TableContainer>
-                      </div>
-                    </HStack>
+                              </Thead>
+                              <Tbody>
+                                {top5Query.data.endingAt.map((station) => (
+                                  <Tr>
+                                    <Td>
+                                      <Link href={`/station/${station._id}`}>
+                                        {station.name[0]}
+                                      </Link>
+                                    </Td>
+                                    <Td>{station.count}</Td>
+                                  </Tr>
+                                ))}
+                              </Tbody>
+                            </Table>
+                          </TableContainer>
+                        </div>
+                      </HStack>
+                    </>
                   )}
                 </AccordionPanel>
               </AccordionItem>

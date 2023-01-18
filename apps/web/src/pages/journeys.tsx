@@ -14,19 +14,10 @@ import {
 } from '@chakra-ui/react'
 import Link from 'next/link'
 import { api } from '../utils/api'
+import { convertDistance, convertTime } from '../utils/units'
 
 // convert seconds to minutes and hours
-const convertTime = (time: number) => {
-  const hours = Math.floor(time / 3600)
-  const minutes = Math.floor((time - hours * 3600) / 60)
-  const seconds = time - hours * 3600 - minutes * 60
-  if (hours) return `${hours}h ${minutes}m ${seconds}s`
-  return `${minutes}m ${seconds}s`
-}
 
-const convertDistance = (distance: number) => {
-  return (distance / 1000).toFixed(1)
-}
 const Journeys: NextPage = () => {
   const journeyQuery = api.journey.getAll.useInfiniteQuery(
     {

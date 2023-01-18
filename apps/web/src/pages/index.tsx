@@ -43,6 +43,7 @@ const Home: NextPage = ({
       <Head>
         <title>Citybiker - Main</title>
         <link rel="icon" href="/favicon.ico" />
+        <link rel="preconnect" href="https://tile.openstreetmap.org/" />
       </Head>
       <main className="flex h-screen flex-col items-center bg-gray-100 text-black">
         <div className="container flex flex-col items-center justify-center gap-6 px-4 py-8">
