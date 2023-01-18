@@ -57,14 +57,26 @@ export const stationRouter = createTRPCRouter({
         {
           $search: {
             index: 'stationIndex',
-            text: {
+            autocomplete: {
               query: input,
+              path: 'finName',
               fuzzy: {},
-              path: {
-                wildcard: '*'
-              }
+              tokenOrder: 'any'
             }
+            // text: {
+            //   query: input,
+            //   fuzzy: {
+            //     maxEdits: 2,
+            //     maxExpansions: 200
+            //   },
+            //   path: {
+            //     wildcard: '*'
+            //   }
+            // }
           }
+        },
+        {
+          $limit: 10
         }
       ]
     })
