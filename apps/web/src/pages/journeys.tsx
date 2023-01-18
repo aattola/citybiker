@@ -94,7 +94,6 @@ const Journeys: NextPage = () => {
             </Tbody>
           </Table>
         </TableContainer>
-        <div className="" />
 
         <Button
           onClick={() => journeyQuery.fetchNextPage()}

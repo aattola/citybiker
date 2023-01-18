@@ -1,16 +1,32 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import { useState } from 'react'
+import React from 'react'
 import Link from 'next/link'
-import { Spinner } from '@chakra-ui/react'
+import {
+  Button,
+  Spinner,
+  Table,
+  TableContainer,
+  Tbody,
+  Td,
+  Th,
+  Thead,
+  Tr
+} from '@chakra-ui/react'
 import { api } from '../utils/api'
 
 const Stations: NextPage = () => {
-  const [cursor, setCursor] = useState<number | null>(null)
-  const stationQuery = api.station.getAll.useQuery({
-    take: 50,
-    cursor
-  })
+  const stationQuery = api.station.getAll.useInfiniteQuery(
+    {
+      take: 50
+    },
+    {
+      getNextPageParam: (lastPage) => {
+        if (lastPage.length < 50) return null
+        return lastPage[lastPage.length - 1].id
+      }
+    }
+  )
 
   if (stationQuery.isLoading) {
     return (
@@ -24,31 +40,51 @@ const Stations: NextPage = () => {
     return <h1>Failed</h1>
   }
 
-  function handleNext() {
-    if (!stationQuery.data) return
-
-    const lastIndex = stationQuery.data.length - 1
-    const lastId = stationQuery.data[lastIndex].id
-    setCursor(lastId)
-  }
-
   return (
     <>
       <Head>
         <title>Citybiker - Stations</title>
       </Head>
-      <main>
-        {stationQuery.data.map((station) => (
-          <div key={station.id}>
-            <Link href={`/station/${station.id}`}>
-              <h3>
-                {station.finName} {station.finAddress}
-              </h3>
-            </Link>
-          </div>
-        ))}
+      <main className="px-4 pb-4 max-w-2xl m-auto my-4">
+        <TableContainer>
+          <Table size="sm">
+            <Thead>
+              <Tr>
+                <Th>Name</Th>
+                <Th>Address</Th>
+              </Tr>
+            </Thead>
+            <Tbody>
+              {stationQuery.data.pages.map((stationPage, i) => (
+                <React.Fragment key={i}>
+                  {stationPage.map((station) => (
+                    <Tr key={station.id}>
+                      <Td>
+                        <Link href={`/station/${station.id}`}>
+                          {station.finName}
+                        </Link>
+                      </Td>
+                      <Td>
+                        <Link href={`/station/${station.id}`}>
+                          {station.finAddress}
+                        </Link>
+                      </Td>
+                    </Tr>
+                  ))}
+                </React.Fragment>
+              ))}
+            </Tbody>
+          </Table>
+        </TableContainer>
 
-        <button onClick={handleNext}>load next 50 stations</button>
+        <Button
+          onClick={() => stationQuery.fetchNextPage()}
+          isLoading={stationQuery.isFetchingNextPage}
+          variant="ghost"
+          className="my-2"
+        >
+          {stationQuery.isFetchingNextPage ? 'Loading more...' : 'Load More'}
+        </Button>
       </main>
     </>
   )
