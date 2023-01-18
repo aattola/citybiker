@@ -1,6 +1,6 @@
 // src/utils/trpc.ts
 import { createTRPCNext } from '@trpc/next'
-import { httpBatchLink, loggerLink } from '@trpc/client'
+import { httpBatchLink, httpLink, loggerLink } from '@trpc/client'
 import { inferRouterInputs, inferRouterOutputs } from '@trpc/server'
 import type { AppRouter } from '@citybiker/api'
 import { transformer } from '@citybiker/api/transformer'
@@ -22,9 +22,12 @@ export const api = createTRPCNext<AppRouter>({
             process.env.NODE_ENV === 'development' ||
             (opts.direction === 'down' && opts.result instanceof Error)
         }),
-        httpBatchLink({
+        httpLink({
           url: `${getBaseUrl()}/api/trpc`
         })
+        // httpBatchLink({
+        //   url: `${getBaseUrl()}/api/trpc`
+        // })
       ]
     }
   },
