@@ -169,7 +169,25 @@ export const stationRouter = createTRPCRouter({
   getStatsById: publicProcedure
     .input(z.number())
     .query(async ({ ctx, input }) => {
-      return ctx.prisma.station.findFirst({
+      const avgDepartureStats = await ctx.prisma.journey.aggregate({
+        where: {
+          departureStationId: input
+        },
+        _avg: {
+          coveredDistance: true
+        }
+      })
+
+      const avgReturnStats = await ctx.prisma.journey.aggregate({
+        where: {
+          returnStationId: input
+        },
+        _avg: {
+          coveredDistance: true
+        }
+      })
+
+      const counts = await ctx.prisma.station.findFirst({
         where: { id: input },
         include: {
           _count: {
@@ -180,6 +198,8 @@ export const stationRouter = createTRPCRouter({
           }
         }
       })
+
+      return { counts, avgReturnStats, avgDepartureStats }
     }),
 
   byId: publicProcedure.input(z.number()).query(async ({ ctx, input }) => {

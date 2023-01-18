@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router'
-import { NextPage } from 'next'
+import { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next'
 import Head from 'next/head'
 import dynamic from 'next/dynamic'
 import Skeleton from 'react-loading-skeleton'
@@ -29,7 +29,51 @@ import {
 } from '@chakra-ui/react'
 import { ChevronDownIcon } from '@chakra-ui/icons'
 import Link from 'next/link'
+import { prisma } from '@citybiker/db'
 import { api } from '../../utils/api'
+
+export async function getStaticPaths() {
+  const stations = await prisma.station.findMany()
+
+  const paths = stations.map((station) => ({
+    params: { stationId: station.id.toString() }
+  }))
+
+  return {
+    paths,
+    fallback: false // can also be true or 'blocking'
+  }
+}
+
+export const getStaticProps: GetStaticProps = async (context) => {
+  const id = context.params?.stationId
+
+  if (!id || typeof id !== 'string') {
+    return {
+      notFound: true
+    }
+  }
+
+  const _station = await prisma.station.findUnique({
+    where: {
+      id: +id
+    }
+  })
+
+  if (!_station) {
+    return {
+      notFound: true
+    }
+  }
+
+  // Passed to the page component as props
+  const returns = {
+    props: { station: _station },
+    revalidate: 60
+  }
+
+  return returns
+}
 
 const MapWithNoSSR = dynamic(() => import('../../components/Map'), {
   ssr: false,
@@ -51,23 +95,26 @@ function Loader() {
   )
 }
 
-const StationById: NextPage = () => {
+const StationById: NextPage = ({
+  station
+}: InferGetStaticPropsType<typeof getStaticProps>) => {
+  console.log(station)
   const [monthFilter, setMonthFilter] = useState<string>('all')
   const router = useRouter()
   const { stationId } = router.query
 
   const id = +(stationId as string)
 
-  const stationQuery = api.station.byId.useQuery(id, {
-    enabled: router.isReady
-  })
+  // const stationQuery = api.station.byId.useQuery(id, {
+  //   enabled: router.isReady
+  // })
 
   const stationInfoQuery = api.station.getStatsById.useQuery(id, {
     enabled: router.isReady
   })
 
   const top5Query = api.station.getTopById.useQuery(id, {
-    enabled: router.isReady && !!stationInfoQuery.data
+    enabled: router.isReady
   })
 
   const stationTime = api.station.byIdFilteredByMonth.useQuery(
@@ -80,23 +127,23 @@ const StationById: NextPage = () => {
     }
   )
 
-  if (stationQuery.isLoading) {
-    return <Loader />
-  }
+  // if (stationQuery.isLoading) {
+  //   return <Loader />
+  // }
 
-  if (!stationQuery.isSuccess || !stationQuery.data)
-    return <p>Something broke</p>
-  const station = stationQuery.data
+  // if (!stationQuery.isSuccess || !stationQuery.data)
+  //   return <p>Something broke</p>
+  // const _station = stationQuery.data
   const info = stationInfoQuery.data
 
   const endedJourneys =
     monthFilter !== 'all'
       ? stationTime.data?.ending
-      : info?._count.endedJourneys
+      : info?.counts?._count.endedJourneys
   const startedJourneys =
     monthFilter !== 'all'
       ? stationTime.data?.starting
-      : info?._count.startedJourneys
+      : info?.counts?._count.startedJourneys
 
   const infoPaused = stationTime.fetchStatus === 'idle'
 
