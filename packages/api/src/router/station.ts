@@ -44,7 +44,34 @@ function generateQuey(where: string, input: number) {
   }
 }
 
+type JourneySearchResult = {
+  id: string
+  finName: string
+  finAddress: string
+}
+
 export const stationRouter = createTRPCRouter({
+  search: publicProcedure.input(z.string()).query(async ({ ctx, input }) => {
+    const rawSearch = await ctx.prisma.station.aggregateRaw({
+      pipeline: [
+        {
+          $search: {
+            index: 'stationIndex',
+            text: {
+              query: input,
+              fuzzy: {},
+              path: {
+                wildcard: '*'
+              }
+            }
+          }
+        }
+      ]
+    })
+
+    return rawSearch as unknown as JourneySearchResult[]
+  }),
+
   getAll: publicProcedure
     .input(
       z.object({

@@ -1,9 +1,12 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import React from 'react'
+import React, { useState } from 'react'
 import Link from 'next/link'
 import {
   Button,
+  Input,
+  InputGroup,
+  InputRightElement,
   Spinner,
   Table,
   TableContainer,
@@ -14,8 +17,11 @@ import {
   Tr
 } from '@chakra-ui/react'
 import { api } from '../utils/api'
+import { useDebounce } from '../utils/useDebounce'
 
 const Stations: NextPage = () => {
+  const [search, setSearch] = useState('')
+  const debouncedSearch = useDebounce(search, 500)
   const stationQuery = api.station.getAll.useInfiniteQuery(
     {
       take: 50
@@ -27,6 +33,12 @@ const Stations: NextPage = () => {
       }
     }
   )
+
+  const searchQuery = api.station.search.useQuery(debouncedSearch, {
+    enabled: debouncedSearch.length > 0,
+    keepPreviousData: true,
+    staleTime: 5 * 60 * 1000
+  })
 
   if (stationQuery.isLoading) {
     return (
@@ -40,6 +52,8 @@ const Stations: NextPage = () => {
     return <h1>Failed</h1>
   }
 
+  const isCurrentlySearch = searchQuery.isSuccess && search.length > 0
+
   return (
     <>
       <Head>
@@ -47,6 +61,18 @@ const Stations: NextPage = () => {
       </Head>
       <main className="px-4 pb-4 max-w-2xl m-auto my-4">
         <TableContainer>
+          <InputGroup maxW="sm" my={1} mb={3} ml={3}>
+            <Input
+              variant="outline"
+              placeholder="Search for stations"
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+            />
+            <InputRightElement>
+              {searchQuery.isFetching && <Spinner />}
+            </InputRightElement>
+          </InputGroup>
+
           <Table size="sm">
             <Thead>
               <Tr>
@@ -54,37 +80,60 @@ const Stations: NextPage = () => {
                 <Th>Address</Th>
               </Tr>
             </Thead>
-            <Tbody>
-              {stationQuery.data.pages.map((stationPage, i) => (
-                <React.Fragment key={i}>
-                  {stationPage.map((station) => (
-                    <Tr key={station.id}>
-                      <Td>
-                        <Link href={`/station/${station.id}`}>
-                          {station.finName}
-                        </Link>
-                      </Td>
-                      <Td>
-                        <Link href={`/station/${station.id}`}>
-                          {station.finAddress}
-                        </Link>
-                      </Td>
-                    </Tr>
-                  ))}
-                </React.Fragment>
-              ))}
-            </Tbody>
+
+            {isCurrentlySearch ? (
+              <Tbody>
+                {searchQuery.data.map((station) => (
+                  <Tr key={station.id}>
+                    <Td>
+                      <Link href={`/station/${station.id}`}>
+                        {station.finName}
+                      </Link>
+                    </Td>
+                    <Td>
+                      <Link href={`/station/${station.id}`}>
+                        {station.finAddress}
+                      </Link>
+                    </Td>
+                  </Tr>
+                ))}
+              </Tbody>
+            ) : (
+              <Tbody>
+                {stationQuery.data.pages.map((stationPage, i) => (
+                  <React.Fragment key={i}>
+                    {stationPage.map((station) => (
+                      <Tr key={station.id}>
+                        <Td>
+                          <Link href={`/station/${station.id}`}>
+                            {station.finName}
+                          </Link>
+                        </Td>
+                        <Td>
+                          <Link href={`/station/${station.id}`}>
+                            {station.finAddress}
+                          </Link>
+                        </Td>
+                      </Tr>
+                    ))}
+                  </React.Fragment>
+                ))}
+              </Tbody>
+            )}
+            <Tbody />
           </Table>
         </TableContainer>
 
-        <Button
-          onClick={() => stationQuery.fetchNextPage()}
-          isLoading={stationQuery.isFetchingNextPage}
-          variant="ghost"
-          className="my-2"
-        >
-          {stationQuery.isFetchingNextPage ? 'Loading more...' : 'Load More'}
-        </Button>
+        {!isCurrentlySearch && (
+          <Button
+            onClick={() => stationQuery.fetchNextPage()}
+            isLoading={stationQuery.isFetchingNextPage}
+            variant="ghost"
+            className="my-2"
+          >
+            {stationQuery.isFetchingNextPage ? 'Loading more...' : 'Load More'}
+          </Button>
+        )}
       </main>
     </>
   )
