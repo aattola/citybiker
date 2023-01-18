@@ -11,7 +11,6 @@ import {
   AccordionItem,
   AccordionPanel,
   Box,
-  Button,
   Card,
   CardBody,
   Heading,
@@ -26,9 +25,10 @@ import {
   Td,
   Th,
   Thead,
-  Tr,
-  VStack
+  Tr
 } from '@chakra-ui/react'
+import { ChevronDownIcon } from '@chakra-ui/icons'
+import Link from 'next/link'
 import { api } from '../../utils/api'
 
 const MapWithNoSSR = dynamic(() => import('../../components/Map'), {
@@ -53,7 +53,6 @@ function Loader() {
 
 const StationById: NextPage = () => {
   const [monthFilter, setMonthFilter] = useState<string>('all')
-  const [loadTop5, setLoadTop5] = useState<boolean>(false)
   const router = useRouter()
   const { stationId } = router.query
 
@@ -85,12 +84,21 @@ const StationById: NextPage = () => {
     return <Loader />
   }
 
-  console.log(stationInfoQuery)
-
   if (!stationQuery.isSuccess || !stationQuery.data)
     return <p>Something broke</p>
   const station = stationQuery.data
   const info = stationInfoQuery.data
+
+  const endedJourneys =
+    monthFilter !== 'all'
+      ? stationTime.data?.ending
+      : info?._count.endedJourneys
+  const startedJourneys =
+    monthFilter !== 'all'
+      ? stationTime.data?.starting
+      : info?._count.startedJourneys
+
+  const infoPaused = stationTime.fetchStatus === 'idle'
 
   // Station name
   // Station address
@@ -102,7 +110,7 @@ const StationById: NextPage = () => {
         <title>Citybiker - Station {station.finName}</title>
       </Head>
 
-      <Card>
+      <Card className="max-w-2xl m-auto my-4">
         <CardBody>
           <Stack mt="6" spacing="3">
             <div>
@@ -117,8 +125,8 @@ const StationById: NextPage = () => {
                 <p>Total number of journeys starting from the station:</p>
 
                 <Heading size="md" py={1}>
-                  {info ? (
-                    info._count.startedJourneys
+                  {info && startedJourneys ? (
+                    startedJourneys
                   ) : (
                     <SkeletonText
                       noOfLines={1}
@@ -133,8 +141,8 @@ const StationById: NextPage = () => {
                 <p> Total number of journeys ending at the station</p>
 
                 <Heading size="md" py={1}>
-                  {info ? (
-                    info._count.endedJourneys
+                  {info && endedJourneys ? (
+                    endedJourneys
                   ) : (
                     <SkeletonText
                       noOfLines={1}
@@ -147,10 +155,16 @@ const StationById: NextPage = () => {
             </HStack>
 
             <Select
-              placeholder="Filter journeys by month"
               zIndex={1234}
               value={monthFilter}
               onChange={(e) => setMonthFilter(e.target.value)}
+              icon={
+                !infoPaused && stationTime.status === 'loading' ? (
+                  <Loader />
+                ) : (
+                  <ChevronDownIcon />
+                )
+              }
             >
               {selectValues.map(({ value, label }) => (
                 <option key={value} value={value}>
@@ -188,7 +202,11 @@ const StationById: NextPage = () => {
                             <Tbody>
                               {top5Query.data.startingFrom.map((station) => (
                                 <Tr>
-                                  <Td>{station.name[0]}</Td>
+                                  <Td>
+                                    <Link href={`/station/${station._id}`}>
+                                      {station.name[0]}
+                                    </Link>
+                                  </Td>
                                   <Td>{station.count}</Td>
                                 </Tr>
                               ))}
@@ -212,7 +230,11 @@ const StationById: NextPage = () => {
                             <Tbody>
                               {top5Query.data.endingAt.map((station) => (
                                 <Tr>
-                                  <Td>{station.name[0]}</Td>
+                                  <Td>
+                                    <Link href={`/station/${station._id}`}>
+                                      {station.name[0]}
+                                    </Link>
+                                  </Td>
                                   <Td>{station.count}</Td>
                                 </Tr>
                               ))}
@@ -227,87 +249,17 @@ const StationById: NextPage = () => {
             </Accordion>
 
             <Card borderRadius={8} overflow="hidden" variant="filled">
-              {/* <div style={{ height: 300, width: 'auto' }}> */}
-              {/*   <MapWithNoSSR */}
-              {/*     stations={[station]} */}
-              {/*     center={[station.y, station.x]} */}
-              {/*     zoom={16} */}
-              {/*   /> */}
-              {/* </div> */}
+              <div style={{ height: 300, width: 'auto' }}>
+                <MapWithNoSSR
+                  stations={[station]}
+                  center={[station.y, station.x]}
+                  zoom={16}
+                />
+              </div>
             </Card>
           </Stack>
         </CardBody>
       </Card>
-
-      <h1>{station.finName}</h1>
-      <h2>{station.finAddress}</h2>
-
-      <Select
-        placeholder="Filter journeys by month"
-        zIndex={1234}
-        value={monthFilter}
-        onChange={(e) => setMonthFilter(e.target.value)}
-      >
-        {selectValues.map(({ value, label }) => (
-          <option key={value} value={value}>
-            {label}
-          </option>
-        ))}
-      </Select>
-
-      {/* TODO: REFACTOR TO SOMETHING MUCH NICER */}
-      {stationInfoQuery.isLoading && !stationInfoQuery.isSuccess ? (
-        <SkeletonText />
-      ) : (
-        <>
-          <h2>
-            Total number of journeys starting from the station
-            {stationTime.data && monthFilter !== 'all' ? (
-              <>
-                {' '}
-                in {stationTime.data.monthName}: {stationTime.data.starting}{' '}
-              </>
-            ) : (
-              <>: {stationInfoQuery.data._count.startedJourneys}</>
-            )}
-          </h2>
-
-          <h2>
-            Total number of journeys ending at the station
-            {stationTime.data && monthFilter !== 'all' ? (
-              <>
-                {' '}
-                in {stationTime.data.monthName}: {stationTime.data.ending}{' '}
-              </>
-            ) : (
-              <>: {stationInfoQuery.data._count.endedJourneys}</>
-            )}
-          </h2>
-        </>
-      )}
-
-      <h2>Top 5 most popular return stations for journeys starting here</h2>
-
-      {!top5Query.isSuccess && (
-        <Button
-          onClick={() => setLoadTop5(true)}
-          isLoading={top5Query.fetchStatus === 'fetching'}
-          variant="ghost"
-          className="my-2"
-        >
-          {top5Query.isFetching ? 'Loading...' : 'Load top 5 journeys'}
-        </Button>
-      )}
-
-      {/* TODO: MAKE DEPARTURE STATIONS TOO AND MAKE THIS LOOK NICE */}
-
-      {top5Query.isSuccess && top5Query.data && (
-        <ul>
-          {top5Query.data.startingFrom.map((station) => (
-            <li key={station._id}>{station.name[0]}</li>
-          ))}
-        </ul>
-      )}
     </div>
   )
 }

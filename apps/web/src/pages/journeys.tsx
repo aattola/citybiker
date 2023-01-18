@@ -52,20 +52,12 @@ const Journeys: NextPage = () => {
     return <h1>Failed</h1>
   }
 
-  // function handleNext() {
-  //   if (!journeyQuery.data) return
-  //
-  //   const lastIndex = journeyQuery.data.length - 1
-  //   const lastId = journeyQuery.data[lastIndex].id
-  //   setCursor(lastId)
-  // }
-
   return (
     <>
       <Head>
         <title>Citybiker - Journeys</title>
       </Head>
-      <main className="px-4 pb-4">
+      <main className="px-4 pb-4 max-w-4xl m-auto my-4">
         <TableContainer>
           <Table size="sm">
             <Thead>
