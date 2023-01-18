@@ -5,6 +5,37 @@ import { createTRPCRouter, publicProcedure } from '../trpc'
 
 type top5List = { _id: number; count: number; name: [string] }[]
 
+function generateQuey(where: string, input: number) {
+  return {
+    pipeline: [
+      {
+        $match: {
+          [where]: input
+        }
+      },
+      {
+        $group: {
+          _id: '$returnStationId',
+          name: {
+            $addToSet: '$returnStationName'
+          },
+          count: {
+            $count: {}
+          }
+        }
+      },
+      {
+        $sort: {
+          count: -1
+        }
+      },
+      {
+        $limit: 5
+      }
+    ]
+  }
+}
+
 export const stationRouter = createTRPCRouter({
   getAll: publicProcedure
     .input(
@@ -80,36 +111,38 @@ export const stationRouter = createTRPCRouter({
   getTopById: publicProcedure
     .input(z.number())
     .query(async ({ ctx, input }) => {
-      const rawAggregation = await ctx.prisma.journey.aggregateRaw({
-        pipeline: [
-          {
-            $match: {
-              departureStationId: input
-            }
-          },
-          {
-            $group: {
-              _id: '$returnStationId',
-              name: {
-                $addToSet: '$returnStationName'
-              },
-              count: {
-                $count: {}
-              }
-            }
-          },
-          {
-            $sort: {
-              count: -1
-            }
-          },
-          {
-            $limit: 5
-          }
-        ]
-      })
+      const departureQuery = generateQuey('departureStationId', input)
+      const returnQuery = generateQuey('returnStationId', input)
 
-      return rawAggregation as unknown as top5List
+      const departureRawAggregation =
+        ctx.prisma.journey.aggregateRaw(departureQuery)
+      const returnRawAggregation = ctx.prisma.journey.aggregateRaw(returnQuery)
+
+      const promises = await Promise.all([
+        departureRawAggregation,
+        returnRawAggregation
+      ])
+
+      return {
+        startingFrom: promises[0] as unknown as top5List,
+        endingAt: promises[1] as unknown as top5List
+      }
+    }),
+
+  getStatsById: publicProcedure
+    .input(z.number())
+    .query(async ({ ctx, input }) => {
+      return ctx.prisma.station.findFirst({
+        where: { id: input },
+        include: {
+          _count: {
+            select: {
+              endedJourneys: true,
+              startedJourneys: true
+            }
+          }
+        }
+      })
     }),
 
   byId: publicProcedure.input(z.number()).query(async ({ ctx, input }) => {
@@ -156,39 +189,9 @@ export const stationRouter = createTRPCRouter({
     //   by: ['returnStationId']
     // })
 
-    const departureCountP = ctx.prisma.journey.aggregateRaw({
-      pipeline: [
-        {
-          $match: {
-            departureStationId: 3
-          }
-        },
-        {
-          $count: 'count'
-        }
-      ]
-    })
-
-    const returnCountP = ctx.prisma.journey.aggregateRaw({
-      pipeline: [
-        {
-          $match: {
-            returnStationId: 3
-          }
-        },
-        {
-          $count: 'count'
-        }
-      ]
-    })
-
-    const stationP = ctx.prisma.station.findFirst({
+    const station = await ctx.prisma.station.findFirst({
       where: { id: input }
     })
-
-    const data = await Promise.all([departureCountP, returnCountP, stationP])
-
-    const station = data[2]
 
     if (station === null)
       throw new TRPCError({
@@ -198,11 +201,7 @@ export const stationRouter = createTRPCRouter({
       })
 
     return {
-      ...station,
-      _count: {
-        returnCount: data[1].count! ?? 0,
-        departureCount: data[0].count! ?? 0
-      }
+      ...station
     }
   })
 })
