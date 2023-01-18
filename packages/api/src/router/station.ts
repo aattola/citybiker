@@ -63,16 +63,6 @@ export const stationRouter = createTRPCRouter({
               fuzzy: {},
               tokenOrder: 'any'
             }
-            // text: {
-            //   query: input,
-            //   fuzzy: {
-            //     maxEdits: 2,
-            //     maxExpansions: 200
-            //   },
-            //   path: {
-            //     wildcard: '*'
-            //   }
-            // }
           }
         },
         {
