@@ -8,6 +8,12 @@ Filter by month top 5
 
 
 Journey filter by distance and time
-Search
+Search journeys
 
-Average time for a journey and average distance
+Average time for a journey and average distance [DONE]
+
+Tests
+
+Refactor for tests
+
+Finnish readme

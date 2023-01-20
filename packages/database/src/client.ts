@@ -1,6 +1,7 @@
 import { Prisma, PrismaClient } from '@prisma/client'
 
 declare global {
+  // eslint-disable-next-line no-var
   var prisma:
     | PrismaClient<Prisma.PrismaClientOptions, 'info' | 'warn' | 'error'>
     | undefined
@@ -9,7 +10,10 @@ declare global {
 export const prisma =
   global.prisma ||
   new PrismaClient({
-    log: ['info', 'warn', 'error', 'query']
+    log:
+      process.env.NODE_ENV === 'development'
+        ? ['info', 'warn', 'error', 'query']
+        : ['error']
   })
 export * from '@prisma/client'
 

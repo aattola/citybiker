@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router'
-import { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next'
+import { GetStaticPropsContext, InferGetStaticPropsType } from 'next'
 import Head from 'next/head'
 import dynamic from 'next/dynamic'
 import Skeleton from 'react-loading-skeleton'
@@ -32,6 +32,7 @@ import Link from 'next/link'
 import { prisma } from '@citybiker/db'
 import { api } from '../../utils/api'
 import { convertDistance } from '../../utils/units'
+import { stationQuery } from '../../queries/stationQuery'
 
 export async function getStaticPaths() {
   const stations = await prisma.station.findMany()
@@ -46,7 +47,7 @@ export async function getStaticPaths() {
   }
 }
 
-export const getStaticProps: GetStaticProps = async (context) => {
+export const getStaticProps = async (context: GetStaticPropsContext) => {
   const id = context.params?.stationId
 
   if (!id || typeof id !== 'string') {
@@ -67,8 +68,10 @@ export const getStaticProps: GetStaticProps = async (context) => {
     }
   }
 
+  const info = await stationQuery(+id)
+
   return {
-    props: { station: _station },
+    props: { station: _station, info },
     revalidate: 60
   }
 }
@@ -93,8 +96,9 @@ function Loader() {
   )
 }
 
-const StationById: NextPage = ({
-  station
+const StationById = ({
+  station,
+  info
 }: InferGetStaticPropsType<typeof getStaticProps>) => {
   const [monthFilter, setMonthFilter] = useState<string>('all')
   const router = useRouter()
@@ -102,13 +106,15 @@ const StationById: NextPage = ({
 
   const id = +(stationId as string)
 
+  console.log(info)
+
   // const stationQuery = api.station.byId.useQuery(id, {
   //   enabled: router.isReady
   // })
 
-  const stationInfoQuery = api.station.getStatsById.useQuery(id, {
-    enabled: router.isReady
-  })
+  // const stationInfoQuery = api.station.getStatsById.useQuery(id, {
+  //   enabled: router.isReady
+  // })
 
   const top5Query = api.station.getTopById.useQuery(id, {
     enabled: router.isReady
@@ -131,7 +137,7 @@ const StationById: NextPage = ({
   // if (!stationQuery.isSuccess || !stationQuery.data)
   //   return <p>Something broke</p>
   // const _station = stationQuery.data
-  const info = stationInfoQuery.data
+  // const info = stationInfoQuery.data
 
   const endedJourneys =
     monthFilter !== 'all'
