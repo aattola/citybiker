@@ -5,10 +5,10 @@ import { prisma } from './client'
 
 const filePath = path.resolve(__dirname, '../data/')
 const JourneyFiles = ['2021-05.csv', '2021-06.csv', '2021-07.csv']
-const StationFiles = ['Pysakit.csv']
+// const StationFiles = ['Pysakit.csv']
 
 const journeyFiles = JourneyFiles.map((file) => filePath + '/' + file)
-const stationFiles = StationFiles.map((file) => filePath + '/' + file)
+// const stationFiles = StationFiles.map((file) => filePath + '/' + file)
 
 // 754 does not exist in the station data, 997 and 999 are probably service and production
 const badStations = [754, 997, 999]
@@ -25,48 +25,48 @@ interface Journey {
 }
 
 interface Station {
-  finCity: any
-  sweCity: any
-  sweAddress: any
+  finCity: string
+  sweCity: string
+  sweAddress: string
   x: number
   y: number
   id: number
-  finName: any
-  sweName: any
-  operator: any
-  finAddress: any
+  finName: string
+  sweName: string
+  operator: string
+  finAddress: string
   capacity: number
 }
 
-function parseStation(data: any): Station | false {
-  const station = {
-    id: +data.ID,
-    finName: data.Nimi,
-    sweName: data.Namn,
-    finAddress: data.Osoite,
-    sweAddress: data.Adress,
-    finCity: data.Kaupunki,
-    sweCity: data.Stad,
-    operator: data.Operaattor,
-    capacity: +data.Kapasiteet,
-    x: +data.x,
-    y: +data.y
-  }
-
-  if (!station.id) return false
-  if (!station.finName) return false
-  if (!station.sweName) return false
-  if (!station.finAddress) return false
-  if (!station.sweAddress) return false
-  if (!station.finCity) return false
-  if (!station.sweCity) return false
-  if (!station.operator) return false
-  if (!station.capacity) return false
-  if (!station.x) return false
-  if (!station.y) return false
-
-  return station
-}
+// function parseStation(data: any): Station | false {
+//   const station = {
+//     id: +data.ID,
+//     finName: data.Nimi,
+//     sweName: data.Namn,
+//     finAddress: data.Osoite,
+//     sweAddress: data.Adress,
+//     finCity: data.Kaupunki,
+//     sweCity: data.Stad,
+//     operator: data.Operaattor,
+//     capacity: +data.Kapasiteet,
+//     x: +data.x,
+//     y: +data.y
+//   }
+//
+//   if (!station.id) return false
+//   if (!station.finName) return false
+//   if (!station.sweName) return false
+//   if (!station.finAddress) return false
+//   if (!station.sweAddress) return false
+//   if (!station.finCity) return false
+//   if (!station.sweCity) return false
+//   if (!station.operator) return false
+//   if (!station.capacity) return false
+//   if (!station.x) return false
+//   if (!station.y) return false
+//
+//   return station
+// }
 
 function parseJourney(data: any): Journey | false {
   const newData: Journey = {
