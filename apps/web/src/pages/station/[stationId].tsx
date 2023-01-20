@@ -106,8 +106,6 @@ const StationById = ({
 
   const id = +(stationId as string)
 
-  console.log(info)
-
   // const stationQuery = api.station.byId.useQuery(id, {
   //   enabled: router.isReady
   // })
@@ -293,7 +291,10 @@ const StationById = ({
                                 {top5Query.data.startingFrom.map((station) => (
                                   <Tr>
                                     <Td>
-                                      <Link href={`/station/${station._id}`}>
+                                      <Link
+                                        prefetch={false}
+                                        href={`/station/${station._id}`}
+                                      >
                                         {station.name[0]}
                                       </Link>
                                     </Td>

@@ -86,12 +86,12 @@ const Stations: NextPage = () => {
                 {searchQuery.data.map((station) => (
                   <Tr key={station.id}>
                     <Td>
-                      <Link href={`/station/${station.id}`}>
+                      <Link prefetch={false} href={`/station/${station.id}`}>
                         {station.finName}
                       </Link>
                     </Td>
                     <Td>
-                      <Link href={`/station/${station.id}`}>
+                      <Link prefetch={false} href={`/station/${station.id}`}>
                         {station.finAddress}
                       </Link>
                     </Td>

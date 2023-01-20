@@ -16,8 +16,6 @@ import Link from 'next/link'
 import { api } from '../utils/api'
 import { convertDistance, convertTime } from '../utils/units'
 
-// convert seconds to minutes and hours
-
 const Journeys: NextPage = () => {
   const journeyQuery = api.journey.getAll.useInfiniteQuery(
     {
@@ -65,12 +63,18 @@ const Journeys: NextPage = () => {
                   {journeyPage.map((journey) => (
                     <Tr key={journey.id}>
                       <Td>
-                        <Link href={`/station/${journey.departureStationId}`}>
+                        <Link
+                          prefetch={false}
+                          href={`/station/${journey.departureStationId}`}
+                        >
                           {journey.departureStationName}
                         </Link>
                       </Td>
                       <Td>
-                        <Link href={`/station/${journey.returnStationId}`}>
+                        <Link
+                          prefetch={false}
+                          href={`/station/${journey.returnStationId}`}
+                        >
                           {journey.returnStationName}
                         </Link>
                       </Td>
