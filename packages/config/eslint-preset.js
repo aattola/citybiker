@@ -1,7 +1,8 @@
 module.exports = {
   env: {
     browser: true,
-    es2021: true
+    es2021: true,
+    'jest/globals': true
   },
   parserOptions: {
     ecmaFeatures: {
@@ -19,7 +20,7 @@ module.exports = {
     'standard-jsx',
     'prettier'
   ],
-  plugins: ['prettier', '@typescript-eslint', 'react', 'react-hooks'],
+  plugins: ['prettier', '@typescript-eslint', 'react', 'react-hooks', 'jest'],
   settings: {
     next: {
       rootDir: ['apps/*/', 'packages/*/']
@@ -42,6 +43,12 @@ module.exports = {
     'turbo/no-undeclared-env-vars': 'off',
 
     'react-hooks/rules-of-hooks': 'error', // Checks rules of Hooks
-    'react-hooks/exhaustive-deps': 'warn' // Checks effect dependencies
+    'react-hooks/exhaustive-deps': 'warn', // Checks effect dependencies
+
+    'jest/no-disabled-tests': 'warn',
+    'jest/no-focused-tests': 'error',
+    'jest/no-identical-title': 'error',
+    'jest/prefer-to-have-length': 'warn',
+    'jest/valid-expect': 'error'
   }
 }

@@ -18,6 +18,9 @@
       "dependsOn": ["^generate"]
     },
     "lint": {},
-    "test": {}
+    "test": {},
+    "test:watch": {
+      "cache": false
+    }
   }
 }
