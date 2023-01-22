@@ -106,14 +106,6 @@ const StationById = ({
 
   const id = +(stationId as string)
 
-  // const stationQuery = api.station.byId.useQuery(id, {
-  //   enabled: router.isReady
-  // })
-
-  // const stationInfoQuery = api.station.getStatsById.useQuery(id, {
-  //   enabled: router.isReady
-  // })
-
   const top5Query = api.station.getTopById.useQuery(id, {
     enabled: router.isReady
   })
@@ -127,15 +119,6 @@ const StationById = ({
       enabled: monthFilter !== 'all' && router.isReady
     }
   )
-
-  // if (stationQuery.isLoading) {
-  //   return <Loader />
-  // }
-
-  // if (!stationQuery.isSuccess || !stationQuery.data)
-  //   return <p>Something broke</p>
-  // const _station = stationQuery.data
-  // const info = stationInfoQuery.data
 
   const endedJourneys =
     monthFilter !== 'all'
@@ -176,7 +159,7 @@ const StationById = ({
                 <p>Total number of journeys starting from the station:</p>
 
                 <Heading size="md" py={1}>
-                  {info && startedJourneys ? (
+                  {info && startedJourneys !== undefined ? (
                     startedJourneys
                   ) : (
                     <SkeletonText
@@ -192,7 +175,7 @@ const StationById = ({
                 <p> Total number of journeys ending at the station</p>
 
                 <Heading size="md" py={1}>
-                  {info && endedJourneys ? (
+                  {info && endedJourneys !== undefined ? (
                     endedJourneys
                   ) : (
                     <SkeletonText
@@ -289,7 +272,7 @@ const StationById = ({
                               </Thead>
                               <Tbody>
                                 {top5Query.data.startingFrom.map((station) => (
-                                  <Tr>
+                                  <Tr key={station._id}>
                                     <Td>
                                       <Link
                                         prefetch={false}
@@ -320,7 +303,7 @@ const StationById = ({
                               </Thead>
                               <Tbody>
                                 {top5Query.data.endingAt.map((station) => (
-                                  <Tr>
+                                  <Tr key={station._id}>
                                     <Td>
                                       <Link href={`/station/${station._id}`}>
                                         {station.name[0]}
