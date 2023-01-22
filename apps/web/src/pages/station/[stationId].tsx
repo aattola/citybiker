@@ -136,8 +136,14 @@ const StationById = ({
       ? stationTime.data?.starting
       : info?.counts?._count.startedJourneys
 
-  const avgDepartureDistance = info?.avgDepartureStats._avg.coveredDistance
-  const avgReturnDistance = info?.avgReturnStats._avg.coveredDistance
+  const avgDepartureDistance =
+    monthFilter !== 'all'
+      ? stationTime.data?.avgDepartureStats._avg?.coveredDistance
+      : info?.avgDepartureStats._avg?.coveredDistance
+  const avgReturnDistance =
+    monthFilter !== 'all'
+      ? stationTime.data?.avgReturnStats._avg?.coveredDistance
+      : info?.avgReturnStats._avg?.coveredDistance
 
   const infoPaused = stationTime.fetchStatus === 'idle'
 
@@ -157,7 +163,7 @@ const StationById = ({
         <title>Citybiker - Station {station.finName}</title>
       </Head>
 
-      <Card className="max-w-2xl m-auto my-4">
+      <Card className="max-w-3xl m-auto my-4">
         <CardBody>
           <Stack mt="6" spacing="3">
             <div>
@@ -187,7 +193,7 @@ const StationById = ({
                   {info && endedJourneys !== undefined ? (
                     endedJourneys
                   ) : (
-                    <SkeletonText />
+                    <Skeleton />
                   )}
                 </Heading>
               </div>
@@ -203,7 +209,7 @@ const StationById = ({
                   {info && avgDepartureDistance ? (
                     convertDistance(avgDepartureDistance) + ' km'
                   ) : (
-                    <SkeletonText />
+                    <Skeleton />
                   )}
                 </Heading>
               </div>
@@ -215,7 +221,7 @@ const StationById = ({
                   {info && avgReturnDistance ? (
                     convertDistance(avgReturnDistance) + ' km'
                   ) : (
-                    <SkeletonText />
+                    <Skeleton />
                   )}
                 </Heading>
               </div>

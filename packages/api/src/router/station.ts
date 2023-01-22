@@ -1,6 +1,7 @@
 import { z } from 'zod'
 import { Prisma } from '@citybiker/db'
 import { TRPCError } from '@trpc/server'
+import { stationQuery } from '@citybiker/web/src/queries/stationQuery'
 import { createTRPCRouter, publicProcedure } from '../trpc'
 
 type top5List = { _id: number; count: number; name: [string] }[]
@@ -179,8 +180,6 @@ export const stationRouter = createTRPCRouter({
         ltDate
       })
 
-      console.log(departureQuery.pipeline[0].$match)
-
       const departureRawAggregation =
         ctx.prisma.journey.aggregateRaw(departureQuery)
       const returnRawAggregation = ctx.prisma.journey.aggregateRaw(returnQuery)
@@ -192,13 +191,17 @@ export const stationRouter = createTRPCRouter({
 
       const tr = await Promise.all([stationsdeparture, stationsarrival])
 
+      const infoQuery = await stationQuery(input.id, input.month)
+
       return {
         starting: tr[0].length,
         ending: tr[1].length,
         month: gteDate.getMonth() + 1,
         monthName: gteDate.toLocaleString('en-US', { month: 'long' }),
         startingFrom: promises[0] as unknown as top5List,
-        endingAt: promises[1] as unknown as top5List
+        endingAt: promises[1] as unknown as top5List,
+        avgDepartureStats: infoQuery.avgDepartureStats,
+        avgReturnStats: infoQuery.avgReturnStats
       }
     }),
 

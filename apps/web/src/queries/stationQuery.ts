@@ -1,23 +1,35 @@
-import { prisma } from '@citybiker/db'
+import { prisma, Prisma } from '@citybiker/db'
 
-export async function stationQuery(input: number) {
-  const avgDepartureStatsP = prisma.journey.aggregate({
-    where: {
-      departureStationId: input
-    },
+function generateQuery(
+  where: string,
+  input: number,
+  month?: number
+): Prisma.JourneyAggregateArgs {
+  const whereQuery = month
+    ? {
+        [where]: input,
+        departure: {
+          gte: new Date(`2021-${month}-01`),
+          lt: new Date(`2021-${month + 1}-01`)
+        }
+      }
+    : {
+        [where]: input
+      }
+
+  return {
+    where: whereQuery,
     _avg: {
       coveredDistance: true
     }
-  })
+  }
+}
+export async function stationQuery(input: number, month?: number) {
+  const departureQuery = generateQuery('departureStationId', input, month)
+  const returnQuery = generateQuery('returnStationId', input, month)
 
-  const avgReturnStatsP = prisma.journey.aggregate({
-    where: {
-      returnStationId: input
-    },
-    _avg: {
-      coveredDistance: true
-    }
-  })
+  const avgDepartureStatsP = prisma.journey.aggregate(departureQuery)
+  const avgReturnStatsP = prisma.journey.aggregate(returnQuery)
 
   const countsP = prisma.station.findFirst({
     where: { id: input },
