@@ -1,4 +1,3 @@
-import type { NextPage } from 'next'
 import Head from 'next/head'
 import React, { useState } from 'react'
 import Link from 'next/link'
@@ -16,10 +15,30 @@ import {
   Thead,
   Tr
 } from '@chakra-ui/react'
+import { Station } from '@citybiker/db'
+import { getStationsWithCursor } from '@citybiker/api/src/router/station'
+import { InferGetStaticPropsType } from 'next'
 import { api } from '../utils/api'
 import { useDebounce } from '../utils/useDebounce'
 
-const Stations: NextPage = () => {
+export const getStaticProps = async () => {
+  const ssrStations = await getStationsWithCursor({
+    take: 50
+  })
+
+  const stations = JSON.parse(JSON.stringify(ssrStations)) as Station[]
+
+  return {
+    props: {
+      ssrStations: stations
+    },
+    revalidate: 60
+  }
+}
+
+const Stations = ({
+  ssrStations
+}: InferGetStaticPropsType<typeof getStaticProps>) => {
   const [search, setSearch] = useState('')
   const debouncedSearch = useDebounce(search, 500)
   const stationQuery = api.station.getAll.useInfiniteQuery(
@@ -27,6 +46,10 @@ const Stations: NextPage = () => {
       take: 50
     },
     {
+      initialData: {
+        pages: [ssrStations],
+        pageParams: [undefined]
+      },
       getNextPageParam: (lastPage) => {
         if (lastPage.length < 50) return null
         return lastPage[lastPage.length - 1].id

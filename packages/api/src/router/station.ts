@@ -1,5 +1,5 @@
 import { z } from 'zod'
-import { Prisma } from '@citybiker/db'
+import { Prisma, prisma } from '@citybiker/db'
 import { TRPCError } from '@trpc/server'
 import { stationQuery } from '@citybiker/web/src/queries/stationQuery'
 import { createTRPCRouter, publicProcedure } from '../trpc'
@@ -86,6 +86,25 @@ type JourneySearchResult = {
   finAddress: string
 }
 
+const getAllInput = z.object({
+  take: z.number().min(1).max(100).default(10),
+  cursor: z.number().optional().nullable()
+})
+
+export async function getStationsWithCursor(input: {
+  cursor?: z.infer<typeof getAllInput>['cursor']
+  take: number
+}) {
+  const query: Prisma.StationFindManyArgs = {
+    skip: 1,
+    take: input.take,
+    cursor: input.cursor ? { id: input.cursor } : undefined,
+    orderBy: { id: 'desc' }
+  }
+
+  return await prisma.station.findMany(query)
+}
+
 export const stationRouter = createTRPCRouter({
   search: publicProcedure.input(z.string()).query(async ({ ctx, input }) => {
     const rawSearch = await ctx.prisma.station.aggregateRaw({
@@ -110,23 +129,9 @@ export const stationRouter = createTRPCRouter({
     return rawSearch as unknown as JourneySearchResult[]
   }),
 
-  getAll: publicProcedure
-    .input(
-      z.object({
-        take: z.number().min(1).max(100).default(10),
-        cursor: z.number().optional().nullable()
-      })
-    )
-    .query(async ({ ctx, input }) => {
-      const query: Prisma.StationFindManyArgs = {
-        skip: 1,
-        take: 100,
-        cursor: input.cursor ? { id: input.cursor } : undefined,
-        orderBy: { id: 'desc' }
-      }
-
-      return await ctx.prisma.station.findMany(query)
-    }),
+  getAll: publicProcedure.input(getAllInput).query(async ({ input }) => {
+    return await getStationsWithCursor(input)
+  }),
 
   getAllMapPoints: publicProcedure.query(async ({ ctx }) => {
     return await ctx.prisma.station.findMany({

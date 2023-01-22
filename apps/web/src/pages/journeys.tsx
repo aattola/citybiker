@@ -1,6 +1,6 @@
-import type { NextPage } from 'next'
+import type { InferGetStaticPropsType } from 'next'
 import Head from 'next/head'
-import React from 'react'
+import React, { useState } from 'react'
 import {
   Table,
   Thead,
@@ -10,24 +10,59 @@ import {
   Td,
   TableContainer,
   Button,
-  Spinner
+  Spinner,
+  InputGroup,
+  InputRightElement,
+  Input
 } from '@chakra-ui/react'
 import Link from 'next/link'
+import { getJourneysWithCursor } from '@citybiker/api/src/router/journey'
+import { Journey } from '@citybiker/db'
 import { api } from '../utils/api'
 import { convertDistance, convertTime } from '../utils/units'
+import { useDebounce } from '../utils/useDebounce'
 
-const Journeys: NextPage = () => {
+export const getStaticProps = async () => {
+  const ssrJourneys = await getJourneysWithCursor({
+    take: 50
+  })
+
+  const journeys = JSON.parse(JSON.stringify(ssrJourneys)) as Journey[]
+
+  return {
+    props: {
+      ssrJourneys: journeys
+    },
+    revalidate: 60
+  }
+}
+
+const Journeys = ({
+  ssrJourneys
+}: InferGetStaticPropsType<typeof getStaticProps>) => {
+  const [search, setSearch] = useState('')
+  const debouncedSearch = useDebounce(search, 500)
   const journeyQuery = api.journey.getAll.useInfiniteQuery(
     {
       take: 50
     },
     {
+      initialData: {
+        pages: [ssrJourneys],
+        pageParams: [undefined]
+      },
       getNextPageParam: (lastPage) => {
         if (lastPage.length < 50) return null
         return lastPage[lastPage.length - 1].id
       }
     }
   )
+
+  const searchQuery = api.journey.search.useQuery(debouncedSearch, {
+    enabled: debouncedSearch.length > 0,
+    keepPreviousData: true,
+    staleTime: 5 * 60 * 1000
+  })
 
   if (journeyQuery.isLoading) {
     return (
@@ -41,13 +76,28 @@ const Journeys: NextPage = () => {
     return <h1>Failed</h1>
   }
 
+  const journeys =
+    searchQuery.isSuccess && search.length > 0 ? [] : journeyQuery.data.pages
+
   return (
     <>
       <Head>
         <title>Citybiker - Journeys</title>
       </Head>
-      <main className="px-4 pb-4 max-w-4xl m-auto my-4">
+      <main className="px-4 pb-4 max-w-5xl m-auto my-4">
         <TableContainer>
+          <InputGroup maxW="sm" my={1} mb={3} ml={3}>
+            <Input
+              variant="outline"
+              placeholder="Search for journeys"
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+            />
+            <InputRightElement>
+              {searchQuery.isFetching && <Spinner />}
+            </InputRightElement>
+          </InputGroup>
+
           <Table size="sm">
             <Thead>
               <Tr>
@@ -58,7 +108,7 @@ const Journeys: NextPage = () => {
               </Tr>
             </Thead>
             <Tbody>
-              {journeyQuery.data.pages.map((journeyPage, i) => (
+              {journeys.map((journeyPage, i) => (
                 <React.Fragment key={i}>
                   {journeyPage.map((journey) => (
                     <Tr key={journey.id}>
