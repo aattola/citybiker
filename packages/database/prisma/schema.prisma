@@ -1,21 +1,17 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
 generator client {
-  provider = "prisma-client-js"
+  provider      = "prisma-client-js"
   binaryTargets = ["native", "debian-openssl-3.0.x"]
 }
 
 datasource db {
   provider = "mongodb"
   url      = env("DATABASE_URL")
-  // shadowDatabaseUrl = env("DEV_DB_URL")
 }
 
 model Journey {
   id                   String   @id @default(auto()) @map("_id") @db.ObjectId
   departure            DateTime
-  return               DateTime
+  return               DateTime @db.Date
   departureStation     Station  @relation(name: "departure", fields: [departureStationId], references: [id])
   departureStationId   Int
   departureStationName String
@@ -26,6 +22,8 @@ model Journey {
   duration             Float
 
   @@index([departureStationId, returnStationId, coveredDistance, duration])
+  @@index([departureStationId], map: "departureStationId_1")
+  @@index([returnStationId], map: "returnStationId_1")
 }
 
 model Station {
