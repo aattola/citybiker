@@ -134,10 +134,6 @@ const StationById = ({
 
   const infoPaused = stationTime.fetchStatus === 'idle'
 
-  // Station name
-  // Station address
-  // Total number of journeys starting from the station
-  // Total number of journeys ending at the station
   return (
     <div>
       <Head>
