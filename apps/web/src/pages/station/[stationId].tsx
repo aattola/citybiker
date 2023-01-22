@@ -2,7 +2,6 @@ import { useRouter } from 'next/router'
 import { GetStaticPropsContext, InferGetStaticPropsType } from 'next'
 import Head from 'next/head'
 import dynamic from 'next/dynamic'
-import Skeleton from 'react-loading-skeleton'
 import React, { useState } from 'react'
 import {
   Accordion,
@@ -33,6 +32,10 @@ import { prisma } from '@citybiker/db'
 import { api } from '../../utils/api'
 import { convertDistance } from '../../utils/units'
 import { stationQuery } from '../../queries/stationQuery'
+
+const Skeleton = () => (
+  <SkeletonText noOfLines={1} skeletonHeight={7} maxW="75px" />
+)
 
 export async function getStaticPaths() {
   const stations = await prisma.station.findMany()
@@ -110,6 +113,10 @@ const StationById = ({
     enabled: router.isReady
   })
 
+  // const stationInfoQuery = api.station.getStatsById.useQuery(id, {
+  //   enabled: router.isReady
+  // })
+
   const stationTime = api.station.byIdFilteredByMonth.useQuery(
     {
       id,
@@ -133,6 +140,16 @@ const StationById = ({
   const avgReturnDistance = info?.avgReturnStats._avg.coveredDistance
 
   const infoPaused = stationTime.fetchStatus === 'idle'
+
+  const startingFrom =
+    monthFilter !== 'all'
+      ? stationTime.data?.startingFrom
+      : top5Query.data?.startingFrom
+
+  const endingAt =
+    monthFilter !== 'all'
+      ? stationTime.data?.endingAt
+      : top5Query.data?.endingAt
 
   return (
     <div>
@@ -158,11 +175,7 @@ const StationById = ({
                   {info && startedJourneys !== undefined ? (
                     startedJourneys
                   ) : (
-                    <SkeletonText
-                      noOfLines={1}
-                      skeletonHeight={7}
-                      maxW="75px"
-                    />
+                    <Skeleton />
                   )}
                 </Heading>
               </div>
@@ -174,11 +187,7 @@ const StationById = ({
                   {info && endedJourneys !== undefined ? (
                     endedJourneys
                   ) : (
-                    <SkeletonText
-                      noOfLines={1}
-                      skeletonHeight={7}
-                      maxW="75px"
-                    />
+                    <SkeletonText />
                   )}
                 </Heading>
               </div>
@@ -194,11 +203,7 @@ const StationById = ({
                   {info && avgDepartureDistance ? (
                     convertDistance(avgDepartureDistance) + ' km'
                   ) : (
-                    <SkeletonText
-                      noOfLines={1}
-                      skeletonHeight={7}
-                      maxW="75px"
-                    />
+                    <SkeletonText />
                   )}
                 </Heading>
               </div>
@@ -210,11 +215,7 @@ const StationById = ({
                   {info && avgReturnDistance ? (
                     convertDistance(avgReturnDistance) + ' km'
                   ) : (
-                    <SkeletonText
-                      noOfLines={1}
-                      skeletonHeight={7}
-                      maxW="75px"
-                    />
+                    <SkeletonText />
                   )}
                 </Heading>
               </div>
@@ -267,19 +268,25 @@ const StationById = ({
                                 </Tr>
                               </Thead>
                               <Tbody>
-                                {top5Query.data.startingFrom.map((station) => (
-                                  <Tr key={station._id}>
-                                    <Td>
-                                      <Link
-                                        prefetch={false}
-                                        href={`/station/${station._id}`}
-                                      >
-                                        {station.name[0]}
-                                      </Link>
-                                    </Td>
-                                    <Td>{station.count}</Td>
-                                  </Tr>
-                                ))}
+                                {startingFrom ? (
+                                  startingFrom.map((station) => (
+                                    <Tr key={station._id}>
+                                      <Td>
+                                        <Link
+                                          prefetch={false}
+                                          href={`/station/${station._id}`}
+                                        >
+                                          {station.name[0]}
+                                        </Link>
+                                      </Td>
+                                      <Td>{station.count}</Td>
+                                    </Tr>
+                                  ))
+                                ) : (
+                                  <div className="p-4">
+                                    <Spinner />
+                                  </div>
+                                )}
                               </Tbody>
                             </Table>
                           </TableContainer>
@@ -298,16 +305,22 @@ const StationById = ({
                                 </Tr>
                               </Thead>
                               <Tbody>
-                                {top5Query.data.endingAt.map((station) => (
-                                  <Tr key={station._id}>
-                                    <Td>
-                                      <Link href={`/station/${station._id}`}>
-                                        {station.name[0]}
-                                      </Link>
-                                    </Td>
-                                    <Td>{station.count}</Td>
-                                  </Tr>
-                                ))}
+                                {endingAt ? (
+                                  endingAt.map((station) => (
+                                    <Tr key={station._id}>
+                                      <Td>
+                                        <Link href={`/station/${station._id}`}>
+                                          {station.name[0]}
+                                        </Link>
+                                      </Td>
+                                      <Td>{station.count}</Td>
+                                    </Tr>
+                                  ))
+                                ) : (
+                                  <div className="p-4">
+                                    <Spinner />
+                                  </div>
+                                )}
                               </Tbody>
                             </Table>
                           </TableContainer>

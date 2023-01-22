@@ -5,7 +5,14 @@ import { createTRPCRouter, publicProcedure } from '../trpc'
 
 type top5List = { _id: number; count: number; name: [string] }[]
 
-function generateQuey(where: string, input: number) {
+function generateQuey(
+  where: string,
+  input: number,
+  month?: {
+    gteDate: Date
+    ltDate: Date
+  }
+) {
   const whereInvert =
     where === 'departureStationId' ? 'returnStationId' : 'departureStationId'
 
@@ -14,12 +21,40 @@ function generateQuey(where: string, input: number) {
       ? 'returnStationName'
       : 'departureStationName'
 
+  const whereMonth = month
+    ? {
+        [where]: input,
+        $expr: {
+          $gte: [
+            '$departure',
+            {
+              $dateFromString: {
+                dateString: month.gteDate.toISOString()
+              }
+            }
+          ]
+        },
+        // PROFESSIONAL RULE BREAKING AHEAD!! mongodb queries are weird
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-ignore, eslint-disable-next-line no-dupe-keys
+        // eslint-disable-next-line no-dupe-keys
+        $expr: {
+          $lt: [
+            '$departure',
+            {
+              $dateFromString: {
+                dateString: '2021-06-01T05:00:00.000Z'
+              }
+            }
+          ]
+        }
+      }
+    : { [where]: input }
+
   return {
     pipeline: [
       {
-        $match: {
-          [where]: input
-        }
+        $match: whereMonth
       },
       {
         $group: {
@@ -135,13 +170,35 @@ export const stationRouter = createTRPCRouter({
         }
       })
 
+      const departureQuery = generateQuey('departureStationId', input.id, {
+        gteDate,
+        ltDate
+      })
+      const returnQuery = generateQuey('returnStationId', input.id, {
+        gteDate,
+        ltDate
+      })
+
+      console.log(departureQuery.pipeline[0].$match)
+
+      const departureRawAggregation =
+        ctx.prisma.journey.aggregateRaw(departureQuery)
+      const returnRawAggregation = ctx.prisma.journey.aggregateRaw(returnQuery)
+
+      const promises = await Promise.all([
+        departureRawAggregation,
+        returnRawAggregation
+      ])
+
       const tr = await Promise.all([stationsdeparture, stationsarrival])
 
       return {
         starting: tr[0].length,
         ending: tr[1].length,
         month: gteDate.getMonth() + 1,
-        monthName: gteDate.toLocaleString('en-US', { month: 'long' })
+        monthName: gteDate.toLocaleString('en-US', { month: 'long' }),
+        startingFrom: promises[0] as unknown as top5List,
+        endingAt: promises[1] as unknown as top5List
       }
     }),
 
