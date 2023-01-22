@@ -2,6 +2,8 @@ import * as fs from 'node:fs'
 import * as path from 'node:path'
 import csv from 'csv-parser'
 import { prisma } from './client'
+import { Journey, Station } from './types'
+import { parseJourney, parseStation } from './parsers'
 
 const filePath = path.resolve(__dirname, '../data/')
 const JourneyFiles = ['2021-05.csv', '2021-06.csv', '2021-07.csv']
@@ -11,87 +13,6 @@ const journeyFiles = JourneyFiles.map((file) => filePath + '/' + file)
 // const stationFiles = StationFiles.map((file) => filePath + '/' + file)
 
 // 754 does not exist in the station data, 997 and 999 are probably service and production
-const badStations = [754, 997, 999]
-
-interface Journey {
-  duration: number
-  returnStationId: number
-  coveredDistance: number
-  departureStationId: number
-  departureStationName: string
-  returnStationName: string
-  departure: Date
-  return: Date
-}
-
-interface Station {
-  finCity: string
-  sweCity: string
-  sweAddress: string
-  x: number
-  y: number
-  id: number
-  finName: string
-  sweName: string
-  operator: string
-  finAddress: string
-  capacity: number
-}
-
-// function parseStation(data: any): Station | false {
-//   const station = {
-//     id: +data.ID,
-//     finName: data.Nimi,
-//     sweName: data.Namn,
-//     finAddress: data.Osoite,
-//     sweAddress: data.Adress,
-//     finCity: data.Kaupunki,
-//     sweCity: data.Stad,
-//     operator: data.Operaattor,
-//     capacity: +data.Kapasiteet,
-//     x: +data.x,
-//     y: +data.y
-//   }
-//
-//   if (!station.id) return false
-//   if (!station.finName) return false
-//   if (!station.sweName) return false
-//   if (!station.finAddress) return false
-//   if (!station.sweAddress) return false
-//   if (!station.finCity) return false
-//   if (!station.sweCity) return false
-//   if (!station.operator) return false
-//   if (!station.capacity) return false
-//   if (!station.x) return false
-//   if (!station.y) return false
-//
-//   return station
-// }
-
-function parseJourney(data: any): Journey | false {
-  const newData: Journey = {
-    departure: new Date(data['﻿Departure']),
-    return: new Date(data.Return),
-    departureStationId: +data['Departure station id'],
-    departureStationName: data['Departure station name'],
-    returnStationId: +data['Return station id'],
-    returnStationName: data['Return station name'],
-    coveredDistance: +data['Covered distance (m)'],
-    duration: +data['Duration (sec.)']
-  }
-
-  // No journeys that lasted for less than ten seconds, No journeys that are shorter than 10 meters
-  if (newData.duration < 10) return false
-  if (newData.coveredDistance < 10) return false
-
-  if (!newData.departureStationId) return false
-  if (!newData.returnStationId) return false
-
-  if (badStations.includes(newData.departureStationId)) return false
-  if (badStations.includes(newData.returnStationId)) return false
-
-  return newData
-}
 
 const journeys: Journey[] = []
 const stations: Station[] = []
