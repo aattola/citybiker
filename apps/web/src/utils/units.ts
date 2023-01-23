@@ -6,6 +6,8 @@ export const convertTime = (time: number) => {
   return `${minutes}m ${seconds}s`
 }
 
-export const convertDistance = (distance: number) => {
+export const convertDistance = (distance: number | null) => {
+  if (distance === null) return 0
+
   return (distance / 1000).toFixed(1)
 }

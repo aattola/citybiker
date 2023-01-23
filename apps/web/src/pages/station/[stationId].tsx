@@ -206,7 +206,7 @@ const StationById = ({
                 </p>
 
                 <Heading size="md" py={1}>
-                  {info && avgDepartureDistance ? (
+                  {info && avgDepartureDistance !== undefined ? (
                     convertDistance(avgDepartureDistance) + ' km'
                   ) : (
                     <Skeleton />
@@ -218,7 +218,7 @@ const StationById = ({
                 <p>The average distance of a journey ending at the station</p>
 
                 <Heading size="md" py={1}>
-                  {info && avgReturnDistance ? (
+                  {info && avgReturnDistance !== undefined ? (
                     convertDistance(avgReturnDistance) + ' km'
                   ) : (
                     <Skeleton />
