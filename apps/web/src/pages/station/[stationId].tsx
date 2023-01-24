@@ -260,7 +260,7 @@ const StationById = ({
                   {top5Query.isLoading && <Loader />}
                   {top5Query.isSuccess && (
                     <>
-                      <HStack>
+                      <HStack className="lg:flex-wrap">
                         <div>
                           <h1>
                             Top 5 return stations for journeys starting from

@@ -5,13 +5,13 @@ const badStations = [754, 997, 999]
 
 export const stationParser = z.object({
   id: z.number().int().positive(),
-  finName: z.string(),
-  sweName: z.string(),
-  finAddress: z.string(),
-  sweAddress: z.string(),
-  finCity: z.string(),
-  sweCity: z.string(),
-  operator: z.string(),
+  finName: z.string().min(1),
+  sweName: z.string().min(1),
+  finAddress: z.string().min(1),
+  sweAddress: z.string().min(1),
+  finCity: z.string().min(1),
+  sweCity: z.string().min(1),
+  operator: z.string().min(1),
   capacity: z.number().int().positive(),
   x: z.number(),
   y: z.number()
@@ -42,9 +42,9 @@ export const journeyParser = z.object({
   departure: z.date(),
   return: z.date(),
   departureStationId: z.number().int().positive(),
-  departureStationName: z.string(),
+  departureStationName: z.string().min(1),
   returnStationId: z.number().int().positive(),
-  returnStationName: z.string(),
+  returnStationName: z.string().min(1),
   coveredDistance: z.number().positive().min(10),
   duration: z.number().positive().min(10)
 })

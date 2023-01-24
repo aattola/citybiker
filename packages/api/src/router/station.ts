@@ -2,7 +2,9 @@ import { z } from 'zod'
 import { Prisma, prisma } from '@citybiker/db'
 import { TRPCError } from '@trpc/server'
 import { stationQuery } from '@citybiker/web/src/queries/stationQuery'
+import { stationParser } from '@citybiker/db/src/parsers'
 import { createTRPCRouter, publicProcedure } from '../trpc'
+import { createStation } from './station/create'
 
 type top5List = { _id: number; count: number; name: [string] }[]
 
@@ -105,7 +107,18 @@ export async function getStationsWithCursor(input: {
   return await prisma.station.findMany(query)
 }
 
+const parser = stationParser.omit({
+  id: true,
+  sweName: true,
+  sweAddress: true,
+  sweCity: true
+})
+
 export const stationRouter = createTRPCRouter({
+  create: publicProcedure.input(parser).mutation(async ({ ctx, input }) => {
+    return await createStation(ctx.prisma, input)
+  }),
+
   search: publicProcedure.input(z.string()).query(async ({ ctx, input }) => {
     const rawSearch = await ctx.prisma.station.aggregateRaw({
       pipeline: [
