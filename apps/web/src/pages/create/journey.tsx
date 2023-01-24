@@ -73,7 +73,7 @@ const CreateJourney = () => {
         <form onSubmit={onSubmit}>
           <Stack mt="6" spacing="3">
             <Heading size="md" py={1}>
-              Create station
+              Create journey
             </Heading>
 
             <div>
