@@ -20,7 +20,7 @@
     "prebuild": "npm run generate",
     "predev": "npm run generate",
     "studio": "prisma studio",
-    "import": "tsx src/import.ts",
+    "import": "prisma db push && tsx src/import.ts",
     "test": "jest --verbose --coverage",
     "test:watch": "jest --verbose --watchAll"
   },
