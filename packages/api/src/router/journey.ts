@@ -1,6 +1,7 @@
 import { z } from 'zod'
 import { Prisma, prisma, Journey } from '@citybiker/db'
 import { createTRPCRouter, publicProcedure } from '../trpc'
+import { createJourney, journeyCreateParser } from './journey/create'
 
 const zodInput = z.object({
   take: z.number().min(1).max(50).default(10),
@@ -22,6 +23,12 @@ export async function getJourneysWithCursor(input: {
 }
 
 export const journeyRouter = createTRPCRouter({
+  create: publicProcedure
+    .input(journeyCreateParser)
+    .mutation(async ({ ctx, input }) => {
+      return await createJourney(ctx.prisma, input)
+    }),
+
   search: publicProcedure.input(z.string()).query(async ({ ctx, input }) => {
     const rawSearch = await ctx.prisma.journey.aggregateRaw({
       pipeline: [
