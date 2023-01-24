@@ -37,9 +37,7 @@ export const journeyRouter = createTRPCRouter({
             index: 'journeyIndex',
             text: {
               query: input,
-              path: {
-                wildcard: '*'
-              }
+              path: ['returnStationName', 'departStationName', '_id']
             }
           }
         },

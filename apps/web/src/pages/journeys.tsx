@@ -77,7 +77,9 @@ const Journeys = ({
   }
 
   const journeys =
-    searchQuery.isSuccess && search.length > 0 ? [] : journeyQuery.data.pages
+    searchQuery.isSuccess && search.length > 0
+      ? [searchQuery.data]
+      : journeyQuery.data.pages
 
   return (
     <>
@@ -140,14 +142,16 @@ const Journeys = ({
           </Table>
         </TableContainer>
 
-        <Button
-          onClick={() => journeyQuery.fetchNextPage()}
-          isLoading={journeyQuery.isFetchingNextPage}
-          variant="ghost"
-          className="my-2"
-        >
-          {journeyQuery.isFetchingNextPage ? 'Loading more...' : 'Load More'}
-        </Button>
+        {search.length === 0 && (
+          <Button
+            onClick={() => journeyQuery.fetchNextPage()}
+            isLoading={journeyQuery.isFetchingNextPage}
+            variant="ghost"
+            className="my-2"
+          >
+            {journeyQuery.isFetchingNextPage ? 'Loading more...' : 'Load More'}
+          </Button>
+        )}
       </main>
     </>
   )
