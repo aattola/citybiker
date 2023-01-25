@@ -15,14 +15,14 @@ import {
   Thead,
   Tr
 } from '@chakra-ui/react'
-import { Station } from '@citybiker/db'
-import { getStationsWithCursor } from '@citybiker/api/src/router/station'
+import { Station, prisma } from '@citybiker/db'
 import { InferGetStaticPropsType } from 'next'
+import { getStationsWithCursor } from '@citybiker/api/src/router/station/getWithCursor'
 import { api } from '../utils/api'
 import { useDebounce } from '../utils/useDebounce'
 
 export const getStaticProps = async () => {
-  const ssrStations = await getStationsWithCursor({
+  const ssrStations = await getStationsWithCursor(prisma, {
     take: 50
   })
 
