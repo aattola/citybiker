@@ -16,14 +16,14 @@ import {
   Input
 } from '@chakra-ui/react'
 import Link from 'next/link'
-import { getJourneysWithCursor } from '@citybiker/api/src/router/journey'
-import { Journey } from '@citybiker/db'
+import { Journey, prisma } from '@citybiker/db'
+import { getJourneysWithCursor } from '@citybiker/api/src/router/journey/getWithCursor'
 import { api } from '../utils/api'
 import { convertDistance, convertTime } from '../utils/units'
 import { useDebounce } from '../utils/useDebounce'
 
 export const getStaticProps = async () => {
-  const ssrJourneys = await getJourneysWithCursor({
+  const ssrJourneys = await getJourneysWithCursor(prisma, {
     take: 50
   })
 
