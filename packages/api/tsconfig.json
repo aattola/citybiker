@@ -1,5 +1,9 @@
 {
   "extends": "tsconfig/base.json",
+  "compilerOptions": {
+    "module": "es2022",
+    "target": "es2020",
+  },
   "exclude": ["node_modules"],
-  "include": ["src", "index.ts", "transformer.ts"]
+  "include": ["src", "index.ts", "transformer.ts", "node_modules/jest-extended/types/index.d.ts"]
 }
