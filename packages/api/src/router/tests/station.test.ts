@@ -5,17 +5,7 @@ import { getHTTPStatusCodeFromError } from '@trpc/server/http'
 import { AppRouter, appRouter } from '../../root'
 
 import 'jest-extended/all'
-class NoErrorThrownError extends Error {}
-
-const getError = async <TError>(call: () => unknown): Promise<TError> => {
-  try {
-    await call()
-
-    throw new NoErrorThrownError()
-  } catch (error: unknown) {
-    return error as TError
-  }
-}
+import { getError, NoErrorThrownError } from './helpers'
 
 type RouterOutput = inferRouterOutputs<AppRouter>
 
