@@ -26,3 +26,5 @@ describe('Journeys list', () => {
 
   // TODO: add more when filtering is implemented
 })
+
+export {}
