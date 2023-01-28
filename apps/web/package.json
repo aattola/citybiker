@@ -13,6 +13,7 @@
     "test:watch": "jest --verbose --watchAll",
     "cypress:open": "cypress open",
     "cypress:test": "cypress run",
+    "e2e:headless": "start-server-and-test dev http://localhost:3000 cypress:test",
     "e2e": "start-server-and-test dev http://localhost:3000 cypress:open"
   },
   "dependencies": {
