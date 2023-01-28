@@ -16,6 +16,7 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
     'turbo',
+    'plugin:cypress/recommended',
     'standard',
     'standard-jsx',
     'prettier'
