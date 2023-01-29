@@ -37,14 +37,22 @@ export const getStaticProps = async () => {
   }
 }
 
+type Sortable = 'id' | 'coveredDistance' | 'duration'
+type SortableWay = 'desc' | 'asc'
+
 const Journeys = ({
   ssrJourneys
 }: InferGetStaticPropsType<typeof getStaticProps>) => {
   const [search, setSearch] = useState('')
+  const [sortBy, setSortBy] = useState<Sortable>('id')
+  const [way, setWay] = useState<SortableWay>('desc')
   const debouncedSearch = useDebounce(search, 500)
   const journeyQuery = api.journey.getAll.useInfiniteQuery(
     {
-      take: 50
+      take: 50,
+      orderBy: {
+        [sortBy]: way
+      }
     },
     {
       initialData: {
@@ -63,6 +71,24 @@ const Journeys = ({
     keepPreviousData: true,
     staleTime: 5 * 60 * 1000
   })
+
+  function setSort(by: Sortable) {
+    if (by === sortBy) {
+      if (way === 'desc') {
+        setWay('asc')
+      } else {
+        setWay('desc')
+      }
+    }
+
+    setSortBy(by)
+  }
+
+  function resetFilters() {
+    setSort('id')
+    setWay('desc')
+    setSearch('')
+  }
 
   if (journeyQuery.isLoading) {
     return (
@@ -88,6 +114,11 @@ const Journeys = ({
       </Head>
       <main className="px-4 pb-4 max-w-5xl m-auto my-4">
         <TableContainer>
+          {sortBy !== 'id' && (
+            <Button onClick={resetFilters} ml={4}>
+              Reset filters
+            </Button>
+          )}
           <InputGroup maxW="sm" my={1} mb={3} ml={3}>
             <Input
               variant="outline"
@@ -97,6 +128,7 @@ const Journeys = ({
             />
             <InputRightElement>
               {searchQuery.isFetching && <Spinner />}
+              {journeyQuery.isFetching && <Spinner />}
             </InputRightElement>
           </InputGroup>
 
@@ -105,8 +137,20 @@ const Journeys = ({
               <Tr>
                 <Th>Departure station</Th>
                 <Th>Return station</Th>
-                <Th isNumeric>Distance travelled (km)</Th>
-                <Th isNumeric>Duration of the ride (min)</Th>
+                <Th
+                  cursor="pointer"
+                  onClick={() => setSort('coveredDistance')}
+                  isNumeric
+                >
+                  Distance travelled (km)
+                </Th>
+                <Th
+                  cursor="pointer"
+                  onClick={() => setSort('duration')}
+                  isNumeric
+                >
+                  Duration of the ride (min)
+                </Th>
               </Tr>
             </Thead>
             <Tbody>
@@ -142,7 +186,7 @@ const Journeys = ({
           </Table>
         </TableContainer>
 
-        {search.length === 0 && (
+        {sortBy === 'id' && search.length === 0 && (
           <Button
             onClick={() => journeyQuery.fetchNextPage()}
             isLoading={journeyQuery.isFetchingNextPage}
