@@ -27,6 +27,27 @@ function testTotalJourneyCount() {
   ending.invoke('text').then(parseFloat).should('be.gt', 1000)
 }
 
+describe('Stations list', () => {
+  beforeEach(function () {
+    cy.visit('http://localhost:3000/stations')
+  })
+
+  it('loads the correct data for stations', () => {
+    cy.contains('Name')
+    cy.contains('Address')
+
+    cy.contains("O'Bike Station")
+    cy.contains('Tarvonsalmenkatu 17')
+  })
+
+  it('search works correctly', () => {
+    cy.get('[placeholder="Search for stations"]').type('Puistolantori')
+
+    cy.contains('Puistolantori')
+    cy.contains('Puistolantori 1')
+  })
+})
+
 describe('Specific station test', () => {
   beforeEach(function () {
     cy.visit('http://localhost:3000/station/3')

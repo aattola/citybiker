@@ -24,7 +24,31 @@ describe('Journeys list', () => {
     cy.contains('6m 11s')
   })
 
-  // TODO: add more when filtering is implemented
+  it('pagination works correctly', () => {
+    cy.intercept('/api/trpc/journey.getAll?*').as('getStationInfo')
+    cy.contains('Load More').click()
+    cy.wait('@getStationInfo')
+  })
+
+  it('sorting by distance works correctly', () => {
+    cy.contains('Distance travelled (km)').click()
+
+    cy.contains('163.9')
+
+    cy.contains('Distance travelled (km)').click()
+
+    cy.contains('0.00')
+  })
+
+  it('sorting by duration works correctly', () => {
+    cy.contains('Duration of the ride (min)').click()
+
+    cy.contains('1358h')
+
+    cy.contains('Duration of the ride (min)').click()
+
+    cy.contains('11s')
+  })
 })
 
 export {}
