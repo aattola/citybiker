@@ -1,19 +1,25 @@
 version: "3"
 
-volumes:
-  database:
-    driver: local
+networks:
+  mongonet:
+    driver: bridge
 
 services:
-  mysql:
-    platform: linux/amd64
-    image: mysql:8.0.31
-    container_name: turborepo_mysql
-    restart: always
+  mongodb:
+    image: mongo:latest
+#    environment:
+#      MONGO_INITDB_ROOT_USERNAME: test
+#      MONGO_INITDB_ROOT_PASSWORD: test
     ports:
-      - 3306:3306
-    environment:
-      MYSQL_DATABASE: turborepo
-      MYSQL_ALLOW_EMPTY_PASSWORD: 1
-    volumes:
-      - database:/var/lib/mysql
+      - 27017:27017
+    networks:
+      - "mongonet"
+
+  mongo-seed:
+    build:
+      context: ./packages/database
+      dockerfile: Dockerfile
+    depends_on:
+      - mongodb
+    networks:
+      - "mongonet"

@@ -1,0 +1,6886 @@
+[{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd3be"
+  },
+  "id": 518,
+  "finName": "Tuulimäki",
+  "sweName": "Väderbacken",
+  "finAddress": "Itätuulenkuja 11",
+  "sweAddress": "Östanvindsgränden 11",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 18,
+  "x": 24.806051,
+  "y": 60.174144
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd3ba"
+  },
+  "id": 511,
+  "finName": "Sateentie",
+  "sweName": "Regnvägen",
+  "finAddress": "Sateentie 2",
+  "sweAddress": "Regnvägen 2",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 18,
+  "x": 24.810688,
+  "y": 60.173424
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd3b8"
+  },
+  "id": 507,
+  "finName": "Golfpolku",
+  "sweName": "Golfstigen",
+  "finAddress": "Golfpolku 3",
+  "sweAddress": "Golfstigen 3",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 16,
+  "x": 24.796136,
+  "y": 60.168143
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd3b5"
+  },
+  "id": 501,
+  "finName": "Hanasaari",
+  "sweName": "Hanaholmen",
+  "finAddress": "Hanasaarenranta 1",
+  "sweAddress": "Hanaholmsstranden 1",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 10,
+  "x": 24.840319,
+  "y": 60.16582
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd3bb"
+  },
+  "id": 513,
+  "finName": "Hakalehto",
+  "sweName": "Hagliden",
+  "finAddress": "Merituulentie 18",
+  "sweAddress": "Havsvindsvägen 18",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 24,
+  "x": 24.79139,
+  "y": 60.173567
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd3c3"
+  },
+  "id": 527,
+  "finName": "Otsolahti",
+  "sweName": "Björnviken",
+  "finAddress": "Otsolahdentie 18",
+  "sweAddress": "Björnviksvägen 18",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 18,
+  "x": 24.817423,
+  "y": 60.178655
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd3c9"
+  },
+  "id": 538,
+  "finName": "Hagalundinpuisto",
+  "sweName": "Hagalundinpuisto",
+  "finAddress": "Tekniikantie 15",
+  "sweAddress": "Teknikvägen 15",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 14,
+  "x": 24.817403,
+  "y": 60.18363
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd3d3"
+  },
+  "id": 557,
+  "finName": "Louhentori",
+  "sweName": "Louhitorget",
+  "finAddress": "Louhentie 16",
+  "sweAddress": "Louhivägen 16",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 16,
+  "x": 24.796959,
+  "y": 60.18715
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd3d9"
+  },
+  "id": 573,
+  "finName": "Urheilupuisto (M)",
+  "sweName": "Idrottsparken (M)",
+  "finAddress": "Jousenpuistonkatu 4",
+  "sweAddress": "Bågparksgatan 4",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 28,
+  "x": 24.779428,
+  "y": 60.17465
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd3dd"
+  },
+  "id": 581,
+  "finName": "Niittykumpu (M)",
+  "sweName": "Ängskulla (M)",
+  "finAddress": "Merituulentie 38",
+  "sweAddress": "Havsvindsvägen 38",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 35,
+  "x": 24.763184,
+  "y": 60.170758
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd3e5"
+  },
+  "id": 596,
+  "finName": "Toppelundinportti",
+  "sweName": "Toppelundsporten",
+  "finAddress": "Haukilahdenkatu 2",
+  "sweAddress": "Gäddviksgatan 2",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 20,
+  "x": 24.7848628,
+  "y": 60.1624471
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd3ef"
+  },
+  "id": 619,
+  "finName": "Etuniementie",
+  "sweName": "Framnäsvägen",
+  "finAddress": "Kalastajantie 6",
+  "sweAddress": "Fiskarvägen 6",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 10,
+  "x": 24.724835,
+  "y": 60.160645
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd3f0"
+  },
+  "id": 621,
+  "finName": "Hauenkalliontie",
+  "sweName": "Gäddbergsvägen",
+  "finAddress": "Hauenkalliontie 22",
+  "sweAddress": "Gäddbergsvägen 22",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 12,
+  "x": 24.756272,
+  "y": 60.161138
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd3f5"
+  },
+  "id": 631,
+  "finName": "Friisilänaukio",
+  "sweName": "Frisansplatsen",
+  "finAddress": "Friisiläntie 2",
+  "sweAddress": "Frisansvägen 2",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 12,
+  "x": 24.721367,
+  "y": 60.162842
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd416"
+  },
+  "id": 747,
+  "finName": "Leppävaaran uimahalli",
+  "sweName": "Alberga simhall",
+  "finAddress": "Veräjäpellonkatu 12",
+  "sweAddress": "Grindåkersgatan 12",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 18,
+  "x": 24.804735,
+  "y": 60.226379
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd41a"
+  },
+  "id": 755,
+  "finName": "Kutsuntatie",
+  "sweName": "Uppbådsvägen",
+  "finAddress": "Lintulaaksontie 2",
+  "sweAddress": "Fågeldalsvägen 2",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 16,
+  "x": 24.824561,
+  "y": 60.230453
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd421"
+  },
+  "id": 901,
+  "finName": "O'Bike Station",
+  "sweName": "O'Bike Station",
+  "finAddress": "Rauhalanpuisto 11",
+  "sweAddress": "Rauhalaparken 11",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 20,
+  "x": 24.742219,
+  "y": 60.163412
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd42e"
+  },
+  "id": 12,
+  "finName": "Kanavaranta",
+  "sweName": "Kanalkajen",
+  "finAddress": "Kanavaranta 1",
+  "sweAddress": "Kanalkajen 1",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 34,
+  "x": 24.9584922784237,
+  "y": 60.1684959040351
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd433"
+  },
+  "id": 17,
+  "finName": "Varsapuistikko",
+  "sweName": "Fölskvären",
+  "finAddress": "Yrjö-Koskisen katu 1",
+  "sweAddress": "Yrjö-Koskinens gata 1",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 28,
+  "x": 24.9494967766807,
+  "y": 60.1730909028646
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd435"
+  },
+  "id": 19,
+  "finName": "Rautatientori / itä",
+  "sweName": "Järnvägstorget/öst",
+  "finAddress": "Rautatientori 1",
+  "sweAddress": "Järnvägstorget 1",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 20,
+  "x": 24.9425267992462,
+  "y": 60.1708235917114
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd44b"
+  },
+  "id": 41,
+  "finName": "Ympyrätalo",
+  "sweName": "Runda huset",
+  "finAddress": "Porthaninrinne 1",
+  "sweAddress": "Porthansbrinken 1",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 36,
+  "x": 24.949399999845,
+  "y": 60.1808629918822
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd44d"
+  },
+  "id": 43,
+  "finName": "Karhupuisto",
+  "sweName": "Björnparken",
+  "finAddress": "Agricolankatu 11",
+  "sweAddress": "Agricolagatan 11",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 24,
+  "x": 24.9526762998375,
+  "y": 60.18428329212
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd454"
+  },
+  "id": 50,
+  "finName": "Melkonkuja",
+  "sweName": "Melkögränd",
+  "finAddress": "Melkonkuja 1",
+  "sweAddress": "Melkögränd 1",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 12,
+  "x": 24.8861093999757,
+  "y": 60.1498126916296
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd45c"
+  },
+  "id": 58,
+  "finName": "Lauttasaarensilta",
+  "sweName": "Drumsö bro",
+  "finAddress": "Lauttasaarentie 5",
+  "sweAddress": "Drumsövägen 5",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 20,
+  "x": 24.8899154000946,
+  "y": 60.1611858173089
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd465"
+  },
+  "id": 67,
+  "finName": "Perämiehenkatu",
+  "sweName": "Styrmansgatan",
+  "finAddress": "Punavuorenkatu 22",
+  "sweAddress": "Rödbergsgatan 22",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 24.9340656851355,
+  "y": 60.160087584362
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd47c"
+  },
+  "id": 90,
+  "finName": "Paciuksenkaari",
+  "sweName": "Paciussvängen",
+  "finAddress": "Johannesbergintie 6",
+  "sweAddress": "Johannesbergsvägen 6",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 20,
+  "x": 24.8911179001253,
+  "y": 60.1944474917836
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd485"
+  },
+  "id": 100,
+  "finName": "Teljäntie",
+  "sweName": "Täljevägen",
+  "finAddress": "Ulvilantie 21",
+  "sweAddress": "Ulfsbyvägen 21",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 12,
+  "x": 24.8686567195812,
+  "y": 60.209690428765
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd496"
+  },
+  "id": 118,
+  "finName": "Fleminginkatu",
+  "sweName": "Flemingsgatan",
+  "finAddress": "Aleksis Kiven katu 30",
+  "sweAddress": "Aleksis Kivis gata 30",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 22,
+  "x": 24.952206700403,
+  "y": 60.1895253157117
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd49e"
+  },
+  "id": 126,
+  "finName": "Kalasatama (M)",
+  "sweName": "Fiskehamnen (M)",
+  "finAddress": "Hermannin rantatie 2b",
+  "sweAddress": "Hermanstads strandväg 2b",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 24,
+  "x": 24.977153892421,
+  "y": 60.1875308427268
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4bd"
+  },
+  "id": 203,
+  "finName": "Opastinsilta",
+  "sweName": "Semaforbron",
+  "finAddress": "Opastinsilta 10",
+  "sweAddress": "Semaforbron 10",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 40,
+  "x": 24.9381525773313,
+  "y": 60.1992657652357
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4c3"
+  },
+  "id": 209,
+  "finName": "Takomotie",
+  "sweName": "Smedjevägen",
+  "finAddress": "Takomotie 29",
+  "sweAddress": "Smedjevägen 29",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 14,
+  "x": 24.8710464686467,
+  "y": 60.2178996244041
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4da"
+  },
+  "id": 232,
+  "finName": "Oulunkylän asema",
+  "sweName": "Åggelby station",
+  "finAddress": "Oulunkyläntori 2",
+  "sweAddress": "Åggelbytorget 2",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 14,
+  "x": 24.9667185624345,
+  "y": 60.2291001546027
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4e1"
+  },
+  "id": 239,
+  "finName": "Viikin tiedepuisto",
+  "sweName": "Viks forskarpark",
+  "finAddress": "Viikintori",
+  "sweAddress": "Vikstorget",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 28,
+  "x": 25.0100484016428,
+  "y": 60.2275394155784
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4e7"
+  },
+  "id": 245,
+  "finName": "Kulosaari (M)",
+  "sweName": "Brändö (M)",
+  "finAddress": "Ukko-Pekan porras",
+  "sweAddress": "Ukko-Pekkas trappstig",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 20,
+  "x": 25.0064636871854,
+  "y": 60.1889293103178
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4f1"
+  },
+  "id": 255,
+  "finName": "Laivalahden puistotie",
+  "sweName": "Båtsviksallén",
+  "finAddress": "Laivalahden puistotie 10",
+  "sweAddress": "Båtsvikallén 10",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 25.0313242435422,
+  "y": 60.1879616899796
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4f5"
+  },
+  "id": 259,
+  "finName": "Petter Wetterin tie",
+  "sweName": "Petter Wetters väg",
+  "finAddress": "Hitsaajankatu 16",
+  "sweAddress": "Svetsargatan 16",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 20,
+  "x": 25.0310806077186,
+  "y": 60.1931499986426
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4f7"
+  },
+  "id": 261,
+  "finName": "Asentajanpuisto",
+  "sweName": "Montörsparken",
+  "finAddress": "Asentajankatu 8",
+  "sweAddress": "Montörsgatan 8",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 25.0424582865295,
+  "y": 60.1991534842401
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4f9"
+  },
+  "id": 263,
+  "finName": "Herttoniemen kirkko",
+  "sweName": "Hertonäs kyrka",
+  "finAddress": "Karhutie 11",
+  "sweAddress": "Björnvägen 11",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 25.0322254160118,
+  "y": 60.1984720937284
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4fa"
+  },
+  "id": 264,
+  "finName": "Eränkävijäntori",
+  "sweName": "Jägartorget",
+  "finAddress": "Hiihtomäentie 39",
+  "sweAddress": "Skidbacksvägen 39",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 25.0336255327162,
+  "y": 60.2045796219055
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4fb"
+  },
+  "id": 265,
+  "finName": "Siilitie 9",
+  "sweName": "Igelkottsvägen 9",
+  "finAddress": "Siilitie 12",
+  "sweAddress": "Igelkottsvägen 12",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 25.0375268074421,
+  "y": 60.209453145538
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4fc"
+  },
+  "id": 266,
+  "finName": "Siilitie 13",
+  "sweName": "Igelkottsvägen 13",
+  "finAddress": "Sopulirinne 2",
+  "sweAddress": "Lemmelbrinken 2",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 14,
+  "x": 25.0438403800837,
+  "y": 60.2150936967815
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd500"
+  },
+  "id": 270,
+  "finName": "Tulisuontie",
+  "sweName": "Kaskärrsvägen",
+  "finAddress": "Roihuvuorentie 25",
+  "sweAddress": "Kasbergsvägen 25",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 25.0600755207072,
+  "y": 60.2020741769704
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd505"
+  },
+  "id": 276,
+  "finName": "Puotinharju",
+  "sweName": "Botbyhöjden",
+  "finAddress": "Turunlinnantie 4",
+  "sweAddress": "Åbohusvägen 4",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 24,
+  "x": 25.0824161004374,
+  "y": 60.2125560259595
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd509"
+  },
+  "id": 280,
+  "finName": "Puotilan ostoskeskus",
+  "sweName": "Botby köpcentrum",
+  "finAddress": "Klaavuntie 11",
+  "sweAddress": "Klåvusvägen 11",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 14,
+  "x": 25.0955595128971,
+  "y": 60.2127005636951
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd510"
+  },
+  "id": 290,
+  "finName": "Vallilan varikko",
+  "sweName": "Vallgårds depå",
+  "finAddress": "Hämeentie 86",
+  "sweAddress": "Tavastvägen 86",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 20,
+  "x": 24.9628231422149,
+  "y": 60.1952459460233
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd523"
+  },
+  "id": 316,
+  "finName": "Punakiventie",
+  "sweName": "Rödstensvägen",
+  "finAddress": "Punakiventie 12",
+  "sweAddress": "Rödstensvägen 12",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 25.1467500568672,
+  "y": 60.2140014852962
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd526"
+  },
+  "id": 319,
+  "finName": "Purjetie",
+  "sweName": "Segelvägen",
+  "finAddress": "Kallvikintie",
+  "sweAddress": "Kallviksvägen",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 18,
+  "x": 25.1338286912921,
+  "y": 60.2196483224979
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd533"
+  },
+  "id": 332,
+  "finName": "Kontulankaari",
+  "sweName": "Gårdsbackabågen",
+  "finAddress": "Kontulankaari 7",
+  "sweAddress": "Gårdsbackabågen 7",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 25.076226580763,
+  "y": 60.2438416352054
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd536"
+  },
+  "id": 335,
+  "finName": "Kurkimäentie",
+  "sweName": "Tranbackavägen",
+  "finAddress": "Kivikonkaari 30",
+  "sweAddress": "Stensbölebågen 30",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 25.0626083649392,
+  "y": 60.2331943880568
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd53a"
+  },
+  "id": 340,
+  "finName": "Jakomäki",
+  "sweName": "Jakobacka",
+  "finAddress": "Jakomäenkuja 2",
+  "sweAddress": "Jakobackagränden 2",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 25.0759055985793,
+  "y": 60.2610194104155
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd542"
+  },
+  "id": 348,
+  "finName": "Siltamäki",
+  "sweName": "Brobacka",
+  "finAddress": "Jousimiehentie 3",
+  "sweAddress": "Skyttens väg 3",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 12,
+  "x": 24.9893966166804,
+  "y": 60.2744670938261
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd54c"
+  },
+  "id": 357,
+  "finName": "Vanha Tapanilantie",
+  "sweName": "Gamla Staffansbyvägen",
+  "finAddress": "Kirkonkyläntie 79",
+  "sweAddress": "Kyrkobyvägen 79",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 24.9897538768656,
+  "y": 60.2596990442275
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd550"
+  },
+  "id": 361,
+  "finName": "Huhtakuja",
+  "sweName": "Fallåkersgränden",
+  "finAddress": "Kotinummentie 5",
+  "sweAddress": "Hemmalmsvägen 5",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 25.0131080169475,
+  "y": 60.2575633298897
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd551"
+  },
+  "id": 362,
+  "finName": "Teerisuontie",
+  "sweName": "Orrmossevägen",
+  "finAddress": "Teerisuontie 27",
+  "sweAddress": "Orrmossevägen 27",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 14,
+  "x": 25.0214900833646,
+  "y": 60.2533940877891
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd552"
+  },
+  "id": 364,
+  "finName": "Ala-Malmin tori",
+  "sweName": "Nedre Malms torg",
+  "finAddress": "Pikkalankatu 5",
+  "sweAddress": "Pickalagatan 5",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 20,
+  "x": 25.0132371443462,
+  "y": 60.2503063500603
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd558"
+  },
+  "id": 368,
+  "finName": "Pukinmäen liikuntapuisto",
+  "sweName": "Bocksbacka idrottspark",
+  "finAddress": "Kenttätie 10",
+  "sweAddress": "Fältvägen 10",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 14,
+  "x": 24.9917239060614,
+  "y": 60.2477323351629
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd561"
+  },
+  "id": 377,
+  "finName": "Paloheinän maja",
+  "sweName": "Svedängens stuga",
+  "finAddress": "Pakilantie 124",
+  "sweAddress": "Baggbölevägen 124",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 20,
+  "x": 24.9183008944604,
+  "y": 60.2552356088463
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd562"
+  },
+  "id": 378,
+  "finName": "Paloheinäntie",
+  "sweName": "Svedängsvägen",
+  "finAddress": "Pakilantie 91",
+  "sweAddress": "Baggbölevägen 91",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 24.9238580658345,
+  "y": 60.2469918098113
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd566"
+  },
+  "id": 382,
+  "finName": "Hakuninmaa",
+  "sweName": "Håkansåker",
+  "finAddress": "Perhekunnantie 8",
+  "sweAddress": "Husfolksvägen 8",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 24.8970699007855,
+  "y": 60.252967146995
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd568"
+  },
+  "id": 384,
+  "finName": "Kalannintie",
+  "sweName": "Kalantivägen",
+  "finAddress": "Kalanninpolku",
+  "sweAddress": "Kalantistigen",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 14,
+  "x": 24.8841075429141,
+  "y": 60.2528066323977
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd56a"
+  },
+  "id": 385,
+  "finName": "Pajupillintie",
+  "sweName": "Videlåtsvägen",
+  "finAddress": "Vanhaistentie 3",
+  "sweAddress": "Gamlasvägen 3",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 24.8861026255016,
+  "y": 60.2432353029777
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd56b"
+  },
+  "id": 387,
+  "finName": "Kauppakeskus Kaari",
+  "sweName": "Köpcentrum Kaari",
+  "finAddress": "Kantelettarentie 1",
+  "sweAddress": "Kanteletarvägen 1",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 24.8894796721591,
+  "y": 60.2363305501839
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd570"
+  },
+  "id": 392,
+  "finName": "Viljelijäntie",
+  "sweName": "Odlarvägen",
+  "finAddress": "Viljelijäntie 5",
+  "sweAddress": "Odlarvägen 5",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 24.8572979635334,
+  "y": 60.2432334444678
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd3bf"
+  },
+  "id": 519,
+  "finName": "Tapionaukio",
+  "sweName": "Tapioplatsen",
+  "finAddress": "Tapionaukio 9",
+  "sweAddress": "Tapioplatsen 9",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 26,
+  "x": 24.805825,
+  "y": 60.176168
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd3c0"
+  },
+  "id": 521,
+  "finName": "Kulttuuriaukio",
+  "sweName": "Kulturplatsen",
+  "finAddress": "Kulttuuriaukio 2",
+  "sweAddress": "Kulturplatsen 2",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 30,
+  "x": 24.803942,
+  "y": 60.177588
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd3c1"
+  },
+  "id": 523,
+  "finName": "Ahertajantie",
+  "sweName": "Flitarvägen",
+  "finAddress": "Ahertajantie 1",
+  "sweAddress": "Flitargränden 1",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 20,
+  "x": 24.797984,
+  "y": 60.17875
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd3c5"
+  },
+  "id": 531,
+  "finName": "Keilaranta",
+  "sweName": "Kägelstranden",
+  "finAddress": "Keilaranta 13",
+  "sweAddress": "Kägelstranden 13",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 24,
+  "x": 24.835132,
+  "y": 60.178762
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd3cf"
+  },
+  "id": 549,
+  "finName": "Maarinranta",
+  "sweName": "Marstranden",
+  "finAddress": "Maarinrannantie 4",
+  "sweAddress": "Marstrandvägen 4",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 12,
+  "x": 24.810193,
+  "y": 60.187529
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd3db"
+  },
+  "id": 577,
+  "finName": "Olarinluoma",
+  "sweName": "Olarsbäcken",
+  "finAddress": "Olarinluoma 19",
+  "sweAddress": "Olarsbäcken 19",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 18,
+  "x": 24.760606,
+  "y": 60.180848
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd3df"
+  },
+  "id": 585,
+  "finName": "Haukilahdenaukio",
+  "sweName": "Gäddviksplatsen",
+  "finAddress": "Haukilahdenranta 2",
+  "sweAddress": "Gäddviksstranden 2",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 16,
+  "x": 24.775882,
+  "y": 60.162396
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd3e1"
+  },
+  "id": 589,
+  "finName": "Haukilahdenranta",
+  "sweName": "Gäddviksstranden",
+  "finAddress": "Haukilahdenranta 13",
+  "sweAddress": "Gäddviksstranden 13",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 16,
+  "x": 24.769864,
+  "y": 60.158048
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd3e4"
+  },
+  "id": 595,
+  "finName": "Westendintie",
+  "sweName": "Westendvägen",
+  "finAddress": "Westendintie 34",
+  "sweAddress": "Westendvägen 34",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 16,
+  "x": 24.791754,
+  "y": 60.158194
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd3ee"
+  },
+  "id": 617,
+  "finName": "Tiistinkallio",
+  "sweName": "Distberget",
+  "finAddress": "Kalastajantie 29",
+  "sweAddress": "Fiskarvägen 29",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 12,
+  "x": 24.729112,
+  "y": 60.153737
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd3f7"
+  },
+  "id": 635,
+  "finName": "Kuunkatu",
+  "sweName": "Mångatan",
+  "finAddress": "Kuunkatu 3",
+  "sweAddress": "Mångatan 3",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 24,
+  "x": 24.726025,
+  "y": 60.172673
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd3fa"
+  },
+  "id": 641,
+  "finName": "Komeetankatu",
+  "sweName": "Kometgatan",
+  "finAddress": "Komeetankatu 2",
+  "sweAddress": "Kometgatan 2",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 16,
+  "x": 24.735969,
+  "y": 60.167216
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd3fb"
+  },
+  "id": 643,
+  "finName": "Auringonkatu",
+  "sweName": "Solgatan",
+  "finAddress": "Auringonkatu 2",
+  "sweAddress": "Solbanan 2",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 20,
+  "x": 24.731472,
+  "y": 60.171548
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd3fe"
+  },
+  "id": 649,
+  "finName": "Lystimäensilta",
+  "sweName": "Lustikullabron",
+  "finAddress": "Vuosikuja 2",
+  "sweAddress": "Årsgränden 2",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 15,
+  "x": 24.752442,
+  "y": 60.17471
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd409"
+  },
+  "id": 719,
+  "finName": "Säteri",
+  "sweName": "Säteri",
+  "finAddress": "Säterinkatu 6",
+  "sweAddress": "Säterigatan 6",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 32,
+  "x": 24.811572,
+  "y": 60.213443
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd40b"
+  },
+  "id": 723,
+  "finName": "Säterinniitty",
+  "sweName": "Säteriängen",
+  "finAddress": "Säterinpuistontie 16",
+  "sweAddress": "Säteriparksvägen 16",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 10,
+  "x": 24.800486,
+  "y": 60.214666
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd40d"
+  },
+  "id": 727,
+  "finName": "Ratsutori",
+  "sweName": "Ryttartorget",
+  "finAddress": "Leppävaarankatu 1",
+  "sweAddress": "Albergagatan 1",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 33,
+  "x": 24.812419,
+  "y": 60.217311
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd411"
+  },
+  "id": 735,
+  "finName": "Armas Launiksen katu",
+  "sweName": "Armas Launis gata",
+  "finAddress": "Armas Launiksen katu 8",
+  "sweAddress": "Armas Launis gata 8",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 20,
+  "x": 24.818128,
+  "y": 60.221781
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd415"
+  },
+  "id": 745,
+  "finName": "Leppävaaran urheilupuisto",
+  "sweName": "Alberga idrottspark",
+  "finAddress": "Veräjäpellonkatu 17",
+  "sweAddress": "Grindåkersgatan 17",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 32,
+  "x": 24.800971,
+  "y": 60.224943
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd418"
+  },
+  "id": 751,
+  "finName": "Vallipolku",
+  "sweName": "Vallgången",
+  "finAddress": "Vallikatu 12",
+  "sweAddress": "Vallgatan 12",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 20,
+  "x": 24.819614,
+  "y": 60.227827
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd428"
+  },
+  "id": 6,
+  "finName": "Hietalahdentori",
+  "sweName": "Sandvikens torg",
+  "finAddress": "Hietalahdenkatu 2",
+  "sweAddress": "Sandviksgatan 2",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 24,
+  "x": 24.9296476311878,
+  "y": 60.1622283898112
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd42d"
+  },
+  "id": 11,
+  "finName": "Unioninkatu",
+  "sweName": "Unionsgatan",
+  "finAddress": "Eteläesplanadi 1",
+  "sweAddress": "Södra esplanaden 1",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 22,
+  "x": 24.9510226994024,
+  "y": 60.1674572921424
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd437"
+  },
+  "id": 21,
+  "finName": "Töölönlahdenkatu",
+  "sweName": "Tölöviksgatan",
+  "finAddress": "Elielinaukio 5",
+  "sweAddress": "Elielplatsen 5",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 44,
+  "x": 24.9393079129956,
+  "y": 60.1721906837527
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd441"
+  },
+  "id": 31,
+  "finName": "Marian sairaala",
+  "sweName": "Maria sjukhus",
+  "finAddress": "Pohjoinen Rautatiekatu 33",
+  "sweAddress": "Norra Järnvägsgatan 33",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 24.9227415692015,
+  "y": 60.1683228179992
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd446"
+  },
+  "id": 36,
+  "finName": "Apollonkatu",
+  "sweName": "Apollogatan",
+  "finAddress": "Runeberginkatu 43",
+  "sweAddress": "Runebergsgatan 43",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 20,
+  "x": 24.9224632983339,
+  "y": 60.1760927790452
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd447"
+  },
+  "id": 37,
+  "finName": "Töölönkatu",
+  "sweName": "Tölögatan",
+  "finAddress": "Pohjoinen Hesperiankatu 3",
+  "sweAddress": "Norra Hesperiagatan 3",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 18,
+  "x": 24.9283525094474,
+  "y": 60.1775346191328
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd44f"
+  },
+  "id": 45,
+  "finName": "Brahen kenttä",
+  "sweName": "Braheplan",
+  "finAddress": "Helsinginkatu 22",
+  "sweAddress": "Helsingegatan 22",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 20,
+  "x": 24.9508131529517,
+  "y": 60.1867902883311
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd451"
+  },
+  "id": 47,
+  "finName": "Vanha Kauppahalli",
+  "sweName": "Salutorget",
+  "finAddress": "Pakkahuoneenlaituri",
+  "sweAddress": "Packhuskajen",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 22,
+  "x": 24.9535685411145,
+  "y": 60.1652833427097
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd456"
+  },
+  "id": 52,
+  "finName": "Heikkilänaukio",
+  "sweName": "Heikasplatsen",
+  "finAddress": "Heikkilänaukio 1",
+  "sweAddress": "Heikasplatsen 1",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 20,
+  "x": 24.879315899385,
+  "y": 60.1540762917607
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd457"
+  },
+  "id": 53,
+  "finName": "Heikkiläntie",
+  "sweName": "Heikasvägen",
+  "finAddress": "Heikkiläntie 7",
+  "sweAddress": "Heikasvägen 7",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 12,
+  "x": 24.8850653001728,
+  "y": 60.1568169919509
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd459"
+  },
+  "id": 55,
+  "finName": "Puistokaari",
+  "sweName": "Parksvängen",
+  "finAddress": "Isokaari 30",
+  "sweAddress": "Storsvängen 30",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 24.8620200832623,
+  "y": 60.1578749328793
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd45d"
+  },
+  "id": 59,
+  "finName": "Salmisaarenranta",
+  "sweName": "Sundholmsstranden",
+  "finAddress": "Salmisaarenranta 9",
+  "sweAddress": "Sundholmstranden 9",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 28,
+  "x": 24.9009334858186,
+  "y": 60.164784170294
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd460"
+  },
+  "id": 62,
+  "finName": "Välimerenkatu",
+  "sweName": "Medelhavsgatan",
+  "finAddress": "Välimerenkatu 9",
+  "sweAddress": "Medelhavsgatan 9",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 24.9162412896547,
+  "y": 60.1592963414953
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd461"
+  },
+  "id": 63,
+  "finName": "Jätkäsaarenlaituri",
+  "sweName": "Busholmskajen",
+  "finAddress": "Jätkäsaarenlaituri 1",
+  "sweAddress": "Busholmskajen 1",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 24,
+  "x": 24.9214896008223,
+  "y": 60.1619310923994
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd46a"
+  },
+  "id": 72,
+  "finName": "Eteläinen Hesperiankatu",
+  "sweName": "Södra Hesperiagatan",
+  "finAddress": "Eteläinen Hesperiankatu 38",
+  "sweAddress": "Södrä Hesperiagatan 38",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 18,
+  "x": 24.9155261617436,
+  "y": 60.1755926611589
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd47f"
+  },
+  "id": 93,
+  "finName": "Torpanranta",
+  "sweName": "Torpanranta",
+  "finAddress": "Laajalahdentie 1",
+  "sweAddress": "Bredsvikvägen 1",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 24.8713963007609,
+  "y": 60.1948357920888
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd484"
+  },
+  "id": 99,
+  "finName": "Muusantori",
+  "sweName": "Musans torg",
+  "finAddress": "Muusantori 5",
+  "sweAddress": "Musanstorg 5",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 12,
+  "x": 24.8559544008311,
+  "y": 60.207119292
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd486"
+  },
+  "id": 101,
+  "finName": "Munkkivuoren ostoskeskus",
+  "sweName": "Munkhöjdens köpcentrum",
+  "finAddress": "Huopalahdentie 20b",
+  "sweAddress": "Hoplaksvägen 20b",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 24,
+  "x": 24.8798066035013,
+  "y": 60.2059834138688
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd487"
+  },
+  "id": 103,
+  "finName": "Vihdintie",
+  "sweName": "Vichtisvägen",
+  "finAddress": "Vihdintie 2",
+  "sweAddress": "Vichtisvägen 2",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 24.8895209008125,
+  "y": 60.2089249922173
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd495"
+  },
+  "id": 117,
+  "finName": "Brahen puistikko",
+  "sweName": "Braheskvären",
+  "finAddress": "Sturenkatu 12",
+  "sweAddress": "Sturegatan 12",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 12,
+  "x": 24.9481257001872,
+  "y": 60.1896657985504
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4a2"
+  },
+  "id": 130,
+  "finName": "Teollisuuskatu",
+  "sweName": "Industrigatan",
+  "finAddress": "Teollisuuskatu 16",
+  "sweAddress": "Industrigatan 16",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 24,
+  "x": 24.9487523997729,
+  "y": 60.1934740103444
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4a5"
+  },
+  "id": 133,
+  "finName": "Paavalinpuisto",
+  "sweName": "Paulusparken",
+  "finAddress": "Hämeentie 96",
+  "sweAddress": "Tavastvägen 96",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 22,
+  "x": 24.9614401060515,
+  "y": 60.1974798068335
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4a6"
+  },
+  "id": 134,
+  "finName": "Haukilahdenkatu",
+  "sweName": "Gäddviksgatan",
+  "finAddress": "Haukilahdenkatu 6",
+  "sweAddress": "Gäddviksgatan 6",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 26,
+  "x": 24.9676238234156,
+  "y": 60.1985338962222
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4aa"
+  },
+  "id": 138,
+  "finName": "Arabiankatu",
+  "sweName": "Arabiagatan",
+  "finAddress": "Arabiankatu 7",
+  "sweAddress": "Arabiagatan 7",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 22,
+  "x": 24.9770790121958,
+  "y": 60.2064915569171
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4ba"
+  },
+  "id": 200,
+  "finName": "Länsiterminaali",
+  "sweName": "Västra terminalen",
+  "finAddress": "Sammonlaituri",
+  "sweAddress": "Sampokajen",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 24,
+  "x": 24.9152135431213,
+  "y": 60.1504730320499
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4be"
+  },
+  "id": 204,
+  "finName": "A.I. Virtasen aukio",
+  "sweName": "A. I. Virtanens plats",
+  "finAddress": "Gustaf Hällströmin katu 1",
+  "sweAddress": "Gustaf Hällströms gata 1",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 24,
+  "x": 24.9620788508104,
+  "y": 60.2055418168461
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4c2"
+  },
+  "id": 208,
+  "finName": "Valimotie",
+  "sweName": "Gjuterivägen",
+  "finAddress": "Valimotie 1",
+  "sweAddress": "Gjuterivägen 1",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 24,
+  "x": 24.8765290693421,
+  "y": 60.2159693222985
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4c8"
+  },
+  "id": 214,
+  "finName": "Valimon asema",
+  "sweName": "Gjuteriets station",
+  "finAddress": "Valimopolku 3",
+  "sweAddress": "Gjuteristigen 3",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 20,
+  "x": 24.8758443985049,
+  "y": 60.2223022514537
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4ce"
+  },
+  "id": 220,
+  "finName": "Ida Aalbergin tie",
+  "sweName": "Ida Aalbergs väg",
+  "finAddress": "Näyttelijäntie 14",
+  "sweAddress": "Skådespelarvägen 14",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 18,
+  "x": 24.8952023541771,
+  "y": 60.2295326765972
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4cf"
+  },
+  "id": 221,
+  "finName": "Thalianaukio",
+  "sweName": "Thaliaplatsen",
+  "finAddress": "Aino Ackten tie 1",
+  "sweAddress": "Aino Acktés väg 1",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 14,
+  "x": 24.8947958642764,
+  "y": 60.2253423108921
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4dc"
+  },
+  "id": 234,
+  "finName": "Otto Brandtin tie",
+  "sweName": "Otto Brandts väg",
+  "finAddress": "Tulvaniityntie 2",
+  "sweAddress": "Flödängsvägen 2",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 20,
+  "x": 24.9781389181685,
+  "y": 60.2317840575086
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4e2"
+  },
+  "id": 240,
+  "finName": "Viikin normaalikoulu",
+  "sweName": "Normalskolan i Vik",
+  "finAddress": "Kevättori",
+  "sweAddress": "Vårtorget",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 20,
+  "x": 25.0275940265593,
+  "y": 60.2274649666156
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4e8"
+  },
+  "id": 246,
+  "finName": "Tupasaarentie",
+  "sweName": "Stugövägen",
+  "finAddress": "Risto Rytin tie 30",
+  "sweAddress": "Risto Rytis väg 30",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 12,
+  "x": 25.0153289779219,
+  "y": 60.1878871226314
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4f3"
+  },
+  "id": 257,
+  "finName": "Margareetankuja",
+  "sweName": "Margaretagränden",
+  "finAddress": "Margareetankuja 4",
+  "sweAddress": "Margaretagränden 4",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 14,
+  "x": 25.0372267110383,
+  "y": 60.1910267485051
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4f8"
+  },
+  "id": 262,
+  "finName": "Siilitie (M)",
+  "sweName": "Igelkottsvägen (M)",
+  "finAddress": "Siilitie 2",
+  "sweAddress": "Igelkottsvägen 2",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 22,
+  "x": 25.0451499077688,
+  "y": 60.2059412826664
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd50b"
+  },
+  "id": 282,
+  "finName": "Karhulantie",
+  "sweName": "Karhulavägen",
+  "finAddress": "Kiviportintie 2",
+  "sweAddress": "Stenportsvägen 2",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 12,
+  "x": 25.1022019197012,
+  "y": 60.2187064270041
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd513"
+  },
+  "id": 293,
+  "finName": "Korkeasaari",
+  "sweName": "Högholmen",
+  "finAddress": "Mustikkamaanpolku 12",
+  "sweAddress": "Blåbärslandsstigen 12",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 24.9825269338023,
+  "y": 60.1799061320186
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd519"
+  },
+  "id": 305,
+  "finName": "Kalkkihiekantie",
+  "sweName": "Kalksandsvägen",
+  "finAddress": "Kalkkihiekantie 1",
+  "sweAddress": "Kalksandsvägen 1",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 25.1430402936212,
+  "y": 60.202124196154
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd52a"
+  },
+  "id": 323,
+  "finName": "Sallatunturintie",
+  "sweName": "Sallatunturivägen",
+  "finAddress": "Sallatunturintie 2",
+  "sweAddress": "Sallatunturivägen 2",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 25.118300016596,
+  "y": 60.2367409143469
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd530"
+  },
+  "id": 330,
+  "finName": "Kontula (M)",
+  "sweName": "Gårdsbacka (M)",
+  "finAddress": "Kontulankaari 1",
+  "sweAddress": "Gårdsbackabågen 1",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 20,
+  "x": 25.0826095549619,
+  "y": 60.2360953526154
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd53d"
+  },
+  "id": 342,
+  "finName": "Puistolan VPK",
+  "sweName": "Parkstads FBK",
+  "finAddress": "Puistolan raitti 5",
+  "sweAddress": "Parkstads bygata 5",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 18,
+  "x": 25.0575355661699,
+  "y": 60.2700856600164
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd544"
+  },
+  "id": 350,
+  "finName": "Töyrynummi",
+  "sweName": "Lidamalmen",
+  "finAddress": "Pertunpellontie 4",
+  "sweAddress": "Bertåkersvägen 4",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 14,
+  "x": 24.9929902179008,
+  "y": 60.2671467662216
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd56d"
+  },
+  "id": 389,
+  "finName": "Kannelmäen asema",
+  "sweName": "Gamlas järnvägsstation",
+  "finAddress": "Sitratori 2",
+  "sweAddress": "Cittertorg 2",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 20,
+  "x": 24.8766472489767,
+  "y": 60.2393459909658
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd573"
+  },
+  "id": 395,
+  "finName": "Honkasuo",
+  "sweName": "Hongasmossa",
+  "finAddress": "Naapuripellontie 27",
+  "sweAddress": "Naboängsvägen 27",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 24.8465809743929,
+  "y": 60.255557476007
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd3b6"
+  },
+  "id": 503,
+  "finName": "Keilalahti",
+  "sweName": "Kägelviken",
+  "finAddress": "Keilalahdentie 2",
+  "sweAddress": "Kägelviksvägen 2",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 28,
+  "x": 24.827467,
+  "y": 60.171524
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd3b9"
+  },
+  "id": 509,
+  "finName": "Revontulentie",
+  "sweName": "Norrskensvägen",
+  "finAddress": "Revontulentie 10",
+  "sweAddress": "Norrskensvägen 10",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 30,
+  "x": 24.802938,
+  "y": 60.171551
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd3d7"
+  },
+  "id": 565,
+  "finName": "Mankkaanaukio",
+  "sweName": "Mankansplatsen",
+  "finAddress": "Mankkaantie 3",
+  "sweAddress": "Mankasvägen 3",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 20,
+  "x": 24.769021,
+  "y": 60.194599
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd3e3"
+  },
+  "id": 593,
+  "finName": "Toppelundintie",
+  "sweName": "Toppelundsvägen",
+  "finAddress": "Toppelundintie 11",
+  "sweAddress": "Toppelundsvägen 11",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 12,
+  "x": 24.782477,
+  "y": 60.1591405
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd3f2"
+  },
+  "id": 625,
+  "finName": "Suomenlahdentie",
+  "sweName": "Finnviksvägen",
+  "finAddress": "Suomenlahdentie 2",
+  "sweAddress": "Finnviksvägen 2",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 32,
+  "x": 24.741294,
+  "y": 60.160015
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd3f4"
+  },
+  "id": 629,
+  "finName": "Piispanportti",
+  "sweName": "Biskopsporten",
+  "finAddress": "Piispanportti 4",
+  "sweAddress": "Biskopsporten 4",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 16,
+  "x": 24.732688,
+  "y": 60.165603
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd3f9"
+  },
+  "id": 639,
+  "finName": "Itäportti",
+  "sweName": "Österporten",
+  "finAddress": "Ruomelantie 5",
+  "sweAddress": "Romensvägen 5",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 18,
+  "x": 24.738122,
+  "y": 60.174914
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd3ff"
+  },
+  "id": 651,
+  "finName": "Suurpellonaukio",
+  "sweName": "Storåkersplatsen",
+  "finAddress": "Suurpellon puistokatu 4",
+  "sweAddress": "Storaåkerns parkgata 4",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 24,
+  "x": 24.744131,
+  "y": 60.184596
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd402"
+  },
+  "id": 703,
+  "finName": "Elfvik",
+  "sweName": "Elfvik",
+  "finAddress": "Elfvikintie 4",
+  "sweAddress": "Elfviksvägen 4",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 10,
+  "x": 24.8231,
+  "y": 60.203852
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd404"
+  },
+  "id": 707,
+  "finName": "Majurinkulma",
+  "sweName": "Majorshörnet",
+  "finAddress": "Itsehallintotie 8",
+  "sweAddress": "Självstyrelsevägen 8",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 24,
+  "x": 24.824954,
+  "y": 60.210735
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd407"
+  },
+  "id": 713,
+  "finName": "Upseerinkatu",
+  "sweName": "Officersgatan",
+  "finAddress": "Upseerinkatu 3",
+  "sweAddress": "Officersgatan 3",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 30,
+  "x": 24.819396,
+  "y": 60.216067
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd414"
+  },
+  "id": 741,
+  "finName": "Gransinmäki",
+  "sweName": "Gransbacken",
+  "finAddress": "Vanha maantie 6",
+  "sweAddress": "Gamla landsvägen 6",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 20,
+  "x": 24.804898,
+  "y": 60.222154
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd417"
+  },
+  "id": 749,
+  "finName": "Vallikatu",
+  "sweName": "Vallgatan",
+  "finAddress": "Vallikatu 19",
+  "sweAddress": "Vallgatan 19",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 24,
+  "x": 24.813871,
+  "y": 60.228463
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd420"
+  },
+  "id": 900,
+  "finName": "Orionintie",
+  "sweName": "Orionvägen",
+  "finAddress": "Orionintie 3-5",
+  "sweAddress": "Orionvägen 3-5",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 20,
+  "x": 24.771826,
+  "y": 60.180118
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd42c"
+  },
+  "id": 10,
+  "finName": "Kasarmitori",
+  "sweName": "Kaserntorget",
+  "finAddress": "Fabianinkatu 13",
+  "sweAddress": "Fabiansgatan 13",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 28,
+  "x": 24.9494728793816,
+  "y": 60.165017172741
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd439"
+  },
+  "id": 23,
+  "finName": "Kiasma",
+  "sweName": "Kiasma",
+  "finAddress": "Mannerheiminaukio 1",
+  "sweAddress": "Mannerheimplatsen 1",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 30,
+  "x": 24.9374279000749,
+  "y": 60.1712578922641
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd43e"
+  },
+  "id": 28,
+  "finName": "Lastenlehto",
+  "sweName": "Barnlunden",
+  "finAddress": "Lapinrinne",
+  "sweAddress": "Lappbrinken",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 24.9270362659605,
+  "y": 60.1657993006509
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd43f"
+  },
+  "id": 29,
+  "finName": "Baana",
+  "sweName": "Banan",
+  "finAddress": "Ruoholahdenkatu 23",
+  "sweAddress": "Gräsviksgatan 23",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 24.9225706207902,
+  "y": 60.1641173724871
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd443"
+  },
+  "id": 33,
+  "finName": "Kauppakorkeakoulu",
+  "sweName": "Handelshögskolan",
+  "finAddress": "Lapuankatu 1",
+  "sweAddress": "Lappogatan 1",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 24.923839759,
+  "y": 60.171202903
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd444"
+  },
+  "id": 34,
+  "finName": "Kansallismuseo",
+  "sweName": "Nationalmuseum",
+  "finAddress": "Mannerheimintie 30",
+  "sweAddress": "Mannerheimvägen 30",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 24.9328983153441,
+  "y": 60.173956898526
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd448"
+  },
+  "id": 38,
+  "finName": "Töölöntori",
+  "sweName": "Tölötorg",
+  "finAddress": "Töölöntorinkatu 11",
+  "sweAddress": "Tölötorggatan 11",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 24.9249700522851,
+  "y": 60.1791005171717
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd47a"
+  },
+  "id": 88,
+  "finName": "Kiskontie",
+  "sweName": "Kiskovägen",
+  "finAddress": "Mannerheimintie 99",
+  "sweAddress": "Mannerheimvägen 99",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 20,
+  "x": 24.9012350212612,
+  "y": 60.1990120683446
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd483"
+  },
+  "id": 98,
+  "finName": "Ulvilantie",
+  "sweName": "Ulfsbyvägen",
+  "finAddress": "Porintie 1",
+  "sweAddress": "Björneborgsvägen",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 12,
+  "x": 24.8708784784714,
+  "y": 60.2038687140902
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd48a"
+  },
+  "id": 106,
+  "finName": "Korppaanmäentie",
+  "sweName": "Korpasbackavägen",
+  "finAddress": "Mannerheimintie 170",
+  "sweAddress": "Mannerheimvägen",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 24.898929699376,
+  "y": 60.2034734922503
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd49d"
+  },
+  "id": 125,
+  "finName": "Arielinkatu",
+  "sweName": "Arielgatan",
+  "finAddress": "Englantilaisaukio",
+  "sweAddress": "Englandsskvären",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 24.9797385551711,
+  "y": 60.1859217406831
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4a1"
+  },
+  "id": 129,
+  "finName": "Pernajantie",
+  "sweName": "Pernåvägen",
+  "finAddress": "Mäkelänkatu 25",
+  "sweAddress": "Backasgatan 25",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 20,
+  "x": 24.9579782365195,
+  "y": 60.1942276026523
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4a3"
+  },
+  "id": 131,
+  "finName": "Elimäenkatu",
+  "sweName": "Elimägatan",
+  "finAddress": "Elimäenkatu 24",
+  "sweAddress": "Elimägatan 24",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 24,
+  "x": 24.9476290451587,
+  "y": 60.1962195625714
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4ac"
+  },
+  "id": 140,
+  "finName": "Verkatehtaanpuisto",
+  "sweName": "Klädesfabriksparken",
+  "finAddress": "Hämeentie 159",
+  "sweAddress": "Tavastvägen 159",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 14,
+  "x": 24.9797491905267,
+  "y": 60.2136895158892
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4ca"
+  },
+  "id": 216,
+  "finName": "Jännetie",
+  "sweName": "Bågsträngsvägen",
+  "finAddress": "Konalantie 6",
+  "sweAddress": "Kånalavägen 6",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 12,
+  "x": 24.8535714902996,
+  "y": 60.2267575847976
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4cc"
+  },
+  "id": 218,
+  "finName": "Pohjois-Haagan asema",
+  "sweName": "Norra Haga station",
+  "finAddress": "Pennikuja 2",
+  "sweAddress": "Penninggränden 2",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 24.8830806372706,
+  "y": 60.2300717042706
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4cd"
+  },
+  "id": 219,
+  "finName": "Näyttelijäntie",
+  "sweName": "Skådespelarvägen",
+  "finAddress": "Kaupintie 3",
+  "sweAddress": "Krämärvägen 3",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 24.887547040742,
+  "y": 60.2328640962858
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4e3"
+  },
+  "id": 241,
+  "finName": "Agronominkatu",
+  "sweName": "Agronomgatan",
+  "finAddress": "Latokartanontori",
+  "sweAddress": "Ladugårdstorget",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 24,
+  "x": 25.0328574018929,
+  "y": 60.2340530021105
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4ef"
+  },
+  "id": 253,
+  "finName": "Tammisalon aukio",
+  "sweName": "Tammelundsplatsen",
+  "finAddress": "Väylänrinne 1",
+  "sweAddress": "Båtledsbrinken 1",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 20,
+  "x": 25.0610604378889,
+  "y": 60.1916636460758
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd50e"
+  },
+  "id": 285,
+  "finName": "Orpaanporras",
+  "sweName": "Lättan",
+  "finAddress": "Orpaanporras 14",
+  "sweAddress": "Lättan 14",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 14,
+  "x": 25.0654178214231,
+  "y": 60.22354882948
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd529"
+  },
+  "id": 322,
+  "finName": "Rukatunturintie",
+  "sweName": "Rukatunturivägen",
+  "finAddress": "Mellunmäentie 27",
+  "sweAddress": "Mellungsbackavägen 27",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 14,
+  "x": 25.1275969785102,
+  "y": 60.2312813452731
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd534"
+  },
+  "id": 333,
+  "finName": "Kivikonkaari",
+  "sweName": "Stensbölebågen",
+  "finAddress": "Kontulankaari 8, toinen puoli",
+  "sweAddress": "Gårdsbackabågen 8, andra sidan",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 14,
+  "x": 25.0746433427518,
+  "y": 60.2399042915928
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd539"
+  },
+  "id": 338,
+  "finName": "Jakomäentie",
+  "sweName": "Jakobackavägen",
+  "finAddress": "Jakomäentie 18",
+  "sweAddress": "Jakobackavägen 18",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 25.0743775866131,
+  "y": 60.2537712252939
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd53e"
+  },
+  "id": 343,
+  "finName": "Puistolantori",
+  "sweName": "Parkstads torg",
+  "finAddress": "Puistolantori 1",
+  "sweAddress": "Parkstads torg 1",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 12,
+  "x": 25.0458546004102,
+  "y": 60.2743699271658
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd545"
+  },
+  "id": 351,
+  "finName": "Kotinummentie",
+  "sweName": "Hemmalmsvägen",
+  "finAddress": "Kotinummentie 68",
+  "sweAddress": "Hemmalmsvägen 68",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 25.0135723691851,
+  "y": 60.2675063004499
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd55d"
+  },
+  "id": 374,
+  "finName": "Etupellonpuisto",
+  "sweName": "Framåkersparken",
+  "finAddress": "Yhdyskunnantie 22",
+  "sweAddress": "Samhällsvägen 22",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 18,
+  "x": 24.95944937493,
+  "y": 60.2419862673955
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd560"
+  },
+  "id": 379,
+  "finName": "Paloheinän kirjasto",
+  "sweName": "Svedängens bibliotek",
+  "finAddress": "Paloheinäntie 22",
+  "sweAddress": "Svedängsvägen 22",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 18,
+  "x": 24.9416682057603,
+  "y": 60.2495097085073
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd56c"
+  },
+  "id": 388,
+  "finName": "Kaustisentie",
+  "sweName": "Kaustbyvägen",
+  "finAddress": "Pelimannintie",
+  "sweAddress": "Spelmansvägen",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 24.8814517125501,
+  "y": 60.2378065223104
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd575"
+  },
+  "id": 397,
+  "finName": "Hankasuontie",
+  "sweName": "Hankmossvägen",
+  "finAddress": "Malminkartanontie 2",
+  "sweAddress": "Malmgårdsvägen",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 24.8475860266275,
+  "y": 60.2447437736882
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd57d"
+  },
+  "id": 405,
+  "finName": "Jollas",
+  "sweName": "Jollas",
+  "finAddress": "Jollaksentie 33",
+  "sweAddress": "Jollasvägen 33",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 25.0616678668253,
+  "y": 60.1644074899774
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd3b7"
+  },
+  "id": 505,
+  "finName": "Westendinasema",
+  "sweName": "Westendstationen",
+  "finAddress": "Westendintie 1",
+  "sweAddress": "Westendvägen 1",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 16,
+  "x": 24.805758,
+  "y": 60.168266
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd578"
+  },
+  "id": 400,
+  "finName": "Kuusisaari",
+  "sweName": "Granö",
+  "finAddress": "Kuusisaarenpolku 1",
+  "sweAddress": "Granöstigen 1",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 24.8567965996401,
+  "y": 60.1845083389847
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd579"
+  },
+  "id": 401,
+  "finName": "Koivusaari (M)",
+  "sweName": "Björkholmens metrostation",
+  "finAddress": "Sotkatie 11",
+  "sweAddress": "Dykandsvägen 11",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 24.8551642686834,
+  "y": 60.1633863116225
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd3c8"
+  },
+  "id": 537,
+  "finName": "Innopoli",
+  "sweName": "Innopoli",
+  "finAddress": "Tekniikantie 14",
+  "sweAddress": "Teknikvägen 14",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 20,
+  "x": 24.81422,
+  "y": 60.185096
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd3d8"
+  },
+  "id": 571,
+  "finName": "Tapiolan urheilupuisto",
+  "sweName": "Hagalunds idrottspark",
+  "finAddress": "Urheilupuistontie 3",
+  "sweAddress": "Idrottsparksvägen 3",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 32,
+  "x": 24.784654,
+  "y": 60.177749
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd3de"
+  },
+  "id": 583,
+  "finName": "Haukilahdenkatu",
+  "sweName": "Gäddviksgatan",
+  "finAddress": "Ahventie 2",
+  "sweAddress": "Abborrvägen 2",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 16,
+  "x": 24.772708,
+  "y": 60.166481
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd3ea"
+  },
+  "id": 609,
+  "finName": "Sepetlahdentie",
+  "sweName": "Sepetviksvägen",
+  "finAddress": "Sepetlahdentie 11",
+  "sweAddress": "Sepetviksvägen 11",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 10,
+  "x": 24.741234,
+  "y": 60.152343
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd3ed"
+  },
+  "id": 615,
+  "finName": "Tiistiläntie",
+  "sweName": "Distbyvägen",
+  "finAddress": "Tiistiläntie 6",
+  "sweAddress": "Distbyvägen 6",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 24,
+  "x": 24.737664,
+  "y": 60.156755
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd3f6"
+  },
+  "id": 633,
+  "finName": "Avaruuskatu",
+  "sweName": "Rymdgatan",
+  "finAddress": "Avaruuskatu 1",
+  "sweAddress": "Rymdgatan 2",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 16,
+  "x": 24.724908,
+  "y": 60.168971
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd3fd"
+  },
+  "id": 647,
+  "finName": "Lystimäki",
+  "sweName": "Lustikulla",
+  "finAddress": "Lystimäentie 2",
+  "sweAddress": "Lustikullavägen 2",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 12,
+  "x": 24.745666,
+  "y": 60.172814
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd401"
+  },
+  "id": 701,
+  "finName": "Gallen-Kallelan tie",
+  "sweName": "Gallen-Kallelas väg",
+  "finAddress": "Gallen-Kallelan tie 29",
+  "sweAddress": "Gallen-Kallelas vägen 29",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 10,
+  "x": 24.840699,
+  "y": 60.206142
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd406"
+  },
+  "id": 711,
+  "finName": "Kirjurinkuja",
+  "sweName": "Skrivargränden",
+  "finAddress": "Kirjurinkuja 1",
+  "sweAddress": "Skrivargränden 1",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 26,
+  "x": 24.826368,
+  "y": 60.215751
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd408"
+  },
+  "id": 715,
+  "finName": "Komentajankatu",
+  "sweName": "Kommendörsgatan",
+  "finAddress": "Perkkaantie 5",
+  "sweAddress": "Bergansvägen 5",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 12,
+  "x": 24.821932,
+  "y": 60.216222
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd40a"
+  },
+  "id": 721,
+  "finName": "Säterinrinne",
+  "sweName": "Säteribrinken",
+  "finAddress": "Ruusutorpantie 1",
+  "sweAddress": "Rosatorpsvägen 1",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 16,
+  "x": 24.805613,
+  "y": 60.214193
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd410"
+  },
+  "id": 733,
+  "finName": "Läkkitori",
+  "sweName": "Blecktorget",
+  "finAddress": "Läkkisepänkuja 3",
+  "sweAddress": "Bleckslagargränden 3",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 25,
+  "x": 24.813109,
+  "y": 60.221019
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd41b"
+  },
+  "id": 757,
+  "finName": "Painiitty",
+  "sweName": "Pajängen",
+  "finAddress": "Lotankatu 1",
+  "sweAddress": "Lottagatan 1",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 12,
+  "x": 24.831397,
+  "y": 60.235089
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd41d"
+  },
+  "id": 763,
+  "finName": "Kalkkipellonmäki",
+  "sweName": "Kalkåkersbacken",
+  "finAddress": "Turuntie 22",
+  "sweAddress": "Åbovägen 22",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 24,
+  "x": 24.833536,
+  "y": 60.220551
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd41e"
+  },
+  "id": 767,
+  "finName": "Ruutikatu",
+  "sweName": "Krutgatan",
+  "finAddress": "Ruutikatu 10",
+  "sweAddress": "Krugranden 10",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 10,
+  "x": 24.820635,
+  "y": 60.223377
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd426"
+  },
+  "id": 4,
+  "finName": "Viiskulma",
+  "sweName": "Femkanten",
+  "finAddress": "Fredrikinkatu 19",
+  "sweAddress": "Fredriksgatan  19",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 14,
+  "x": 24.9417758006418,
+  "y": 60.1609858921764
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd432"
+  },
+  "id": 16,
+  "finName": "Liisanpuistikko",
+  "sweName": "Elisabetsskvären",
+  "finAddress": "Liisankatu 1",
+  "sweAddress": "Elisabetsgatan 1",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 24.9613746997628,
+  "y": 60.1741821916183
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd43c"
+  },
+  "id": 26,
+  "finName": "Kamppi (M)",
+  "sweName": "Kampen (M)",
+  "finAddress": "Fredrikinkatu 44",
+  "sweAddress": "Fredriksgatan 44",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 32,
+  "x": 24.9305373005364,
+  "y": 60.168609492141
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd43d"
+  },
+  "id": 27,
+  "finName": "Eerikinkatu",
+  "sweName": "Eriksgatan",
+  "finAddress": "Eerikinkatu 3",
+  "sweAddress": "Eriksgatan 3",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 14,
+  "x": 24.9366415937527,
+  "y": 60.1677057096398
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd449"
+  },
+  "id": 39,
+  "finName": "Ooppera",
+  "sweName": "Nationaloperan",
+  "finAddress": "Mannerheimintie 62",
+  "sweAddress": "Mannerheimvägen 62",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 24,
+  "x": 24.9266869997467,
+  "y": 60.182552891987
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd44a"
+  },
+  "id": 40,
+  "finName": "Hakaniemi (M)",
+  "sweName": "Hagnäs (M)",
+  "finAddress": "John Stenberginranta 6",
+  "sweAddress": "John Stenbergs strand 6",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 28,
+  "x": 24.9522579797678,
+  "y": 60.1780816347447
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd44c"
+  },
+  "id": 42,
+  "finName": "Haapaniemenkatu",
+  "sweName": "Aspnäsgatan",
+  "finAddress": "Haapaniemenkatu 2",
+  "sweAddress": "Aspnäsgatan 2",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 18,
+  "x": 24.9551952848707,
+  "y": 60.1831601093456
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd450"
+  },
+  "id": 46,
+  "finName": "Diakoniapuisto",
+  "sweName": "Diakoniparken",
+  "finAddress": "Josafatinkatu 12",
+  "sweAddress": "Josafatsgatan 12",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 24.9435409604638,
+  "y": 60.1869040535812
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd46e"
+  },
+  "id": 76,
+  "finName": "Olympiastadion",
+  "sweName": "Olympiastadion",
+  "finAddress": "Toivonkatu 3",
+  "sweAddress": "Toivogatan 3",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 20,
+  "x": 24.924961245284,
+  "y": 60.1844935075188
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd476"
+  },
+  "id": 84,
+  "finName": "Paciuksenkatu",
+  "sweName": "Paciusgatan",
+  "finAddress": "Mäntytie 2",
+  "sweAddress": "Tallvägen 2",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 14,
+  "x": 24.8999261202594,
+  "y": 60.1912061418589
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd488"
+  },
+  "id": 104,
+  "finName": "Kriikunakuja",
+  "sweName": "Krikongränden",
+  "finAddress": "Korppaanmäentie 26",
+  "sweAddress": "Korpasbackavägen 26",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 24.8916816998729,
+  "y": 60.2056784923064
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd48c"
+  },
+  "id": 108,
+  "finName": "Radiokatu",
+  "sweName": "Radiogatan",
+  "finAddress": "Kuuluttajankatu 2",
+  "sweAddress": "Hallåmansgatan 2",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 12,
+  "x": 24.9182184498931,
+  "y": 60.2050064264488
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd48e"
+  },
+  "id": 110,
+  "finName": "Maistraatintori",
+  "sweName": "Magistratstorget",
+  "finAddress": "Pasilanraitio 10",
+  "sweAddress": "Böletået 10",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 20,
+  "x": 24.9248733985577,
+  "y": 60.1991509808314
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd491"
+  },
+  "id": 113,
+  "finName": "Pasilan asema",
+  "sweName": "Böle station",
+  "finAddress": "Pasilan asema-aukio",
+  "sweAddress": "Böle station",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 40,
+  "x": 24.932799079033,
+  "y": 60.1982108580315
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd493"
+  },
+  "id": 115,
+  "finName": "Venttiilikuja",
+  "sweName": "Ventilgränden",
+  "finAddress": "Venttiilikuja  1 & 2",
+  "sweAddress": "Ventilgränden 1 & 2",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 24.9415225602343,
+  "y": 60.1941915204257
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd494"
+  },
+  "id": 116,
+  "finName": "Linnanmäki",
+  "sweName": "Borgbacken",
+  "finAddress": "Viipurinkatu 20",
+  "sweAddress": "Viborgsgatan 20",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 32,
+  "x": 24.9401592995968,
+  "y": 60.1911410923558
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd498"
+  },
+  "id": 120,
+  "finName": "Mäkelänkatu",
+  "sweName": "Backasgatan",
+  "finAddress": "Mäkelänkatu 2",
+  "sweAddress": "Backasgatan 2",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 28,
+  "x": 24.9633904702172,
+  "y": 60.1896359907606
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd49c"
+  },
+  "id": 124,
+  "finName": "Isoisänsilta",
+  "sweName": "Farfarsbron",
+  "finAddress": "Capellan puistotie 2",
+  "sweAddress": "Capellas allé 2",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 18,
+  "x": 24.9817926053222,
+  "y": 60.1826518123339
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd49f"
+  },
+  "id": 127,
+  "finName": "Teurastamo",
+  "sweName": "Teurastamo",
+  "finAddress": "Työpajankatu 2a",
+  "sweAddress": "Verkstadsgatan 2a",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 30,
+  "x": 24.9711566503401,
+  "y": 60.1896945837642
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4ab"
+  },
+  "id": 139,
+  "finName": "Muotoilijankatu",
+  "sweName": "Kairogatan",
+  "finAddress": "Arabiankatu 21",
+  "sweAddress": "Tavastvägen 150",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 24.9797040460124,
+  "y": 60.2097104145027
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4af"
+  },
+  "id": 143,
+  "finName": "Kuikkarinne",
+  "sweName": "Kuikkarinne",
+  "finAddress": "Isokaari 10",
+  "sweAddress": "Storsvängen 10",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 12,
+  "x": 24.8694297861453,
+  "y": 60.1570959878378
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4b8"
+  },
+  "id": 162,
+  "finName": "Leppäsuonaukio",
+  "sweName": "Alkärrsplatsen",
+  "finAddress": "Leppäsuonaukio 1",
+  "sweAddress": "Alkärrsplatsen 1",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 28,
+  "x": 24.9265784464228,
+  "y": 60.1695846151592
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4bb"
+  },
+  "id": 201,
+  "finName": "Länsisatamankuja",
+  "sweName": "Västrahamnsgränden",
+  "finAddress": "Länsisatamankatu 26",
+  "sweAddress": "Västrahamnsgatan 26",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 14,
+  "x": 24.9120898275496,
+  "y": 60.1569514968019
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4bc"
+  },
+  "id": 202,
+  "finName": "Merihaka",
+  "sweName": "Havshagen",
+  "finAddress": "Hakaniemenranta 10",
+  "sweAddress": "Hagnäskajen 10",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 24.9585285446676,
+  "y": 60.1780749105533
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4cb"
+  },
+  "id": 217,
+  "finName": "Marttila",
+  "sweName": "Martas",
+  "finAddress": "Vihdintie 302",
+  "sweAddress": "Vichtisvägen 302",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 24.8732133049419,
+  "y": 60.2271498086552
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4d2"
+  },
+  "id": 224,
+  "finName": "Vesakkotie",
+  "sweName": "Snårvägen",
+  "finAddress": "Männikkötie 11",
+  "sweAddress": "Talldungevägen 11",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 12,
+  "x": 24.9266153826484,
+  "y": 60.2279595153713
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4db"
+  },
+  "id": 233,
+  "finName": "Kirkkoherrantie",
+  "sweName": "Kyrkoherdevägen",
+  "finAddress": "Kirkkoherrantie 5",
+  "sweAddress": "Kyrkoherdevägen 5",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 10,
+  "x": 24.9728193757834,
+  "y": 60.2249303574235
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4dd"
+  },
+  "id": 235,
+  "finName": "Katariina Saksilaisen katu",
+  "sweName": "Katarina av Sachsens gata",
+  "finAddress": "Katariina Saksilaisen katu 6",
+  "sweAddress": "Katarina av Sachsens gata 6",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 24.9844208812225,
+  "y": 60.2172068185826
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4df"
+  },
+  "id": 237,
+  "finName": "Aulangontie",
+  "sweName": "Aulankovägen",
+  "finAddress": "Harjannetie 2",
+  "sweAddress": "Krönvägen 2",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 24.9985804201601,
+  "y": 60.2302596315427
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4e4"
+  },
+  "id": 242,
+  "finName": "Von Daehnin katu",
+  "sweName": "Von Daehns gata",
+  "finAddress": "Von Daehnin katu 14",
+  "sweAddress": "Von Daehns gata 14",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 14,
+  "x": 25.0436178847114,
+  "y": 60.2303443513437
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4e5"
+  },
+  "id": 243,
+  "finName": "Mustikkamaa",
+  "sweName": "Blåbärslandet",
+  "finAddress": "Mustikkamaantie 8",
+  "sweAddress": "Blåbärslandsvägen 8",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 20,
+  "x": 24.992105405271,
+  "y": 60.181844391759
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4e6"
+  },
+  "id": 244,
+  "finName": "Relanderinaukio",
+  "sweName": "Relandersplatsen",
+  "finAddress": "Ståhlbergintie 6",
+  "sweAddress": "Ståhlbergsvägen 6",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 25.0058079125449,
+  "y": 60.1858547331594
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4ea"
+  },
+  "id": 248,
+  "finName": "Gunillantie",
+  "sweName": "Gunillavägen",
+  "finAddress": "Koirasaarentie 32",
+  "sweAddress": "Hundholmsvägen 32",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 25.0330122371046,
+  "y": 60.1719938510831
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4f4"
+  },
+  "id": 258,
+  "finName": "Abraham Wetterin tie",
+  "sweName": "Abraham Wetters väg",
+  "finAddress": "Sorvaajankatu 1",
+  "sweAddress": "Svarvaregatan 1",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 25.0426533906378,
+  "y": 60.1927661994999
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4f6"
+  },
+  "id": 260,
+  "finName": "Herttoniemi (M)",
+  "sweName": "Hertonäs (M)",
+  "finAddress": "Hiihtäjäntie 2",
+  "sweAddress": "Skidlöparvägen 2",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 24,
+  "x": 25.0289074357313,
+  "y": 60.1946246004701
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd502"
+  },
+  "id": 272,
+  "finName": "Marjaniementie",
+  "sweName": "Maruddsvägen",
+  "finAddress": "Rakettipolku 5",
+  "sweAddress": "Raketstigen 5",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 25.076069360708,
+  "y": 60.2043248841061
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd50d"
+  },
+  "id": 284,
+  "finName": "Myllypuro (M)",
+  "sweName": "Kvarnbäcken (M)",
+  "finAddress": "Kivensilmänkuja 1",
+  "sweAddress": "Kvarnögsgränden 1",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 28,
+  "x": 25.0753901685843,
+  "y": 60.2240882550803
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd511"
+  },
+  "id": 291,
+  "finName": "Itäkeskus Metrovarikko",
+  "sweName": "Östrä Centrum depå",
+  "finAddress": "Metrovarikonkuja 6",
+  "sweAddress": "Metrodepågränden 6",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 25.0657818190343,
+  "y": 60.2114607347613
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd515"
+  },
+  "id": 301,
+  "finName": "Aurinkotuulenkatu",
+  "sweName": "Solvindsgatan",
+  "finAddress": "Solvikinkatu 21",
+  "sweAddress": "Solviksgatan 21",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 30,
+  "x": 25.1593463483962,
+  "y": 60.202773395376
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd518"
+  },
+  "id": 304,
+  "finName": "Aurinkolahdenaukio",
+  "sweName": "Solviksplatsen",
+  "finAddress": "Aurinkoranta 8",
+  "sweAddress": "Solstranden 8",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 24,
+  "x": 25.1501135293384,
+  "y": 60.2011360782064
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd532"
+  },
+  "id": 331,
+  "finName": "Lettopolku",
+  "sweName": "Gungflystigen",
+  "finAddress": "Lettopolku 2",
+  "sweAddress": "Gungflystigen 2",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 25.0855297731565,
+  "y": 60.240913939764
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd537"
+  },
+  "id": 336,
+  "finName": "Kivikonlaita",
+  "sweName": "Stensbölekanten",
+  "finAddress": "Kivikonlaita 2",
+  "sweAddress": "Stensbölekanten 2",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 25.0549152254879,
+  "y": 60.230462178329
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd540"
+  },
+  "id": 346,
+  "finName": "Maatullinkuja",
+  "sweName": "Landtullsgränden",
+  "finAddress": "Maatullinkuja 17",
+  "sweAddress": "Landtullsgränden 17",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 18,
+  "x": 25.0246919817259,
+  "y": 60.2762367892689
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd547"
+  },
+  "id": 353,
+  "finName": "Helluntairaitti",
+  "sweName": "Pingststråket",
+  "finAddress": "Tasankotie 14",
+  "sweAddress": "Slättvägen 14",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 20,
+  "x": 25.0368876017095,
+  "y": 60.2632142978322
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd54b"
+  },
+  "id": 356,
+  "finName": "Laulurastaantie",
+  "sweName": "Trastvägen",
+  "finAddress": "Laulurastaantie 25",
+  "sweAddress": "Trastvägen 25",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 14,
+  "x": 25.0033102423416,
+  "y": 60.2608846521727
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd54d"
+  },
+  "id": 358,
+  "finName": "Syystie",
+  "sweName": "Höstvägen",
+  "finAddress": "Kirkonkyläntie 34",
+  "sweAddress": "Kyrkobyvägen 34",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 18,
+  "x": 24.9986055764439,
+  "y": 60.256671174374
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd54e"
+  },
+  "id": 359,
+  "finName": "Malmin sairaala",
+  "sweName": "Malms sjukhus",
+  "finAddress": "Kirkonkyläntie 23",
+  "sweAddress": "Kyrkobyvägen 23",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 25.0028280196256,
+  "y": 60.2541586216461
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd55c"
+  },
+  "id": 373,
+  "finName": "Mikkolantie",
+  "sweName": "Mickelsvägen",
+  "finAddress": "Mikkolantie 12",
+  "sweAddress": "Mickelsvägen 12",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 24.9715442521575,
+  "y": 60.2355666358133
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd56e"
+  },
+  "id": 371,
+  "finName": "Savela",
+  "sweName": "Lerstrand",
+  "finAddress": "Ratavallintie 6",
+  "sweAddress": "Banvallsvägen 6",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 14,
+  "x": 24.9913872585832,
+  "y": 60.2404948542171
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd3c7"
+  },
+  "id": 533,
+  "finName": "Tekniikantie",
+  "sweName": "Teknikvägen",
+  "finAddress": "Tekniikantie 3",
+  "sweAddress": "Teknikvägen 3",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 18,
+  "x": 24.824747,
+  "y": 60.180806
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd3ca"
+  },
+  "id": 539,
+  "finName": "Aalto-yliopisto (M), Tietot",
+  "sweName": "Aalto-universitetet (M),",
+  "finAddress": "Tietotie 4",
+  "sweAddress": "Datavägen 4",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 20,
+  "x": 24.820099,
+  "y": 60.184987
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd3cd"
+  },
+  "id": 545,
+  "finName": "Sähkömies",
+  "sweName": "Strömkarlen",
+  "finAddress": "Otakaari 3",
+  "sweAddress": "Otsvängen 3",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 12,
+  "x": 24.829985,
+  "y": 60.188499
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd3ce"
+  },
+  "id": 547,
+  "finName": "Jämeräntaival",
+  "sweName": "Bistervägen",
+  "finAddress": "Otakaari 18",
+  "sweAddress": "Otsvängen 18",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 30,
+  "x": 24.835033,
+  "y": 60.188118
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd3d4"
+  },
+  "id": 559,
+  "finName": "Pohjankulma",
+  "sweName": "Norrhörnet",
+  "finAddress": "Louhentie 2",
+  "sweAddress": "Louhivägen 2",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 25,
+  "x": 24.794014,
+  "y": 60.18288
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd3dc"
+  },
+  "id": 579,
+  "finName": "Niittymaa",
+  "sweName": "Ängsmalmen",
+  "finAddress": "Niittymaantie 2",
+  "sweAddress": "Ängsmalmsvägen 2",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 21,
+  "x": 24.775913,
+  "y": 60.171127
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd3e8"
+  },
+  "id": 603,
+  "finName": "Matinlahdenranta",
+  "sweName": "Mattviksstranden",
+  "finAddress": "Rantamäki 2",
+  "sweAddress": "Strandbacken 2",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 20,
+  "x": 24.754196,
+  "y": 60.151041
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd3eb"
+  },
+  "id": 611,
+  "finName": "Matinkartanontie",
+  "sweName": "Mattgårdvägen",
+  "finAddress": "Matinkartanontie 2",
+  "sweAddress": "Mattsgårdsvägen 2",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 21,
+  "x": 24.752489,
+  "y": 60.156258
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd3ec"
+  },
+  "id": 613,
+  "finName": "Matinkyläntie",
+  "sweName": "Mattbyvägen",
+  "finAddress": "Joosepinkuja 1",
+  "sweAddress": "Josefsgränden 1",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 15,
+  "x": 24.744978,
+  "y": 60.155689
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd400"
+  },
+  "id": 653,
+  "finName": "Lukutori",
+  "sweName": "Lukutorget",
+  "finAddress": "Suurpellon puistokatu 18",
+  "sweAddress": "Storaåkerns parkgata 18",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 14,
+  "x": 24.742571,
+  "y": 60.187052
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd405"
+  },
+  "id": 709,
+  "finName": "Yhdyskunnankuja",
+  "sweName": "Samhällsgränden",
+  "finAddress": "Yhdyskunnankuja 1",
+  "sweAddress": "Samhällsgränden 1",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 20,
+  "x": 24.819549,
+  "y": 60.212508
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd413"
+  },
+  "id": 739,
+  "finName": "Postipuun koulu",
+  "sweName": "Postipuun koulu",
+  "finAddress": "Mäkkylän puistotie 14",
+  "sweAddress": "Mäkkyläallén 14",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 16,
+  "x": 24.826396,
+  "y": 60.223827
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd423"
+  },
+  "id": 1,
+  "finName": "Kaivopuisto",
+  "sweName": "Brunnsparken",
+  "finAddress": "Meritori 1",
+  "sweAddress": "Havstorget 1",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 30,
+  "x": 24.9502114714031,
+  "y": 60.155369615074
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd424"
+  },
+  "id": 2,
+  "finName": "Laivasillankatu",
+  "sweName": "Skeppsbrogatan",
+  "finAddress": "Laivasillankatu 14",
+  "sweAddress": "Skeppsbrogatan 14",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 12,
+  "x": 24.9565097715858,
+  "y": 60.1609890692806
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd42a"
+  },
+  "id": 8,
+  "finName": "Vanha kirkkopuisto",
+  "sweName": "Gamla kyrkoparken",
+  "finAddress": "Annankatu 16",
+  "sweAddress": "Annegatan 16",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 24,
+  "x": 24.9391145483706,
+  "y": 60.1653538465664
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd42f"
+  },
+  "id": 13,
+  "finName": "Merisotilaantori",
+  "sweName": "Flottisttorget",
+  "finAddress": "Merisotilaantori",
+  "sweAddress": "Flottisttorget",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 24,
+  "x": 24.9755284752387,
+  "y": 60.1679190540567
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd431"
+  },
+  "id": 15,
+  "finName": "Ritarikatu",
+  "sweName": "Riddaregatan",
+  "finAddress": "Ritarikatu 7",
+  "sweAddress": "Riddaregatan 7",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 12,
+  "x": 24.9555218601895,
+  "y": 60.1710906797301
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd455"
+  },
+  "id": 51,
+  "finName": "Itälahdenkatu",
+  "sweName": "Österviksgatan",
+  "finAddress": "Itälahdenkatu 15",
+  "sweAddress": "Österviksgatan 15",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 12,
+  "x": 24.8812501991249,
+  "y": 60.1506599919369
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd458"
+  },
+  "id": 54,
+  "finName": "Gyldenintie",
+  "sweName": "Gyldénsvägen",
+  "finAddress": "Gyldenintie 2",
+  "sweAddress": "Gyldénsvägen 2",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 36,
+  "x": 24.8766657996794,
+  "y": 60.1583841916575
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd45e"
+  },
+  "id": 60,
+  "finName": "Kaapelitehdas",
+  "sweName": "Kabelfabriken",
+  "finAddress": "Tammasaarenlaituri 7",
+  "sweAddress": "Märaholmskajen 7",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 26,
+  "x": 24.90279681,
+  "y": 60.161252848
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd463"
+  },
+  "id": 65,
+  "finName": "Hernesaarenranta",
+  "sweName": "Ärtholmsstranden",
+  "finAddress": "Hylkeenpyytäjänkatu 1a",
+  "sweAddress": "Säljägargatan 1a",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 40,
+  "x": 24.9311978237832,
+  "y": 60.1535144787873
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd464"
+  },
+  "id": 66,
+  "finName": "Ehrenströmintie",
+  "sweName": "Ehrenströmsvägen",
+  "finAddress": "Ehrenströmintie 3",
+  "sweAddress": "Ehrenströmsvägen 3",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 20,
+  "x": 24.9592122677265,
+  "y": 60.1552178275344
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd466"
+  },
+  "id": 68,
+  "finName": "Albertinkatu",
+  "sweName": "Albertsgatan",
+  "finAddress": "Albertinkatu 17",
+  "sweAddress": "Albertsgatan 17",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 20,
+  "x": 24.9368050446952,
+  "y": 60.1618574790512
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd46c"
+  },
+  "id": 74,
+  "finName": "Rajasaarentie",
+  "sweName": "Råholmsvägen",
+  "finAddress": "Rajasaarentie 6",
+  "sweAddress": "Råholmsvägen",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 24.9110579020192,
+  "y": 60.1831258058734
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd46f"
+  },
+  "id": 77,
+  "finName": "Nordenskiöldinaukio",
+  "sweName": "Nordenskiöldsplatsen",
+  "finAddress": "Linnankoskenkatu 15-17",
+  "sweAddress": "Linnankoskigatan 15-17",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 24.9172924251712,
+  "y": 60.1852461094041
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd474"
+  },
+  "id": 82,
+  "finName": "Töölöntulli",
+  "sweName": "Tölötull",
+  "finAddress": "Mannerheimintie 112",
+  "sweAddress": "Mannerheimvägen 112",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 24.912893019047,
+  "y": 60.1909233737999
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd475"
+  },
+  "id": 83,
+  "finName": "Meilahden sairaala",
+  "sweName": "Mejlans sjukhus",
+  "finAddress": "Haartmaninkatu 4",
+  "sweAddress": "Haartmansgatan 4",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 28,
+  "x": 24.9083351006824,
+  "y": 60.1902194919139
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd482"
+  },
+  "id": 96,
+  "finName": "Huopalahdentie",
+  "sweName": "Hoplaksvägen",
+  "finAddress": "Huopalahdentie 13",
+  "sweAddress": "Hoplaksvägen 13",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 20,
+  "x": 24.8835764865762,
+  "y": 60.199732919393
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd48b"
+  },
+  "id": 107,
+  "finName": "Tenholantie",
+  "sweName": "Tenalavägen",
+  "finAddress": "Kiskontie 22",
+  "sweAddress": "Kiskovägen 22",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 18,
+  "x": 24.9054367957033,
+  "y": 60.202377405156
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd497"
+  },
+  "id": 119,
+  "finName": "Gebhardinaukio",
+  "sweName": "Gebhardsplatsen",
+  "finAddress": "Teollisuuskatu 3",
+  "sweAddress": "Industrigatan 3",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 20,
+  "x": 24.9550767908172,
+  "y": 60.1911804709255
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4a0"
+  },
+  "id": 128,
+  "finName": "Päijänteentie",
+  "sweName": "Päijännevägen",
+  "finAddress": "Päijänteentie 1",
+  "sweAddress": "Päijännevägen 1",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 14,
+  "x": 24.9642238002852,
+  "y": 60.1920575919922
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4a7"
+  },
+  "id": 135,
+  "finName": "Velodrominrinne",
+  "sweName": "Velodromsbrinken",
+  "finAddress": "Mäkelänkatu 70",
+  "sweAddress": "Backasgatan 70",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 12,
+  "x": 24.9441912064593,
+  "y": 60.2010022969661
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4ad"
+  },
+  "id": 141,
+  "finName": "Intiankatu",
+  "sweName": "Indiagatan",
+  "finAddress": "Intiankatu 20",
+  "sweAddress": "Indiagatan 20",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 24.9676246411057,
+  "y": 60.207840227695
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4b4"
+  },
+  "id": 148,
+  "finName": "Juhana Herttuan tie",
+  "sweName": "Hertig Johans väg",
+  "finAddress": "Antti Korpin tie 3a",
+  "sweAddress": "Anders Korps väg 3a",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 24.9664522586218,
+  "y": 60.2185249019981
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4b9"
+  },
+  "id": 163,
+  "finName": "Lehtisaarentie",
+  "sweName": "Lövövägen",
+  "finAddress": "Liljasaarentie 1a",
+  "sweAddress": "Liljeholmsvägen 1a",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 12,
+  "x": 24.8505039451831,
+  "y": 60.1819482497591
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4bf"
+  },
+  "id": 205,
+  "finName": "Ilmalan asema",
+  "sweName": "Ilmala station",
+  "finAddress": "Ilmalantori 1",
+  "sweAddress": "Ilmalatorget 1",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 24.9222198886664,
+  "y": 60.2066264297482
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4c1"
+  },
+  "id": 207,
+  "finName": "Vanha Viertotie",
+  "sweName": "Gamla chaussén",
+  "finAddress": "Vanha Viertotie 23",
+  "sweAddress": "Gamla chaussén 23",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 24.8816602535719,
+  "y": 60.2110752881999
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4c7"
+  },
+  "id": 213,
+  "finName": "Huopalahden asema",
+  "sweName": "Hoplaks station",
+  "finAddress": "Huopalahden aseman itäinen raittisilta",
+  "sweAddress": "Hoplaks stations östra järnvägsbro",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 20,
+  "x": 24.8950577369046,
+  "y": 60.2180961357994
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4d0"
+  },
+  "id": 222,
+  "finName": "Huovitie",
+  "sweName": "Knektvägen",
+  "finAddress": "Huovitie 10",
+  "sweAddress": "Knektvägen 10",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 12,
+  "x": 24.9032866466572,
+  "y": 60.2219755272546
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4d1"
+  },
+  "id": 223,
+  "finName": "Hämeenlinnanväylä",
+  "sweName": "Tavastehusleden",
+  "finAddress": "Teuvo Pakkalan tie 2",
+  "sweAddress": "Eliel Saarinens väg 2",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 14,
+  "x": 24.9028322456731,
+  "y": 60.2274510674778
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4d3"
+  },
+  "id": 225,
+  "finName": "Maunula",
+  "sweName": "Månsas",
+  "finAddress": "Maunulanmäki 2",
+  "sweAddress": "Månsasbacken 2",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 24.9325030021006,
+  "y": 60.2303828796011
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4d8"
+  },
+  "id": 230,
+  "finName": "Mäkitorpantie",
+  "sweName": "Kullatorpsvägen",
+  "finAddress": "Kylänvanhimmantie 29",
+  "sweAddress": "Byäldstevägen 29",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 18,
+  "x": 24.9603356197765,
+  "y": 60.2285300629765
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4ee"
+  },
+  "id": 252,
+  "finName": "Humalniementie",
+  "sweName": "Humleuddsvägen",
+  "finAddress": "Ryytikuja 2",
+  "sweAddress": "Kryddgränden 2",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 14,
+  "x": 25.0530603555751,
+  "y": 60.1837062881609
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4fd"
+  },
+  "id": 267,
+  "finName": "Roihupelto",
+  "sweName": "Kasåkern",
+  "finAddress": "Viilarintie 6",
+  "sweAddress": "Filarvägen 6",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 25.0550878014734,
+  "y": 60.2093671231044
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4ff"
+  },
+  "id": 269,
+  "finName": "Peukaloisentie",
+  "sweName": "Tummelitens väg",
+  "finAddress": "Untuvaisentie 2",
+  "sweAddress": "Dunungens väg 2",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 12,
+  "x": 25.0585469211702,
+  "y": 60.1987082869369
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd504"
+  },
+  "id": 275,
+  "finName": "Itäkeskus (M)",
+  "sweName": "Östra centrum (M)",
+  "finAddress": "Tallinnanaukio 2",
+  "sweAddress": "Revalsplanen 2",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 28,
+  "x": 25.0759744433382,
+  "y": 60.2096186210914
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd512"
+  },
+  "id": 292,
+  "finName": "Koskelan varikko",
+  "sweName": "Forsby depå",
+  "finAddress": "Valtimontie 10",
+  "sweAddress": "Valtimovägen 10",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 24.9698571193553,
+  "y": 60.2125872907979
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd514"
+  },
+  "id": 294,
+  "finName": "Postipuisto",
+  "sweName": "Postipuisto",
+  "finAddress": "Niittylänpolku 16",
+  "sweAddress": "Ängsskogsstigen 16",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 18,
+  "x": 24.9337369553808,
+  "y": 60.2203012590912
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd51e"
+  },
+  "id": 310,
+  "finName": "Halkaisijantie",
+  "sweName": "Klyvarvägen",
+  "finAddress": "Halkaisijantie 4",
+  "sweAddress": "Klyvarvägen 4",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 18,
+  "x": 25.1279098203443,
+  "y": 60.2023869312805
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd531"
+  },
+  "id": 326,
+  "finName": "Tuukkalantie",
+  "sweName": "Tuukkalavägen",
+  "finAddress": "Aarteenetsijäntie 10",
+  "sweAddress": "Skattsökarvägen 10",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 25.1007232150956,
+  "y": 60.2388442456374
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd53b"
+  },
+  "id": 339,
+  "finName": "Alppikylä",
+  "sweName": "Alpbyn",
+  "finAddress": "Tattariharjuntie 51",
+  "sweAddress": "Tattaråsvägen 51",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 14,
+  "x": 25.0648942053969,
+  "y": 60.259431119227
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd554"
+  },
+  "id": 365,
+  "finName": "Karviaistie",
+  "sweName": "Stickelvägen",
+  "finAddress": "Karviaistie 3",
+  "sweAddress": "Stickelvägen 3",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 25.0078604417066,
+  "y": 60.2468453049551
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd555"
+  },
+  "id": 366,
+  "finName": "Tilketori",
+  "sweName": "Drevtorget",
+  "finAddress": "Tilketori 1",
+  "sweAddress": "Drevtorget 1",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 20,
+  "x": 25.0039930501515,
+  "y": 60.2498265610789
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd559"
+  },
+  "id": 369,
+  "finName": "Pukinmäen asema",
+  "sweName": "Bocksbacka järnvägsstation",
+  "finAddress": "Pukinmäenaukio 4",
+  "sweAddress": "Bocksbackaplanen 4",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 24.9939952300621,
+  "y": 60.2430864481668
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd55a"
+  },
+  "id": 370,
+  "finName": "Rapakiventie",
+  "sweName": "Örstensvägen",
+  "finAddress": "Lucina Hagmanin kuja 1",
+  "sweAddress": "Lucina Hagmans gränd 1",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 25.0013676173171,
+  "y": 60.2393196827549
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd55e"
+  },
+  "id": 375,
+  "finName": "Piikintie",
+  "sweName": "Piksvägen",
+  "finAddress": "Yhdyskunnantie 54",
+  "sweAddress": "Samhällsvägen 54",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 12,
+  "x": 24.9581440446396,
+  "y": 60.2488559062646
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd567"
+  },
+  "id": 383,
+  "finName": "Kuninkaantammi",
+  "sweName": "Kungseken",
+  "finAddress": "Kuninkaantammenkierto 22",
+  "sweAddress": "Kungseksringen 22",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 20,
+  "x": 24.892757395895,
+  "y": 60.259256054776
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd569"
+  },
+  "id": 386,
+  "finName": "Kannelmäen liikuntapuisto",
+  "sweName": "Gamlas idrottspark",
+  "finAddress": "Kanneltie 12",
+  "sweAddress": "Kantelevägen 12",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 24.8788004950615,
+  "y": 60.2437463425961
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd57a"
+  },
+  "id": 402,
+  "finName": "Bermudankuja",
+  "sweName": "Bermudagränden",
+  "finAddress": "Atlantinkatu 10",
+  "sweAddress": "Atlantgatan 10",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 24.9101421129463,
+  "y": 60.1549042600429
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd3bc"
+  },
+  "id": 515,
+  "finName": "Oravannahkatori",
+  "sweName": "Gråskinnstorget",
+  "finAddress": "Oravannahkatori 1",
+  "sweAddress": "Gråskinnstorget 1",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 16,
+  "x": 24.792559,
+  "y": 60.175769
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd3cc"
+  },
+  "id": 543,
+  "finName": "Otaranta",
+  "sweName": "Oststranden",
+  "finAddress": "Otaranta 6",
+  "sweAddress": "Otstranden 6",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 22,
+  "x": 24.837133,
+  "y": 60.18483
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd3d1"
+  },
+  "id": 553,
+  "finName": "Metsänneidonpolku",
+  "sweName": "Skogsjungfrustigen",
+  "finAddress": "Metsänneidonpolku 5",
+  "sweAddress": "Skogsjungfrustigen 5",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 19,
+  "x": 24.806152,
+  "y": 60.186731
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd3d2"
+  },
+  "id": 555,
+  "finName": "Kalevalantie",
+  "sweName": "Kalevalavägen",
+  "finAddress": "Kalevalantie 7",
+  "sweAddress": "Kalevalavägen 7",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 21,
+  "x": 24.804022,
+  "y": 60.184765
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd3e2"
+  },
+  "id": 591,
+  "finName": "Mellstenintie",
+  "sweName": "Mellstensvägen",
+  "finAddress": "Mellstenintie 17",
+  "sweAddress": "Mellstensvägen 17",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 25,
+  "x": 24.773993,
+  "y": 60.154941
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd3f1"
+  },
+  "id": 623,
+  "finName": "Nelikkotie",
+  "sweName": "Fjärdingsvägen",
+  "finAddress": "Nelikkotie 14",
+  "sweAddress": "Fjärdingsvägen 14",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 16,
+  "x": 24.74663,
+  "y": 60.161588
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd3fc"
+  },
+  "id": 645,
+  "finName": "Piispankallio",
+  "sweName": "Biskopsberget",
+  "finAddress": "Piispankallio 2",
+  "sweAddress": "Biskopsberget 2",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 16,
+  "x": 24.743532,
+  "y": 60.168441
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd41f"
+  },
+  "id": 769,
+  "finName": "Tiurintie",
+  "sweName": "Tiurisvägen",
+  "finAddress": "Kurkijoentie 1",
+  "sweAddress": "Kronoborgsvägen 1",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 12,
+  "x": 24.814562,
+  "y": 60.204951
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd430"
+  },
+  "id": 14,
+  "finName": "Senaatintori",
+  "sweName": "Senatstorget",
+  "finAddress": "Aleksanterinkatu 22",
+  "sweAddress": "Alexandersgatan 22",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 22,
+  "x": 24.9526414004662,
+  "y": 60.1691277919118
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd436"
+  },
+  "id": 20,
+  "finName": "Kaisaniemenpuisto",
+  "sweName": "Kajsaniemiparken",
+  "finAddress": "Bergbominkuja 1",
+  "sweAddress": "Bergbomsgränden 1",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 22,
+  "x": 24.9433556359399,
+  "y": 60.1732349001278
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd43a"
+  },
+  "id": 24,
+  "finName": "Mannerheimintie",
+  "sweName": "Mannerheimvägen",
+  "finAddress": "Mannerheiminitie 18",
+  "sweAddress": "Mannerheimvägen 18",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 20,
+  "x": 24.9394194995361,
+  "y": 60.1690723919948
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd440"
+  },
+  "id": 30,
+  "finName": "Itämerentori",
+  "sweName": "Östersjötorget",
+  "finAddress": "Itämerentori 1",
+  "sweAddress": "Östersjötorget 1",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 40,
+  "x": 24.9145164996449,
+  "y": 60.1635308918594
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd442"
+  },
+  "id": 32,
+  "finName": "Eläinmuseo",
+  "sweName": "Naturhistoriska museet",
+  "finAddress": "Pohjoinen Rautatiekatu 13",
+  "sweAddress": "Norra Järnvägsgatan 13",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 20,
+  "x": 24.9318975121431,
+  "y": 60.1713588986588
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd445"
+  },
+  "id": 35,
+  "finName": "Cygnaeuksenkatu",
+  "sweName": "Cygnaeusgatan",
+  "finAddress": "Cygnaeuksenkatu 1",
+  "sweAddress": "Cygnaeusgatan 1",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 24.9282685568484,
+  "y": 60.1741008716685
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd452"
+  },
+  "id": 48,
+  "finName": "Mastokatu",
+  "sweName": "Mastgatan",
+  "finAddress": "Mastokatu 2",
+  "sweAddress": "Mastgatan 2",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 22,
+  "x": 24.9674668165293,
+  "y": 60.1647464973781
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd453"
+  },
+  "id": 49,
+  "finName": "Annankatu",
+  "sweName": "Annankatu",
+  "finAddress": "Annankatu 5",
+  "sweAddress": "Annegatan 5",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 24.9417379007102,
+  "y": 60.1634749245163
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd45a"
+  },
+  "id": 56,
+  "finName": "Luoteisväylä",
+  "sweName": "Nordvästpassagen",
+  "finAddress": "Luoteisväylä 17",
+  "sweAddress": "Nordvästpassagen 17",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 12,
+  "x": 24.8603118531172,
+  "y": 60.1653590878524
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd46b"
+  },
+  "id": 73,
+  "finName": "Kesäkatu",
+  "sweName": "Sommargatan",
+  "finAddress": "Kesäkatu 8",
+  "sweAddress": "Sommargatan 8",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 14,
+  "x": 24.91325039954,
+  "y": 60.1792966924742
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd471"
+  },
+  "id": 79,
+  "finName": "Uimastadion",
+  "sweName": "Simstadion",
+  "finAddress": "Hammarskjöldintie 5",
+  "sweAddress": "Hammarsköljdsvägen 5",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 18,
+  "x": 24.9292125301786,
+  "y": 60.1892523422817
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd478"
+  },
+  "id": 86,
+  "finName": "Kuusitie",
+  "sweName": "Granvägen",
+  "finAddress": "Mannerheimintie 152",
+  "sweAddress": "Mannerheimvägen 152",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 24,
+  "x": 24.9018996998812,
+  "y": 60.1952451922329
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd481"
+  },
+  "id": 95,
+  "finName": "Munkkiniemen aukio",
+  "sweName": "Munksnäsplatsen",
+  "finAddress": "Munkkiniemen puistotie 1",
+  "sweAddress": "Munksnäs allén 1",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 18,
+  "x": 24.8840193884533,
+  "y": 60.1967237851281
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd489"
+  },
+  "id": 105,
+  "finName": "Tilkantori",
+  "sweName": "Tilktorget",
+  "finAddress": "Tilkantori 3",
+  "sweAddress": "Tilktorget 3",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 24.8933660254613,
+  "y": 60.2027828953059
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd48d"
+  },
+  "id": 109,
+  "finName": "Hertanmäenkatu",
+  "sweName": "Hertabacksgatan",
+  "finAddress": "Radiokuja 2",
+  "sweAddress": "Radiogränden 2",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 20,
+  "x": 24.9223311437335,
+  "y": 60.2026940388763
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd490"
+  },
+  "id": 112,
+  "finName": "Rautatieläisenkatu",
+  "sweName": "Järnvägsmannagatan",
+  "finAddress": "Ratapihantie 13",
+  "sweAddress": "Bangårdsvägentie 13",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 22,
+  "x": 24.9332721002285,
+  "y": 60.2014381920031
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd492"
+  },
+  "id": 114,
+  "finName": "Ratapihantie",
+  "sweName": "Bangårdsvägen",
+  "finAddress": "Ratapihantie 1",
+  "sweAddress": "Bangårdsvägentie 1",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 20,
+  "x": 24.9366332542312,
+  "y": 60.1964208157658
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd49a"
+  },
+  "id": 122,
+  "finName": "Lintulahdenkatu",
+  "sweName": "Fågelviksgatan",
+  "finAddress": "Lintulahdenkuja 6",
+  "sweAddress": "Fågelviksgränden 6",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 24,
+  "x": 24.962063375375,
+  "y": 60.1836809119419
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4a4"
+  },
+  "id": 132,
+  "finName": "Hollolantie",
+  "sweName": "Hollolavägen",
+  "finAddress": "Hollolantie 2",
+  "sweAddress": "Hollolavägen 2",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 12,
+  "x": 24.9546058093258,
+  "y": 60.1958861886173
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4ae"
+  },
+  "id": 142,
+  "finName": "Koskelantie",
+  "sweName": "Forsbyvägen",
+  "finAddress": "Sofianlehdonkatu 13",
+  "sweAddress": "Sofielundsgatan 13",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 14,
+  "x": 24.946677279,
+  "y": 60.207839984
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4b2"
+  },
+  "id": 146,
+  "finName": "Pohjolanaukio",
+  "sweName": "Pohjolaplatsen",
+  "finAddress": "Pohjolankatu 40",
+  "sweAddress": "Pohjolagatan 40",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 24.9543597785941,
+  "y": 60.2171787502601
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4b6"
+  },
+  "id": 150,
+  "finName": "Töölönlahden puisto",
+  "sweName": "Tölöviksparken",
+  "finAddress": "Karamzininranta 4",
+  "sweAddress": "Karamzins strand  4",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 24,
+  "x": 24.9350784201451,
+  "y": 60.1748578219656
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4c4"
+  },
+  "id": 210,
+  "finName": "Pajamäki",
+  "sweName": "Smedjebacka",
+  "finAddress": "Pajamäentie 12",
+  "sweAddress": "Smedjebackavägen 12",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 12,
+  "x": 24.8556743832861,
+  "y": 60.2188213176358
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4c5"
+  },
+  "id": 211,
+  "finName": "Haagan tori",
+  "sweName": "Haga torg",
+  "finAddress": "Haagan tori 1",
+  "sweAddress": "Haga torg 1",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 24.898930057033,
+  "y": 60.2121115807155
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4c9"
+  },
+  "id": 215,
+  "finName": "Pitäjänmäen asema",
+  "sweName": "Sockenbacka station",
+  "finAddress": "Pitäjänmäentie 21",
+  "sweAddress": "Sockenbackavägen 21",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 24.8586292857926,
+  "y": 60.2243090934475
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4ed"
+  },
+  "id": 251,
+  "finName": "Laajasalon ostoskeskus",
+  "sweName": "Degerö köpcentrum",
+  "finAddress": "Yliskylän puistokatu 4",
+  "sweAddress": "Uppby parkgata 4",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 25.0519120121374,
+  "y": 60.1800091502319
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4f0"
+  },
+  "id": 254,
+  "finName": "Agnetankuja",
+  "sweName": "Agnetagränden",
+  "finAddress": "Laivalahdenkaari 24",
+  "sweAddress": "Båtviksbågen 24",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 25.0365006704009,
+  "y": 60.1872113457581
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd501"
+  },
+  "id": 271,
+  "finName": "Prinsessantie",
+  "sweName": "Prinsessvägen",
+  "finAddress": "Prinsessantie 2",
+  "sweAddress": "Prinsessvägen 2",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 25.059863346683,
+  "y": 60.2062943134753
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd508"
+  },
+  "id": 279,
+  "finName": "Puotinkylän kartano",
+  "sweName": "Botby gård",
+  "finAddress": "Puotilantie 12",
+  "sweAddress": "Botbygårdsvägen 12",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 25.1062099916086,
+  "y": 60.2125374414988
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd522"
+  },
+  "id": 314,
+  "finName": "Lokitie",
+  "sweName": "Loggvägen",
+  "finAddress": "Vuosaarentie 1",
+  "sweAddress": "Nordsjövägen 1",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 18,
+  "x": 25.1365036011866,
+  "y": 60.2095580685415
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd52b"
+  },
+  "id": 325,
+  "finName": "Mellunmäki (M)",
+  "sweName": "Mellungsbacka (M)",
+  "finAddress": "Pallaksentie 3",
+  "sweAddress": "Pallasvägen 3",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 20,
+  "x": 25.1098747367064,
+  "y": 60.2385353540219
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd52e"
+  },
+  "id": 328,
+  "finName": "Lallukankuja",
+  "sweName": "Lallukkagränden",
+  "finAddress": "Lallukankuja 1",
+  "sweAddress": "Lallukkagränden 1",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 12,
+  "x": 25.082971174464,
+  "y": 60.2235265780465
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd538"
+  },
+  "id": 337,
+  "finName": "Kivikon liikuntapuisto",
+  "sweName": "Stensböle idrottspark",
+  "finAddress": "Savikiekontie 6",
+  "sweAddress": "Lerduvevägen 6",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 25.0524695830581,
+  "y": 60.23703581972
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd53c"
+  },
+  "id": 341,
+  "finName": "Heikinlaakso",
+  "sweName": "Henriksdal",
+  "finAddress": "Vanha Porvoontie 32",
+  "sweAddress": "Gamla Borgåvägen 32",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 25.0727127107009,
+  "y": 60.2701965544061
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd541"
+  },
+  "id": 347,
+  "finName": "Sateenkaarentie",
+  "sweName": "Regnbågsvägen",
+  "finAddress": "Suutarilantie 60",
+  "sweAddress": "Skomakarbölevägen 60",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 18,
+  "x": 25.0110629825049,
+  "y": 60.2807560752423
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd546"
+  },
+  "id": 345,
+  "finName": "Porvarintie",
+  "sweName": "Borgarvägen",
+  "finAddress": "Porvarintie 8-10",
+  "sweAddress": "Borgarvägen 8-10",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 25.032655333,
+  "y": 60.27189034
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd549"
+  },
+  "id": 354,
+  "finName": "Saniaiskuja",
+  "sweName": "Ormbunksgränden",
+  "finAddress": "Saniaiskuja 1",
+  "sweAddress": "Ormbunksgränden 1",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 25.0290905800296,
+  "y": 60.25909156602
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd563"
+  },
+  "id": 380,
+  "finName": "Pirkkolan liikuntapuisto",
+  "sweName": "Britas idrottspark",
+  "finAddress": "Pirkkolan metsätie 6",
+  "sweAddress": "Britas skogsväg 6",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 14,
+  "x": 24.9097508532821,
+  "y": 60.232734803775
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd56f"
+  },
+  "id": 390,
+  "finName": "Trumpettikuja",
+  "sweName": "Trumpetgränden",
+  "finAddress": "Trumpettitie 3",
+  "sweAddress": "Trumpetvägen 3",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 24.869109999497,
+  "y": 60.2391561100934
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd57c"
+  },
+  "id": 404,
+  "finName": "Sompasaari",
+  "sweName": "Sumparn",
+  "finAddress": "Sompasaarenlaituri 2",
+  "sweAddress": "Sumparkajen 2",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 14,
+  "x": 24.9760758238593,
+  "y": 60.1829308185667
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd3bd"
+  },
+  "id": 517,
+  "finName": "Länsituuli",
+  "sweName": "Västanvinden",
+  "finAddress": "Länsituulenkuja 3",
+  "sweAddress": "Västanvindsgränden 3",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 24,
+  "x": 24.802049,
+  "y": 60.175358
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd3cb"
+  },
+  "id": 541,
+  "finName": "Aalto-yliopisto (M), Korkea",
+  "sweName": "Aalto-universitetet (M),",
+  "finAddress": "Otaniementie 10",
+  "sweAddress": "Otnäsvägen 10",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 42,
+  "x": 24.826671,
+  "y": 60.184312
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd3d5"
+  },
+  "id": 561,
+  "finName": "Koivu-Mankkaa",
+  "sweName": "Björkmankans",
+  "finAddress": "Urpu 6",
+  "sweAddress": "Hänget 6",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 23,
+  "x": 24.78576,
+  "y": 60.182976
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd3d6"
+  },
+  "id": 563,
+  "finName": "Mankkaanlaaksontie",
+  "sweName": "Mankansdalsvägen",
+  "finAddress": "Mankkaanlaaksontie 1",
+  "sweAddress": "Mankansdalsvägen 1",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 26,
+  "x": 24.780478,
+  "y": 60.188706
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd3e0"
+  },
+  "id": 587,
+  "finName": "Hauenkallio",
+  "sweName": "Gäddberget",
+  "finAddress": "Hauenkalliontie 12",
+  "sweAddress": "Gäddbergsvägen 12",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 12,
+  "x": 24.767831,
+  "y": 60.162477
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd3e6"
+  },
+  "id": 597,
+  "finName": "Linnakepolku",
+  "sweName": "Fortstigen",
+  "finAddress": "Westendintie 99",
+  "sweAddress": "Westendvägen 99",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 10,
+  "x": 24.790132,
+  "y": 60.1637
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd40e"
+  },
+  "id": 729,
+  "finName": "Leppävaaranaukio",
+  "sweName": "Albergaplanen",
+  "finAddress": "Hevosenkenkä 3",
+  "sweAddress": "Hästskon 3",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 30,
+  "x": 24.813885,
+  "y": 60.218869
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd422"
+  },
+  "id": 902,
+  "finName": "Derby Business Park",
+  "sweName": "Derby Business Park",
+  "finAddress": "Tarvonsalmenkatu 17",
+  "sweAddress": "Tarvosundsgatan 17",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 20,
+  "x": 24.835356,
+  "y": 60.209017
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd425"
+  },
+  "id": 3,
+  "finName": "Kapteeninpuistikko",
+  "sweName": "Kaptensskvären",
+  "finAddress": "Tehtaankatu 13",
+  "sweAddress": "Fabriksgatan 13",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 24.9450181631667,
+  "y": 60.1581769029949
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd427"
+  },
+  "id": 5,
+  "finName": "Sepänkatu",
+  "sweName": "Smedsgatan",
+  "finAddress": "Tehtaankatu 25",
+  "sweAddress": "Fabriksgatan 25",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 32,
+  "x": 24.9362853002102,
+  "y": 60.157948291819
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd42b"
+  },
+  "id": 9,
+  "finName": "Erottajan aukio",
+  "sweName": "Skillnadsplatsen",
+  "finAddress": "Eteläesplanadi 22",
+  "sweAddress": "Södra esplanaden 22",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 44,
+  "x": 24.9441887601673,
+  "y": 60.1668948711694
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd434"
+  },
+  "id": 18,
+  "finName": "Porthania",
+  "sweName": "Porthania",
+  "finAddress": "Yliopistonkatu 3",
+  "sweAddress": "Universitetsgatan 3",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 30,
+  "x": 24.9493081473109,
+  "y": 60.1696567475916
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd45f"
+  },
+  "id": 61,
+  "finName": "Länsisatamankatu",
+  "sweName": "Västrahamnsgatan",
+  "finAddress": "Länsisatamankatu 19",
+  "sweAddress": "Västrahamnsgatan 19",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 24.9096920006591,
+  "y": 60.158927591706
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd462"
+  },
+  "id": 64,
+  "finName": "Tyynenmerenkatu",
+  "sweName": "Stillahavsgatan",
+  "finAddress": "Rionkatu 6",
+  "sweAddress": "Stillhavsgatan 9",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 20,
+  "x": 24.9203435489542,
+  "y": 60.1568077714966
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd467"
+  },
+  "id": 69,
+  "finName": "Kalevankatu",
+  "sweName": "Kalevagatan",
+  "finAddress": "Lapinlahdenkatu 1",
+  "sweAddress": "Lappviksgatan 1",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 24.9314215703651,
+  "y": 60.1656801793916
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd469"
+  },
+  "id": 71,
+  "finName": "Hietaniemenkatu",
+  "sweName": "Sanduddsgatan",
+  "finAddress": "Hiekkarannantie 9",
+  "sweAddress": "Sandstrandsvägen 9",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 24,
+  "x": 24.9076704246974,
+  "y": 60.1733331469852
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd470"
+  },
+  "id": 78,
+  "finName": "Messeniuksenkatu",
+  "sweName": "Messeniusgatan",
+  "finAddress": "Messeniuksenkatu 1a",
+  "sweAddress": "Messeniusgatan 1a",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 20,
+  "x": 24.9180102002596,
+  "y": 60.1878351921237
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd479"
+  },
+  "id": 87,
+  "finName": "Kustaankatu",
+  "sweName": "Gustavsgatan",
+  "finAddress": "Kustaankatu 4b",
+  "sweAddress": "Gustafsgatan 4b",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 20,
+  "x": 24.9559903941467,
+  "y": 60.1882073042861
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd47b"
+  },
+  "id": 89,
+  "finName": "Tilkanvierto",
+  "sweName": "Tilkkalänken",
+  "finAddress": "Tilkankatu 41",
+  "sweAddress": "Tilkgatan 41",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 24.8992505554038,
+  "y": 60.1975748220279
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd47d"
+  },
+  "id": 91,
+  "finName": "Seurasaari",
+  "sweName": "Fölisön",
+  "finAddress": "Seurasaarentie 15",
+  "sweAddress": "Fölisövägen 15",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 22,
+  "x": 24.8847643214706,
+  "y": 60.1884345423222
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd48f"
+  },
+  "id": 111,
+  "finName": "Esterinportti",
+  "sweName": "Estersporten",
+  "finAddress": "Pasilanraitio 5",
+  "sweAddress": "Böletået 5",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 20,
+  "x": 24.9267808000548,
+  "y": 60.1975723919044
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd499"
+  },
+  "id": 121,
+  "finName": "Vilhonvuorenkatu",
+  "sweName": "Vilhelmsbergsgatan",
+  "finAddress": "Vilhonvuorenkatu 12",
+  "sweAddress": "Vilhelmsbergsgatan 12",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 24.967854123638,
+  "y": 60.1864553029206
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd49b"
+  },
+  "id": 123,
+  "finName": "Näkinsilta",
+  "sweName": "Näckens bro",
+  "finAddress": "Sörnäisten rantatie 9",
+  "sweAddress": "Sörnas strandväg 9",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 24,
+  "x": 24.9554449266327,
+  "y": 60.179750209022
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4a9"
+  },
+  "id": 137,
+  "finName": "Arabian kauppakeskus",
+  "sweName": "Arabia köpcentrum",
+  "finAddress": "Hämeentie 111",
+  "sweAddress": "Tavastvägen 111",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 30,
+  "x": 24.9665718240118,
+  "y": 60.2027696318957
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4b0"
+  },
+  "id": 144,
+  "finName": "Käpyläntie",
+  "sweName": "Kottbyvägen",
+  "finAddress": "Käpyläntie 1",
+  "sweAddress": "Kottbyvägen 1",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 14,
+  "x": 24.9588108000086,
+  "y": 60.2139042918024
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4b1"
+  },
+  "id": 145,
+  "finName": "Pohjolankatu",
+  "sweName": "Pohjolagatan",
+  "finAddress": "Pohjolankatu 1",
+  "sweAddress": "Pohjolagatan 1",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 12,
+  "x": 24.9437964005667,
+  "y": 60.2134209918355
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4b5"
+  },
+  "id": 149,
+  "finName": "Toinen linja",
+  "sweName": "Andra linjen",
+  "finAddress": "Toinen linja 25",
+  "sweAddress": "Andra linjen 25",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 22,
+  "x": 24.9445685112105,
+  "y": 60.1830009926511
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4b7"
+  },
+  "id": 161,
+  "finName": "Eteläesplanadi",
+  "sweName": "Södra Esplanaden",
+  "finAddress": "Eteläesplanadi 14",
+  "sweAddress": "Södrä Esplanaden 14",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 34,
+  "x": 24.9471504600595,
+  "y": 60.1671998456303
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4c6"
+  },
+  "id": 212,
+  "finName": "Tunnelitie",
+  "sweName": "Tunnelvägen",
+  "finAddress": "Tunnelitie 3",
+  "sweAddress": "Tunnelvägen 3",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 14,
+  "x": 24.8995694064157,
+  "y": 60.2166149334764
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4d4"
+  },
+  "id": 226,
+  "finName": "Lepolantie",
+  "sweName": "Lepolavägen",
+  "finAddress": "Lepolantie 61",
+  "sweAddress": "Lepolavägen 61",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 14,
+  "x": 24.9286046557082,
+  "y": 60.2390854029504
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4d6"
+  },
+  "id": 228,
+  "finName": "Kustaankartano",
+  "sweName": "Gustafsgård",
+  "finAddress": "Maapadontie 3",
+  "sweAddress": "Jorddammsvägen 3",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 20,
+  "x": 24.9487651621964,
+  "y": 60.2307028618145
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4de"
+  },
+  "id": 236,
+  "finName": "Hernepellontie",
+  "sweName": "Ärtåkersvägen",
+  "finAddress": "Harjannetie 44",
+  "sweAddress": "Krönvägen 44",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 14,
+  "x": 24.9886129703087,
+  "y": 60.2242412608413
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4e0"
+  },
+  "id": 238,
+  "finName": "Pihlajamäki",
+  "sweName": "Rönnbacka",
+  "finAddress": "Meripihkatie 3",
+  "sweAddress": "Bärnstensvägen 3",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 25.0103139042596,
+  "y": 60.2345785634218
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4eb"
+  },
+  "id": 249,
+  "finName": "Isosaarentie",
+  "sweName": "Mjölövägen",
+  "finAddress": "Köökarinkuja 3",
+  "sweAddress": "Kökargränden 3",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 14,
+  "x": 25.0450147987503,
+  "y": 60.1755054994249
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4ec"
+  },
+  "id": 250,
+  "finName": "Reiherintie",
+  "sweName": "Reihersvägen",
+  "finAddress": "Laajasalontie 13",
+  "sweAddress": "Degerövägen 13",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 12,
+  "x": 25.0474962642387,
+  "y": 60.1677304952092
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4fe"
+  },
+  "id": 268,
+  "finName": "Porolahden koulu",
+  "sweName": "Porovikens skola",
+  "finAddress": "Roihuvuorentie 6b",
+  "sweAddress": "Kasbergsvägen 6b",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 14,
+  "x": 25.0535809447117,
+  "y": 60.1955233353498
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd506"
+  },
+  "id": 277,
+  "finName": "Marjaniemi",
+  "sweName": "Marudd",
+  "finAddress": "Marjaniementie 23",
+  "sweAddress": "Maruddsvägen 23",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 14,
+  "x": 25.0863443649103,
+  "y": 60.2036199297435
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd50a"
+  },
+  "id": 281,
+  "finName": "Puotila (M)",
+  "sweName": "Botby gård (M)",
+  "finAddress": "Vanhanlinnantori",
+  "sweAddress": "Vanhalinnatorget",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 20,
+  "x": 25.0910915854205,
+  "y": 60.2148242972699
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd50f"
+  },
+  "id": 286,
+  "finName": "Mamsellimyllynkatu",
+  "sweName": "Mamsellskvarnsgatan",
+  "finAddress": "Mamsellimyllynkatu 26",
+  "sweAddress": "Mamsellkvarnsgatan 26",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 25.0591030723076,
+  "y": 60.2182457763173
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd516"
+  },
+  "id": 302,
+  "finName": "Sumukuja",
+  "sweName": "Dimgränden",
+  "finAddress": "Sumukuja 2",
+  "sweAddress": "Dimgränden 2",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 18,
+  "x": 25.1584093750563,
+  "y": 60.2054467315293
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd51c"
+  },
+  "id": 308,
+  "finName": "Mosaiikkitori",
+  "sweName": "Mosaiktorget",
+  "finAddress": "Mosaiikkitori 1",
+  "sweAddress": "Mosaiktorget 1",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 24,
+  "x": 25.143852587603,
+  "y": 60.2079753561922
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd520"
+  },
+  "id": 312,
+  "finName": "Meri-Rastilan tori",
+  "sweName": "Havsrastböletorget",
+  "finAddress": "Meri-Rastilan kuja 2",
+  "sweAddress": "Havsrastbölegränden 2",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 25.1194224144705,
+  "y": 60.2041542257304
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd521"
+  },
+  "id": 313,
+  "finName": "Rastila (M)",
+  "sweName": "Rastnöle (M)",
+  "finAddress": "Karavaanisilta 3",
+  "sweAddress": "Karavanbron 3",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 25.1201408621083,
+  "y": 60.2055354689175
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd548"
+  },
+  "id": 352,
+  "finName": "Tapanilan asema",
+  "sweName": "Mosabacka järnvägsstation",
+  "finAddress": "Sompiontori 1",
+  "sweAddress": "Sompiotorget 1",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 12,
+  "x": 25.0281239739891,
+  "y": 60.2633039538104
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd54a"
+  },
+  "id": 355,
+  "finName": "Halmetie",
+  "sweName": "Brännvägen",
+  "finAddress": "Vanha Tapaninlantie 70",
+  "sweAddress": "Gamla Staffansbyvägen 70",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 25.0176577469294,
+  "y": 60.2609068068142
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd54f"
+  },
+  "id": 360,
+  "finName": "Malmin asema",
+  "sweName": "Malm järnvägsstation",
+  "finAddress": "Ylä-Malmin tori 3",
+  "sweAddress": "Övre Malms torg 3",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 24,
+  "x": 25.0091215694658,
+  "y": 60.2523255258372
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd556"
+  },
+  "id": 367,
+  "finName": "Karhusuontie",
+  "sweName": "Björnkärrsvägen",
+  "finAddress": "Karhusuontie 27",
+  "sweAddress": "Björnkärrsvägen 27",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 14,
+  "x": 24.9870649315623,
+  "y": 60.2517795830055
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd574"
+  },
+  "id": 396,
+  "finName": "Malminkartanonhuippu",
+  "sweName": "Malmgårdstoppen",
+  "finAddress": "Naapuripellontie 7",
+  "sweAddress": "Naboängsvägen 7",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 12,
+  "x": 24.8486486878388,
+  "y": 60.2504077926351
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd576"
+  },
+  "id": 398,
+  "finName": "Ajomiehentie",
+  "sweName": "Körkarlsvägen",
+  "finAddress": "Ajomiehentie 1",
+  "sweAddress": "Körkarlsvägen 1",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 20,
+  "x": 24.8512905063639,
+  "y": 60.2388821009165
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd57b"
+  },
+  "id": 403,
+  "finName": "Verkkosaari",
+  "sweName": "Nätholmen",
+  "finAddress": "Tukkutorinkuja 3",
+  "sweAddress": "Partitorgsgränden",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 20,
+  "x": 24.9775480765957,
+  "y": 60.1895561753156
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd3c2"
+  },
+  "id": 525,
+  "finName": "Mäntyviita",
+  "sweName": "Tallbysket",
+  "finAddress": "Mäntyviita 2",
+  "sweAddress": "Tallbysket 2",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 10,
+  "x": 24.810974,
+  "y": 60.178702
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd3c4"
+  },
+  "id": 529,
+  "finName": "Keilaniemi (M)",
+  "sweName": "Kägeludden (M)",
+  "finAddress": "Keilaniementie 4",
+  "sweAddress": "Kägeluddsvägen 4",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 40,
+  "x": 24.82895,
+  "y": 60.175233
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd3c6"
+  },
+  "id": 532,
+  "finName": "Betonimies",
+  "sweName": "Betongblandaren",
+  "finAddress": "Betonimiehenkuja 1",
+  "sweAddress": "Betongblandargränden 1",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 16,
+  "x": 24.831804,
+  "y": 60.180027
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd3d0"
+  },
+  "id": 551,
+  "finName": "Tietäjä",
+  "sweName": "Siaren",
+  "finAddress": "Valkjärventie 4",
+  "sweAddress": "Valkjärvivägen 4",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 20,
+  "x": 24.807083,
+  "y": 60.189143
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd3da"
+  },
+  "id": 575,
+  "finName": "Tontunmäentie",
+  "sweName": "Tomtekullavägen",
+  "finAddress": "Tontunmäentie 25",
+  "sweAddress": "Tomtekullavägen 25",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 16,
+  "x": 24.769667,
+  "y": 60.176107
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd3e7"
+  },
+  "id": 601,
+  "finName": "Nokkala",
+  "sweName": "Nokkala",
+  "finAddress": "Nokkalanniemi 2",
+  "sweAddress": "Nokkalaparken 2",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 18,
+  "x": 24.754344,
+  "y": 60.147974
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd3e9"
+  },
+  "id": 607,
+  "finName": "Nuottaniementie",
+  "sweName": "Notuddsvägen",
+  "finAddress": "Nuottatie 1",
+  "sweAddress": "Notvägen 1",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 15,
+  "x": 24.741546,
+  "y": 60.147921
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd3f3"
+  },
+  "id": 627,
+  "finName": "Piispansilta",
+  "sweName": "Biskopsbron",
+  "finAddress": "Piispansilta 11",
+  "sweAddress": "Biskopsknuten 11",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 44,
+  "x": 24.738416,
+  "y": 60.162403
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd3f8"
+  },
+  "id": 637,
+  "finName": "Ruomelantie",
+  "sweName": "Romensvägen",
+  "finAddress": "Ruomelantie 19",
+  "sweAddress": "Romensvägen 19",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 12,
+  "x": 24.729314,
+  "y": 60.174524
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd403"
+  },
+  "id": 705,
+  "finName": "Laajalahden keskus",
+  "sweName": "Bredviks centrum",
+  "finAddress": "Kirvuntie 22",
+  "sweAddress": "Kirvusvägen 22",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 19,
+  "x": 24.80493,
+  "y": 60.203892
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd40c"
+  },
+  "id": 725,
+  "finName": "Rummunlyöjänkatu",
+  "sweName": "Trumslagargatan",
+  "finAddress": "Leppävaarankatu 13",
+  "sweAddress": "Albergagatan 13",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 20,
+  "x": 24.806279,
+  "y": 60.217261
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd40f"
+  },
+  "id": 731,
+  "finName": "Leppävaarankäytävä",
+  "sweName": "Albergapassagen",
+  "finAddress": "Läkkisepänkuja 3",
+  "sweAddress": "Bleckslagargränden 3",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 21,
+  "x": 24.813437,
+  "y": 60.220254
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd412"
+  },
+  "id": 737,
+  "finName": "Muurarinkuja",
+  "sweName": "Murargränden",
+  "finAddress": "Muurarinkuja 4",
+  "sweAddress": "Murargränden 4",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 19,
+  "x": 24.812271,
+  "y": 60.223769
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd419"
+  },
+  "id": 753,
+  "finName": "Linnuntie",
+  "sweName": "Fågelvägen",
+  "finAddress": "Linnuntie 2",
+  "sweAddress": "Fågelsvägen 2",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 24,
+  "x": 24.813954,
+  "y": 60.234401
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd41c"
+  },
+  "id": 761,
+  "finName": "Mäkkylän asema",
+  "sweName": "Mäkkylä station",
+  "finAddress": "Perkkaantie 20",
+  "sweAddress": "Bergansvägen 20",
+  "finCity": "Espoo",
+  "sweCity": "Esbo",
+  "operator": "CityBike Finland",
+  "capacity": 32,
+  "x": 24.83939,
+  "y": 60.220467
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd429"
+  },
+  "id": 7,
+  "finName": "Designmuseo",
+  "sweName": "Designmuseet",
+  "finAddress": "Korkeavuorenkatu 23",
+  "sweAddress": "Högbergsgatan 23",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 14,
+  "x": 24.9459599998806,
+  "y": 60.16310319166
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd438"
+  },
+  "id": 22,
+  "finName": "Rautatientori / länsi",
+  "sweName": "Järnvägstorget/väst",
+  "finAddress": "Kaivokatu 1",
+  "sweAddress": "Brunnsgatan 1",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 24.9397601000633,
+  "y": 60.1706060919732
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd43b"
+  },
+  "id": 25,
+  "finName": "Narinkka",
+  "sweName": "Narinken",
+  "finAddress": "Narinkka 1",
+  "sweAddress": "Narinken 1",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 40,
+  "x": 24.9346069826026,
+  "y": 60.1700420279259
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd44e"
+  },
+  "id": 44,
+  "finName": "Sörnäinen (M)",
+  "sweName": "Sörnäs (M)",
+  "finAddress": "Vaasanpuistikko 1a",
+  "sweAddress": "Vaasanpuistikko 1a",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 22,
+  "x": 24.960554135,
+  "y": 60.187712639
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd45b"
+  },
+  "id": 57,
+  "finName": "Lauttasaaren ostoskeskus",
+  "sweName": "Drumsö köpcentrum",
+  "finAddress": "Lauttasaarentie 26",
+  "sweAddress": "Drumsövägen 26",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 26,
+  "x": 24.8828103623042,
+  "y": 60.1604153459526
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd468"
+  },
+  "id": 70,
+  "finName": "Sammonpuistikko",
+  "sweName": "Samposkvären",
+  "finAddress": "Sammonkatu 3",
+  "sweAddress": "Sampogatan 3",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 14,
+  "x": 24.9224112000483,
+  "y": 60.1731472920894
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd46d"
+  },
+  "id": 75,
+  "finName": "Korjaamo",
+  "sweName": "Korjaamo",
+  "finAddress": "Töölönkatu 51a",
+  "sweAddress": "Tölögatan 51a",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 20,
+  "x": 24.919883700552,
+  "y": 60.1838636970684
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd472"
+  },
+  "id": 80,
+  "finName": "Jäähalli",
+  "sweName": "Ishall",
+  "finAddress": "Nordenskiöldinkatu 11",
+  "sweAddress": "Nordenskiöldsgatan 11",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 22,
+  "x": 24.9204971353408,
+  "y": 60.1893228039601
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd473"
+  },
+  "id": 81,
+  "finName": "Stenbäckinkatu",
+  "sweName": "Stenbäcksgatan",
+  "finAddress": "Stenbäckinkatu 9",
+  "sweAddress": "Stenbäcksgatan 9",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 18,
+  "x": 24.9123717007068,
+  "y": 60.1883090916703
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd477"
+  },
+  "id": 85,
+  "finName": "Jalavatie",
+  "sweName": "Almvägen",
+  "finAddress": "Jalavatie 10",
+  "sweAddress": "Almvägen 10",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 24.9057885671904,
+  "y": 60.1934470268502
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd47e"
+  },
+  "id": 92,
+  "finName": "Saunalahdentie",
+  "sweName": "Bastuviksvägen",
+  "finAddress": "Saunalahdentie 1",
+  "sweAddress": "Bastuviksvägen 1",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 8,
+  "x": 24.8791652000743,
+  "y": 60.1926665197597
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd480"
+  },
+  "id": 94,
+  "finName": "Laajalahden aukio",
+  "sweName": "Bredviksplatsen",
+  "finAddress": "Munkkiniemen puistotie 21",
+  "sweAddress": "Munksnäs allén 21",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 20,
+  "x": 24.8763012644261,
+  "y": 60.1978706012264
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4a8"
+  },
+  "id": 136,
+  "finName": "Sofianlehdonkatu",
+  "sweName": "Sofielundsgatan",
+  "finAddress": "Isonniitynkatu 7",
+  "sweAddress": "Storsvängen 7",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 12,
+  "x": 24.9513635992833,
+  "y": 60.2032720921502
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4b3"
+  },
+  "id": 147,
+  "finName": "Käpylän asema",
+  "sweName": "Kottby station",
+  "finAddress": "Panuntie 4",
+  "sweAddress": "Panuvägen 4",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 14,
+  "x": 24.9479499152249,
+  "y": 60.2208033078251
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4c0"
+  },
+  "id": 206,
+  "finName": "Ruskeasuon varikko",
+  "sweName": "Brunakärrs depå",
+  "finAddress": "Mannerheimintie 117",
+  "sweAddress": "Mannerheimvägen 117",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 14,
+  "x": 24.8986678907757,
+  "y": 60.2076799515229
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4d5"
+  },
+  "id": 227,
+  "finName": "Kylävoudintie",
+  "sweName": "Byfogdevägen",
+  "finAddress": "Kylävoudintie 6",
+  "sweAddress": "Byfogdevägen 6",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 14,
+  "x": 24.9525612440734,
+  "y": 60.2244037765729
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4d7"
+  },
+  "id": 229,
+  "finName": "Käskynhaltijantie",
+  "sweName": "Ståthållarvägen",
+  "finAddress": "Hirsipadontie 2",
+  "sweAddress": "Timmerdammsvägen 2",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 18,
+  "x": 24.957934116941,
+  "y": 60.2332319429452
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4d9"
+  },
+  "id": 231,
+  "finName": "Siltavoudintie",
+  "sweName": "Brofogdegränd",
+  "finAddress": "Käskynhaltijantie 22",
+  "sweAddress": "Ståthållarvägen 22",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 24.9649692401006,
+  "y": 60.2337172192606
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4e9"
+  },
+  "id": 247,
+  "finName": "Haakoninlahdenkatu",
+  "sweName": "Håkanviksgatan",
+  "finAddress": "Koirasaarentie 33",
+  "sweAddress": "Hundholmsvägen 33",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 25.0208609553502,
+  "y": 60.1688685506822
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd4f2"
+  },
+  "id": 256,
+  "finName": "Herttoniemenranta",
+  "sweName": "Hertonäs strand",
+  "finAddress": "Paasivaarankatu 1",
+  "sweAddress": "Paasivaaragatan 1",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 14,
+  "x": 25.0261074895481,
+  "y": 60.1902241178364
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd503"
+  },
+  "id": 274,
+  "finName": "Voikukantie",
+  "sweName": "Smörblommevägen",
+  "finAddress": "Kauppakartanonkatu 10",
+  "sweAddress": "Handelshusgatan 10",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 25.0867813029403,
+  "y": 60.2090159546746
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd507"
+  },
+  "id": 278,
+  "finName": "Puotilantie",
+  "sweName": "Botbygårdsvägen",
+  "finAddress": "Puotilantie 4",
+  "sweAddress": "Botbygårdsvägen 4",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 14,
+  "x": 25.1004180257133,
+  "y": 60.2090787864561
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd50c"
+  },
+  "id": 283,
+  "finName": "Alakiventie",
+  "sweName": "Understensvägen",
+  "finAddress": "Alakiventie 4",
+  "sweAddress": "Understensvägen 4",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 14,
+  "x": 25.0772822325582,
+  "y": 60.2198397844715
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd517"
+  },
+  "id": 303,
+  "finName": "Leikosaarentie",
+  "sweName": "Lekholmsvägen",
+  "finAddress": "Leikosaarentie 25",
+  "sweAddress": "Lekholmsvägen 25",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 25.1515462608624,
+  "y": 60.2046812958719
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd51a"
+  },
+  "id": 306,
+  "finName": "Kauppakeskus Columbus",
+  "sweName": "Köpcentrum Columbus",
+  "finAddress": "Valkopaadentie 1",
+  "sweAddress": "Vithällsvägen 1",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 20,
+  "x": 25.1455043565057,
+  "y": 60.2063719022092
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd51b"
+  },
+  "id": 315,
+  "finName": "Vuosaaren liikuntapuisto",
+  "sweName": "Nordsjö idrottspark",
+  "finAddress": "Pallokuja 4",
+  "sweAddress": "Bollgränden 4",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 18,
+  "x": 25.1534645734222,
+  "y": 60.2122976062757
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd51d"
+  },
+  "id": 309,
+  "finName": "Kaivonkatsojanpuisto",
+  "sweName": "Brunnsökarparken",
+  "finAddress": "Kaivonkatsojantie 5",
+  "sweAddress": "Brunnsökarvägen 5",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 18,
+  "x": 25.1359993335263,
+  "y": 60.2044047701442
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd51f"
+  },
+  "id": 311,
+  "finName": "Ramsinniementie",
+  "sweName": "Ramsöuddsvägen",
+  "finAddress": "Ramsinniementie 1",
+  "sweAddress": "Ramsöuddsvägen 1",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 18,
+  "x": 25.1199060794359,
+  "y": 60.1995636503578
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd524"
+  },
+  "id": 317,
+  "finName": "Haapasaarentie",
+  "sweName": "Aspholmsvägen",
+  "finAddress": "Marielundinaukio 1",
+  "sweAddress": "Marielundsplatsen 1",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 18,
+  "x": 25.146787178183,
+  "y": 60.2187766341847
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd525"
+  },
+  "id": 318,
+  "finName": "Vuosaaren puistopolku",
+  "sweName": "Nordsjö parkstig",
+  "finAddress": "Mustalahdenpolku 2",
+  "sweAddress": "Svartviksstigen 2",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 14,
+  "x": 25.1410953624725,
+  "y": 60.221320897051
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd527"
+  },
+  "id": 320,
+  "finName": "Koukkusaarentie",
+  "sweName": "Krokholmsvägen",
+  "finAddress": "Kallvikintie",
+  "sweAddress": "Kallviksvägen",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 25.1342325127583,
+  "y": 60.213980722047
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd528"
+  },
+  "id": 321,
+  "finName": "Vartioharjuntie",
+  "sweName": "Botåsvägen",
+  "finAddress": "Vartioharjuntie 13",
+  "sweAddress": "Botåsvägen 13",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 14,
+  "x": 25.110914414719,
+  "y": 60.2208894708644
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd52c"
+  },
+  "id": 324,
+  "finName": "Sinkilätie",
+  "sweName": "Märlvägen",
+  "finAddress": "Untamalantie 2",
+  "sweAddress": "Untamalavägen 2",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 25.1110602327979,
+  "y": 60.2329614527257
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd52d"
+  },
+  "id": 327,
+  "finName": "Humikkalankuja",
+  "sweName": "Humikkalagränd",
+  "finAddress": "Rintinpolku 2",
+  "sweAddress": "Grindstigen 2",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 25.0900641525363,
+  "y": 60.2298249948271
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd52f"
+  },
+  "id": 329,
+  "finName": "Kurkimäki",
+  "sweName": "Tranbacka",
+  "finAddress": "Kurkimäentie 3",
+  "sweAddress": "Tranbackavägen 3",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 25.0716416497357,
+  "y": 60.2282903943644
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd535"
+  },
+  "id": 334,
+  "finName": "Varustuksentie",
+  "sweName": "Rustningsvägen",
+  "finAddress": "Varustuksentie 1",
+  "sweAddress": "Rustningsvägen 1",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 14,
+  "x": 25.0668572558023,
+  "y": 60.2391310073666
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd53f"
+  },
+  "id": 344,
+  "finName": "Puistolan asema",
+  "sweName": "Parkstad järnvägsstation",
+  "finAddress": "Tapulikaupungintie 1",
+  "sweAddress": "Stapelstadsvägen 1",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 25.0343501212405,
+  "y": 60.2751896029642
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd543"
+  },
+  "id": 349,
+  "finName": "Töyrynummentie",
+  "sweName": "Lidmalmsvägen",
+  "finAddress": "Töyrynummentie 2",
+  "sweAddress": "Lidmalmsvägen 2",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 25.0039702918602,
+  "y": 60.2719623839468
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd553"
+  },
+  "id": 363,
+  "finName": "Väärämäentie",
+  "sweName": "Vindobackavägen",
+  "finAddress": "Väärämäentie 2-4",
+  "sweAddress": "Vindobackavägen 2-4",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 12,
+  "x": 25.0297267023462,
+  "y": 60.2426928298539
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd557"
+  },
+  "id": 372,
+  "finName": "Jokipellontie",
+  "sweName": "Åfältsvägen",
+  "finAddress": "Jokipellontie 10",
+  "sweAddress": "Åfältsvägen 10",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 16,
+  "x": 24.9833214791834,
+  "y": 60.2452177923159
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd55b"
+  },
+  "id": 391,
+  "finName": "Tollinpolku",
+  "sweName": "Tollsstigen",
+  "finAddress": "Luutnantinpolku 7a",
+  "sweAddress": "Juustensvägen 4",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 12,
+  "x": 24.8677110166808,
+  "y": 60.245908525041
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd55f"
+  },
+  "id": 376,
+  "finName": "Torpparinmäentie",
+  "sweName": "Torparbacksvägen",
+  "finAddress": "Kuusmiehenkaari 5",
+  "sweAddress": "Sexmansbågen 5",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 14,
+  "x": 24.9447682689237,
+  "y": 60.2568807091704
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd564"
+  },
+  "id": 381,
+  "finName": "Maununneva",
+  "sweName": "Magnuskärr",
+  "finAddress": "Kaarelantie 14",
+  "sweAddress": "Kårbölevägen 14",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 14,
+  "x": 24.8989998259643,
+  "y": 60.2444085812279
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd565"
+  },
+  "id": 307,
+  "finName": "Ulappasilta",
+  "sweName": "Fjärdbron",
+  "finAddress": "Ulappasilta 1",
+  "sweAddress": "Fjärdbron 1",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 18,
+  "x": 25.1410458716813,
+  "y": 60.2066160428581
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd577"
+  },
+  "id": 399,
+  "finName": "Vähäntuvantie",
+  "sweName": "Lillstuvägen",
+  "finAddress": "Kylväjäntie 12",
+  "sweAddress": "Såningsmansvägen 12",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 14,
+  "x": 24.846165047021,
+  "y": 60.2324510345281
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd571"
+  },
+  "id": 393,
+  "finName": "Malminkartanon asema",
+  "sweName": "Malmgård järnvägsstation",
+  "finAddress": "Luutnantinaukio",
+  "sweAddress": "Löjtnantsplatsen",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 20,
+  "x": 24.8631156423813,
+  "y": 60.2478178576762
+},{
+  "_id": {
+    "$oid": "63d0086780acb80ab5dcd572"
+  },
+  "id": 394,
+  "finName": "Tuohipolku",
+  "sweName": "Näverstigen",
+  "finAddress": "Tuohipolku 1",
+  "sweAddress": "Näverstigen 1",
+  "finCity": " ",
+  "sweCity": " ",
+  "operator": " ",
+  "capacity": 12,
+  "x": 24.8574322593556,
+  "y": 60.2515646859168
+},{
+  "_id": {
+    "$oid": "63d544201116ab0a03b1ca7a"
+  },
+  "id": 8058,
+  "finName": "Oravatien asema",
+  "sweName": "",
+  "finAddress": "Oravatie 1",
+  "sweAddress": "",
+  "finCity": "Helsinki",
+  "sweCity": "",
+  "operator": "HSL",
+  "capacity": 22,
+  "x": 12,
+  "y": 11
+},{
+  "_id": {
+    "$oid": "63d54d979d37b51770742bb4"
+  },
+  "id": 7276,
+  "finName": "Oravatien toinen asema",
+  "sweName": "",
+  "finAddress": "Oravatie 2",
+  "sweAddress": "",
+  "finCity": "Helsinki",
+  "sweCity": "",
+  "operator": "HSL",
+  "capacity": 22,
+  "x": 12,
+  "y": 12
+}]

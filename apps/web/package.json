@@ -6,6 +6,7 @@
     "build": "next build",
     "clean": "rm -rf .next .turbo node_modules",
     "dev": "next dev",
+    "start": "next start",
     "lint": "SKIP_ENV_VALIDATION=1 next lint",
     "type-check": "tsc --noEmit",
     "with-env": "dotenv -e ../../.env --",
