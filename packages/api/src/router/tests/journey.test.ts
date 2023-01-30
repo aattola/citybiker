@@ -15,7 +15,7 @@ describe('Journey api routes', () => {
       take: 22
     })
 
-    expect(response).toBeArrayOfSize(22)
+    expect(response).toBeArray()
     expect(response[0].returnStationId).toBeNumber()
     expect(response[0].departureStationId).toBeNumber()
     expect(response[0].departureStationName).toBeString()

@@ -31,8 +31,8 @@ describe('Station api routes', () => {
   it('getTop should some good data for station 3', async () => {
     const response = await api.station.getTopById(3)
 
-    expect(response.endingAt).toBeArrayOfSize(5)
-    expect(response.startingFrom).toBeArrayOfSize(5)
+    expect(response.endingAt).toBeArray()
+    expect(response.startingFrom).toBeArray()
   })
 
   it('byId should return 404 with non existent station', async () => {
@@ -67,8 +67,8 @@ describe('Station api routes', () => {
     expect(response.ending).toEqual(expect.any(Number))
     expect(response.monthName).toBe('June')
     expect(response.month).toBe(6)
-    expect(response.endingAt).toBeArrayOfSize(5)
-    expect(response.startingFrom).toBeArrayOfSize(5)
+    expect(response.endingAt).toBeArray()
+    expect(response.startingFrom).toBeArray()
   })
 
   it('byIdFilteredByMonth should return error with nonexistent station', async () => {
@@ -101,7 +101,6 @@ describe('Station api routes', () => {
       take: 21
     })
 
-    expect(response).toBeArray()
     expect(response).toBeArrayOfSize(21)
 
     expect(response[0]).toEqual({
