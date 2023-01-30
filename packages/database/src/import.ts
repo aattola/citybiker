@@ -14,6 +14,9 @@ const stationFiles = StationFiles.map((file) => filePath + '/' + file)
 
 // 754 does not exist in the station data, 997 and 999 are probably service and production
 
+prisma.station.deleteMany()
+prisma.journey.deleteMany()
+
 console.time('Read data')
 console.log('Reading')
 
